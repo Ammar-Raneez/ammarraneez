@@ -1,0 +1,168 @@
+{
+  "main": {
+    "name": "Ammar Raneez",
+    "occupation": "Aspiring Full Stack ReactJS Developer, also passionate about Data Science & a Current Second Year CS Student",
+    "description": "Full Stack and Data Science Enthusiast",
+    "image": "main.jpg",
+    "bio": "My name is Ammar, I'm an aspiring Full Stack Developer, also passionate about Data Science. Currently, I'm a 2nd year CS Undergraduate",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "ammarraneez@gmail.com",
+    "phone": "+76 432 0855",
+    "address": {
+      "street": "119 Maligawatta Place Colombo 10",
+      "city": "Colombo",
+      "state": "Sri Lanka",
+      "zip": "01000"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload": "documents/Ammar_Resume.docx",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/ammar.raneez",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ammar-raneez-246114196/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/_ammar._r/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/Ammar-Raneez",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "University of Westminster",
+        "degree": "Bachelor of Science in Computer Science",
+        "graduation": "July 2023",
+        "description": "Graduation - July 2023"
+      }
+    ],
+    "work": [
+      {
+        "company": "Clever Programmer",
+        "title": "Team Member && React Specialist",
+        "years": "April 2020 - Present",
+        "description": "Teaching ReactJS to thousands of students."
+      },
+      {
+        "company": "Lindar Media",
+        "title": "Software Engineer",
+        "years": "Nov 2019 - April 2020",
+        "description": "Building MrQ, a gambling website."
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "85%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "85%"
+      },
+      {
+        "name": "NodeJS | Express",
+        "level": "60%"
+      },
+      {
+        "name": "Python",
+        "level": "80%"
+      },
+      {
+        "name": "CSS",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "70%"
+      },
+      {
+        "name": "Java",
+        "level": "80%"
+      },
+      {
+        "name": "HTML5",
+        "level": "95%"
+      },
+      {
+        "name": "NoSQL | MongoDB",
+        "level": "80%"
+      },
+      {
+        "name": "MySQL",
+        "level": "65%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Hit-Me-Up",
+        "category": "Aesthetic Messaging App",
+        "image": "hitmeup.PNG",
+        "url": "http://hitmeup-e7a8d.firebaseapp.com/"
+      },
+      {
+        "title": "Trailerz Hub",
+        "category": "Live Movie Trailer Streamer",
+        "image": "trailerzhub.PNG",
+        "url": "http://trailerz-hub-101.firebaseapp.com/"
+      },
+      {
+        "title": "Meet & Greet",
+        "category": "Live Video Call App, similar to that of zoom",
+        "image": "meet.PNG",
+        "url": "https://limitless-shore-65176.herokuapp.com/"
+      },
+      {
+        "title": "Covid-19 Tracker",
+        "category": "Live Covid-19 Tracker",
+        "image": "covid.PNG",
+        "url": "https://covid-graph-tracker.firebaseapp.com/home"
+      },
+      {
+        "title": "Dummyzon",
+        "category": "Amazon product showcase with a Price Tracker",
+        "image": "amazon.PNG",
+        "url": "http://dummyzon-c93d1.firebaseapp.com/"
+      },
+      {
+        "title": "Craigslist Clone",
+        "category": "Craigslist Scraper With a Way Better User Interface",
+        "image": "craigslist.PNG",
+        "url": "https://secure-journey-34903.herokuapp.com/"
+      },
+      {
+        "title": "WhatsApp Clone",
+        "category": "WhatsApp Clone - Messaging functionality",
+        "image": "whatsapp.PNG",
+        "url": "https://ez-chat-d7a7e.firebaseapp.com/"
+      },
+      {
+        "title": "Google Clone",
+        "category": "Google Search Clone, using Google Custom Search API",
+        "image": "google.PNG",
+        "url": "http://clone-62b99.firebaseapp.com/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Ammar is a really hardworking student, loves working under pressure and loves anything that is mentally challenging and being pushed to his limits. I am confident in his abilities to make an impact in any company.",
+        "user": "Mr Ramesh. School's Headmaster"
+      }
+    ]
+  }
+}
