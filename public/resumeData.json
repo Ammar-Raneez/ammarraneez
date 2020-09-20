@@ -80,6 +80,10 @@
         "level": "80%"
       },
       {
+        "name": "TensorFlow",
+        "level": "75%"
+      },
+      {
         "name": "CSS",
         "level": "95%"
       },
