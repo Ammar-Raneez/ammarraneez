@@ -161,6 +161,70 @@
       }
     ]
   },
+  "certifications": {
+    "projects": [
+      {
+        "title": "HTML, CSS, JS",
+        "category": "Web Design for Everybody: Basics of Web Development & Coding | Coursera",
+        "image": "wdd-basics.PNG",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/SX87DZRHFJHY"
+      },
+      {
+        "title": "Full-Stack Web Development",
+        "category": "Full-Stack Web Development with React | Coursera",
+        "image": "fullstack.PNG",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/SGTU9KWH8EVP"
+      },
+      {
+        "title": "Java",
+        "category": "Java Programming and Software Engineering Fundamentals | Coursera",
+        "image": "java-sefund.PNG",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/DV5MQ92BKTC5"
+      },
+      {
+        "title": "Java",
+        "category": "Object Oriented Programming in Java | Coursera",
+        "image": "java-oop.PNG",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/44KNMTEPECLB"
+      },
+      {
+        "title": "Math",
+        "category": "Mathematics for Machine Learning | Coursera",
+        "image": "math.PNG",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/QY27NBKN8NZC"
+      },
+      {
+        "title": "Machine Learning",
+        "category": "Deep Learning | Coursera",
+        "image": "deep-learning.PNG",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/KY6SJ66ZAWQM"
+      },
+      {
+        "title": "Web Development",
+        "category": "Responsive Web Design | FreeCodeCamp",
+        "image": "fcc-web-design.PNG",
+        "url": "https://www.freecodecamp.org/certification/ammuuu/responsive-web-design"
+      },
+      {
+        "title": "Python",
+        "category": "Python (Basic) | HackerRank",
+        "image": "hackerrank-python.PNG",
+        "url": "https://www.hackerrank.com/certificates/54b6107b078b"
+      },
+      {
+        "title": "Java",
+        "category": "Java (Basic) | HackerRank",
+        "image": "hackerrank-java.PNG",
+        "url": "https://www.hackerrank.com/certificates/85b6ce7fa255"
+      },
+      {
+        "title": "Problem Solving",
+        "category": "Problem Solving (Basic) | HackerRank",
+        "image": "hackerrank-algorithms.PNG",
+        "url": "https://www.hackerrank.com/certificates/25f97cf5bbc3"
+      }
+    ]
+  },
   "testimonials": {
     "testimonials": [
       {
