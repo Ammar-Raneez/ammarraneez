@@ -114,31 +114,31 @@
       {
         "title": "Hit-Me-Up",
         "category": "Aesthetic Messaging App",
-        "image": "hitmeup.PNG",
+        "image": "hitmeup.png",
         "url": "http://hitmeup-e7a8d.firebaseapp.com/"
       },
       {
         "title": "Trailerz Hub",
         "category": "Live Movie Trailer Streamer",
-        "image": "trailerzhub.PNG",
+        "image": "trailerzhub.png",
         "url": "http://trailerz-hub-101.firebaseapp.com/"
       },
       {
         "title": "Meet & Greet",
         "category": "Live Video Call App, similar to that of zoom",
-        "image": "meet.PNG",
+        "image": "meet.png",
         "url": "https://limitless-shore-65176.herokuapp.com/"
       },
       {
         "title": "Covid-19 Tracker",
         "category": "Live Covid-19 Tracker",
-        "image": "covid.PNG",
+        "image": "covid.png",
         "url": "https://covid-graph-tracker.firebaseapp.com/home"
       },
       {
         "title": "Dummyzon",
         "category": "Amazon product showcase with a Price Tracker",
-        "image": "amazon.PNG",
+        "image": "amazon.png",
         "url": "http://dummyzon-c93d1.firebaseapp.com/"
       },
       {
@@ -150,13 +150,13 @@
       {
         "title": "WhatsApp Clone",
         "category": "WhatsApp Clone - Messaging functionality",
-        "image": "whatsapp.PNG",
+        "image": "whatsapp.png",
         "url": "https://ez-chat-d7a7e.firebaseapp.com/"
       },
       {
         "title": "Google Clone",
         "category": "Google Search Clone, using Google Custom Search API",
-        "image": "google.PNG",
+        "image": "google.png",
         "url": "http://clone-62b99.firebaseapp.com/"
       }
     ]
@@ -166,61 +166,61 @@
       {
         "title": "HTML, CSS, JS",
         "category": "Web Design for Everybody: Basics of Web Development & Coding | Coursera",
-        "image": "wdd-basics.PNG",
+        "image": "wdd-basics.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/SX87DZRHFJHY"
       },
       {
         "title": "Full-Stack Web Development",
         "category": "Full-Stack Web Development with React | Coursera",
-        "image": "fullstack.PNG",
+        "image": "fullstack.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/SGTU9KWH8EVP"
       },
       {
         "title": "Java",
         "category": "Java Programming and Software Engineering Fundamentals | Coursera",
-        "image": "java-sefund.PNG",
+        "image": "java-sefund.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/DV5MQ92BKTC5"
       },
       {
         "title": "Java",
         "category": "Object Oriented Programming in Java | Coursera",
-        "image": "java-oop.PNG",
+        "image": "java-oop.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/44KNMTEPECLB"
       },
       {
         "title": "Math",
         "category": "Mathematics for Machine Learning | Coursera",
-        "image": "math.PNG",
+        "image": "math.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/QY27NBKN8NZC"
       },
       {
         "title": "Machine Learning",
         "category": "Deep Learning | Coursera",
-        "image": "deep-learning.PNG",
+        "image": "deep-learning.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/KY6SJ66ZAWQM"
       },
       {
         "title": "Web Development",
         "category": "Responsive Web Design | FreeCodeCamp",
-        "image": "fcc-web-design.PNG",
+        "image": "fcc-web-design.png",
         "url": "https://www.freecodecamp.org/certification/ammuuu/responsive-web-design"
       },
       {
         "title": "Python",
         "category": "Python (Basic) | HackerRank",
-        "image": "hackerrank-python.PNG",
+        "image": "hackerrank-python.png",
         "url": "https://www.hackerrank.com/certificates/54b6107b078b"
       },
       {
         "title": "Java",
         "category": "Java (Basic) | HackerRank",
-        "image": "hackerrank-java.PNG",
+        "image": "hackerrank-java.png",
         "url": "https://www.hackerrank.com/certificates/85b6ce7fa255"
       },
       {
         "title": "Problem Solving",
         "category": "Problem Solving (Basic) | HackerRank",
-        "image": "hackerrank-algorithms.PNG",
+        "image": "hackerrank-algorithms.png",
         "url": "https://www.hackerrank.com/certificates/25f97cf5bbc3"
       }
     ]
