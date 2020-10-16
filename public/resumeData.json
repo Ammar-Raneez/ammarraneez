@@ -80,11 +80,11 @@
         "level": "80%"
       },
       {
-        "name": "TensorFlow",
+        "name": "TensorFlow | Keras",
         "level": "75%"
       },
       {
-        "name": "CSS",
+        "name": "CSS | SASS",
         "level": "95%"
       },
       {
@@ -198,6 +198,18 @@
         "category": "Deep Learning | Coursera",
         "image": "deep-learning.png",
         "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/KY6SJ66ZAWQM"
+      },
+      {
+        "title": "Machine Learning",
+        "category": "Deep Learning | Coursera",
+        "image": "dl-tfdev.png",
+        "url": "https://www.coursera.org/account/accomplishments/professional-cert/E3ZCCDMB65CQ"
+      },
+      {
+        "title": "Cloud Services",
+        "category": "AWS Fundamentals | Coursera",
+        "image": "aws-fund.png",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/XC9BPJLVHQSE"
       },
       {
         "title": "Web Development",
