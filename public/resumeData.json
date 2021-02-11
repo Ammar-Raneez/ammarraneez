@@ -4,7 +4,7 @@
     "occupation": "Aspiring Full Stack ReactJS Developer, also passionate about Data Science & a Current Second Year CS Student",
     "description": "Full Stack and Data Science Enthusiast",
     "image": "main.jpg",
-    "bio": "My name is Ammar, I'm an aspiring Full Stack Developer, also passionate about Data Science. Currently, I'm a 2nd year CS Undergraduate",
+    "bio": "My name is Ammar, I'm an aspiring Full Stack Developer, also passionate about Data Science. Currently, I'm a 2nd year CS Undergraduate & a Freelance Web Developer",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "ammarraneez@gmail.com",
     "phone": "+76 432 0855",
@@ -50,16 +50,28 @@
     ],
     "work": [
       {
-        "company": "Clever Programmer",
-        "title": "Team Member && React Specialist",
-        "years": "April 2020 - Present",
-        "description": "Teaching ReactJS to thousands of students."
+        "company": "The Radiant",
+        "title": "Freelance Web Developer",
+        "years": "Jan 2021 - Present",
+        "description": "Working on the Official Site of Amirah - Fine Gems & Jewelry"
       },
       {
-        "company": "Lindar Media",
-        "title": "Software Engineer",
-        "years": "Nov 2019 - April 2020",
-        "description": "Building MrQ, a gambling website."
+        "company": "NIFTRON",
+        "title": "Freelance Web Developer",
+        "years": "Feb 2021 - Present",
+        "description": "Working on a Web based ticketing platform, based on blockchain"
+      },
+      {
+        "company": "IIT",
+        "title": "Feelance Mobile App Developer",
+        "years": "Dec 2020 - Present",
+        "description": "Working on a Final Year Business Information Systems Project, to be able to provide a Diagnosis & Prognosis for Diabetic Retinopathy"
+      },
+      {
+        "company": "IIT",
+        "title": "Freelance ML Developer",
+        "years": "Jan 2021 - Present",
+        "description": "Working on a Final Year Business Information Systems Project's ML backend, to be able to predict the rents of houses"
       }
     ],
     "skills": [
@@ -96,7 +108,7 @@
         "level": "80%"
       },
       {
-        "name": "TensorFlow | Keras",
+        "name": "TensorFlow | Keras | Sci-kit Learn",
         "level": "75%"
       },
       {
@@ -180,6 +192,12 @@
         "category": "Google Search Clone, using Google Custom Search API",
         "image": "google.png",
         "url": "http://clone-62b99.firebaseapp.com/"
+      },
+      {
+        "title": "Earthquake | Volcano Map",
+        "category": "Location of all Earthquakes & Volcanoes, using Java Applets",
+        "image": "earthquake.png",
+        "url": "https://github.com/Ammar-Raneez/UCSD_Earthquake_Volcano_Map"
       }
     ]
   },
@@ -223,9 +241,15 @@
       },
       {
         "title": "Machine Learning",
-        "category": "Deep Learning | Coursera",
+        "category": "TensorFlow | Coursera",
         "image": "dl-tfdev.png",
         "url": "https://www.coursera.org/account/accomplishments/professional-cert/E3ZCCDMB65CQ"
+      },
+      {
+        "title": "Machine Learning",
+        "category": "AI for Medicine | Coursera",
+        "image": "ai-medicine.png",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/FX8WL7NCES6E"
       },
       {
         "title": "Cloud Services",

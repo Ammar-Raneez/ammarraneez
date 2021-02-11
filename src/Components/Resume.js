@@ -38,9 +38,9 @@ class Resume extends Component {
 				</div>
 
 				<div className="row work">
-					<div className="three columns header-col">
+					<div className="nine columns header-col">
 						<h1><span>Work</span></h1>
-					<div className="nine columns main-col">
+					<div style={{ marginTop: '20px' }} className="three columns main-col">
 					{work}
 					</div></div>
 				</div>
