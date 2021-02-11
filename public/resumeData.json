@@ -194,6 +194,12 @@
         "url": "http://clone-62b99.firebaseapp.com/"
       },
       {
+        "title": "Text Editor Pro",
+        "category": "A Text Editor with Spellcheck, autocomplete, Markov Test, and Edit Distance",
+        "image": "texteditor.jpg",
+        "url": "https://github.com/Ammar-Raneez/UCSD_Text_Editor_Pro"
+      },
+      {
         "title": "Earthquake | Volcano Map",
         "category": "Location of all Earthquakes & Volcanoes, using Java Applets",
         "image": "earthquake.png",
