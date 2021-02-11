@@ -26,7 +26,7 @@ class Certifications extends Component {
 			<section id="certifications">
 				<div className="row">
 					<div className="twelve columns collapsed">
-						<h1>Certifications.</h1>
+						<h1>Some of my Certifications.</h1>
 						<div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
 							{projects}
 						</div>
