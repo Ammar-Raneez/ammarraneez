@@ -50,6 +50,12 @@
     ],
     "work": [
       {
+        "company": "Coursera",
+        "title": "Instructor",
+        "years": "Feb 2021 - Present",
+        "description": "Instructor on Contract with the online learning platform Coursera"
+      },
+      {
         "company": "The Radiant",
         "title": "Freelance Web Developer",
         "years": "Jan 2021 - Present",
