@@ -15,7 +15,7 @@
       "zip": ""
     },
     "website": "https://development-portfolio-382f4.firebaseapp.com/",
-    "resumedownload": "documents/Ammar_Resume.pdf",
+    "resumedownload": "documents/Ammar_CV_Extended.pdf",
     "social": [
       {
         "name": "facebook",
@@ -53,7 +53,7 @@
         "company": "Coursera",
         "title": "Instructor",
         "years": "Feb 2021 - Present",
-        "description": "Instructor on Contract with the online learning platform Coursera"
+        "description": "Instructor on Contract Authoring community guided projects"
       },
       {
         "company": "The Radiant",
@@ -62,34 +62,28 @@
         "description": "Working on the Official Site of Amirah - Fine Gems & Jewelry"
       },
       {
-        "company": "Pulses",
-        "title": "Freelance Web Developer",
-        "years":"Feb 2021 - Present",
-        "description": "Created & maintaining Masjid-Al-Masqbool's Jumma registration website"
-      },
-      {
         "company": "NIFTRON",
         "title": "Freelance Web Developer",
         "years": "Feb 2021 - Present",
         "description": "Working on a Web based ticketing platform, based on blockchain"
       },
       {
-        "company": "IIT",
-        "title": "Feelance Mobile App Developer",
-        "years": "Dec 2020 - Present",
-        "description": "Working on a Final Year Business Information Systems Project, to be able to provide a Diagnosis & Prognosis for Diabetic Retinopathy"
+        "company": "Pulses",
+        "title": "Freelance Web Developer",
+        "years":"Feb 2021 - April 2021",
+        "description": "Created & maintained Masjid-Al-Masqbool's Jumma registration website"
       },
       {
-        "company": "IIT",
-        "title": "Freelance ML Developer",
-        "years": "Jan 2021 - Present",
-        "description": "Working on a Final Year Business Information Systems Project's ML backend, to be able to predict the rents of houses"
+        "company": "Undisclosed",
+        "title": "Feelance Mobile App Developer",
+        "years": "Dec 2020 - April 2021",
+        "description": "Worked on a Final Year Business Information Systems Project, for the Diagnosis and Management of Diabetic Retinopathy"
       }
     ],
     "skills": [
       {
         "name": "React",
-        "level": "85%"
+        "level": "90%"
       },
       {
         "name": "Angular",
@@ -97,11 +91,11 @@
       },
       {
         "name": "TypeScript",
-        "level": "70%"
+        "level": "80%"
       },
       {
         "name": "JavaScript",
-        "level": "85%"
+        "level": "90%"
       },
       {
         "name": "React Native",
@@ -109,7 +103,7 @@
       },
       {
         "name": "Dart | Flutter",
-        "level": "70%"
+        "level": "80%"
       },
       {
         "name": "NodeJS | Express",
@@ -117,7 +111,7 @@
       },
       {
         "name": "Python",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "TensorFlow | Keras | Sci-kit Learn",
@@ -129,11 +123,11 @@
       },
       {
         "name": "Git",
-        "level": "70%"
+        "level": "90%"
       },
       {
         "name": "Java",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "HTML5",
@@ -151,6 +145,24 @@
   },
   "portfolio": {
     "projects": [
+      {
+        "title": "ONCO",
+        "category": "Thoracic Cancer Diagnosis & Prognosis",
+        "image": "onco.png",
+        "url": "#"
+      },
+      {
+        "title": "E-Ophthalmologist",
+        "category": "Diabetic Retinopathy Management",
+        "image": "ep.jpg",
+        "url": "#"
+      },
+      {
+        "title": "PLI",
+        "category": "Premier League Manager Interface",
+        "image": "pl.jpg",
+        "url": "https://github.com/Ammar-Raneez/OOP-COURSEWORK"
+      },
       {
         "title": "Moosique Share",
         "category": "Music Sharing App",
