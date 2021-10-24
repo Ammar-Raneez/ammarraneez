@@ -1,15 +1,15 @@
 {
   "main": {
     "name": "Ammar Raneez",
-    "occupation": "Aspiring Full Stack ReactJS Developer, also passionate about Data Science & a Current Second Year CS Student",
-    "description": "Full Stack and Data Science Enthusiast",
+    "occupation": "Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing & a Current Third Year CS Student",
+    "description": "Full Stack, Blockchain & Cloud Enthusiast",
     "image": "main.jpg",
-    "bio": "My name is Ammar, I'm an aspiring Full Stack Developer, also passionate about Data Science. Currently, I'm a 2nd year CS Undergraduate & a Freelance Web Developer",
+    "bio": "My name is Ammar, I'm an aspiring Full Stack Developer. Currently, I'm a 3rd year CS Undergraduate undergoing an internship & a Freelance Web Developer",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "ammarraneez@gmail.com",
     "phone": "+76 432 0855",
     "address": {
-      "street": "17/12 -1/1, 2nd lane, Prathibimbarama road, Kalubowila",
+      "street": "No. 33, 1/3 Nemra Towers, Ebenezer Place, Dehiwala",
       "city": "Colombo",
       "state": "Sri Lanka",
       "zip": ""
@@ -50,96 +50,55 @@
     ],
     "work": [
       {
-        "company": "Coursera",
-        "title": "Instructor",
-        "years": "Feb 2021 - Present",
-        "description": "Instructor on Contract Authoring community guided projects"
+        "company": "99X",
+        "title": "Trainee Software Engineer",
+        "years": "July 2021 - Present",
+        "description": "Working in an EduTech startup - Maturify"
       },
       {
-        "company": "The Radiant",
-        "title": "Freelance Web Developer",
-        "years": "Jan 2021 - Present",
-        "description": "Working on the Official Site of Amirah - Fine Gems & Jewelry"
+        "company": "NIFTRON",
+        "title": "Freelance Fullstack Web Developer",
+        "years": "May 2021 - Present",
+        "description": "Working on Amaten - Gift Card Tokenization based on blockchain"
+      },
+      {
+        "company": "Self-Employeed",
+        "title": "Freelance Fullstack Web Developer",
+        "years": "April 2021 - Present",
+        "description": [
+          "Working on Amirah Fine Gems & Jewelry - Ecommerce Gems & Jewelry",
+          "Worked on Vontech - A site-construction company"
+        ]
+      },
+      {
+        "company": "Coursera",
+        "title": "Instructor",
+        "years": "Feb 2021 - May 2021",
+        "description": "Instructor on Contract Authoring community guided projects"
       },
       {
         "company": "NIFTRON",
         "title": "Freelance Web Developer",
-        "years": "Feb 2021 - Present",
-        "description": "Working on a Web based ticketing platform, based on blockchain"
+        "years": "Feb 2021 - May 2021",
+        "description": "Worked on a Web based ticketing platform, based on blockchain"
       },
       {
         "company": "Pulses",
         "title": "Freelance Web Developer",
         "years":"Feb 2021 - April 2021",
-        "description": "Created & maintained Masjid-Al-Masqbool's Jumma registration website"
+        "description": "Created & maintained Masjid-Al-Masqbool's Jummuah registration website"
+      },
+      {
+        "company": "The Radiant",
+        "title": "Freelance Web Developer",
+        "years": "Jan 2021 - March 2021",
+        "description": "Worked on the Official Site of Amirah - Fine Gems & Jewelry"
       },
       {
         "company": "Undisclosed",
         "title": "Feelance Mobile App Developer",
         "years": "Dec 2020 - April 2021",
         "description": "Worked on a Final Year Business Information Systems Project, for the Diagnosis and Management of Diabetic Retinopathy"
-      }
-    ],
-    "skills": [
-      {
-        "name": "React",
-        "level": "90%"
-      },
-      {
-        "name": "Angular",
-        "level": "80%"
-      },
-      {
-        "name": "TypeScript",
-        "level": "80%"
-      },
-      {
-        "name": "JavaScript",
-        "level": "90%"
-      },
-      {
-        "name": "React Native",
-        "level": "65%"
-      },
-      {
-        "name": "Dart | Flutter",
-        "level": "80%"
-      },
-      {
-        "name": "NodeJS | Express",
-        "level": "60%"
-      },
-      {
-        "name": "Python",
-        "level": "90%"
-      },
-      {
-        "name": "TensorFlow | Keras | Sci-kit Learn",
-        "level": "75%"
-      },
-      {
-        "name": "CSS | SASS",
-        "level": "95%"
-      },
-      {
-        "name": "Git",
-        "level": "90%"
-      },
-      {
-        "name": "Java",
-        "level": "90%"
-      },
-      {
-        "name": "HTML5",
-        "level": "95%"
-      },
-      {
-        "name": "NoSQL | MongoDB",
-        "level": "80%"
-      },
-      {
-        "name": "MySQL",
-        "level": "65%"
       }
     ]
   },
@@ -317,7 +276,7 @@
     "testimonials": [
       {
         "text": "Ammar is a really hardworking student, loves working under pressure and loves anything that is mentally challenging and being pushed to his limits. I am confident in his abilities to make an impact in any company.",
-        "user": "Mr Ramesh. School's Headmaster"
+        "user": "Mr Ramesh. Royal Institute's Headmaster"
       }
     ]
   }

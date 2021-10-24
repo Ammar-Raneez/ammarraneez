@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 class Certifications extends Component {
 	render() {
 		if(this.props.data){
-			var projects = this.props.data.projects.map(function(projects){
+			var projects = this.props.data.projects.map(function(projects, index){
 				var projectImage = 'images/certificates/'+projects.image;
-				return <div key={projects.title} className="columns portfolio-item">
+				return <div key={index} className="columns portfolio-item">
 					<div className="item-wrap">
 						<a rel="noopener noreferrer" target="_blank" href={projects.url} title={projects.title}>
 						<img alt={projects.title} src={projectImage} />
