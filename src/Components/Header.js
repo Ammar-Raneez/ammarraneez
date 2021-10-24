@@ -26,7 +26,7 @@ class Header extends Component {
 						<li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
 						<li><a className="smoothscroll" href="#certifications">Certifications</a></li>
 						<li><a className="smoothscroll" href="#contact">Contact</a></li>
-						<li><a rel="noopener noreferrer" target="_blank" href="https://mysterious-escarpment-41897.herokuapp.com/indexBlog.html">Blog</a></li>
+						{/* <li><a rel="noopener noreferrer" target="_blank" href="https://mysterious-escarpment-41897.herokuapp.com/indexBlog.html">Blog</a></li> */}
 					</ul>
 				</nav>
 

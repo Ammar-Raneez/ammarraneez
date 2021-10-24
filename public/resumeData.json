@@ -15,7 +15,7 @@
       "zip": ""
     },
     "website": "https://development-portfolio-382f4.firebaseapp.com/",
-    "resumedownload": "documents/Ammar_CV_Extended.pdf",
+    "resumedownload": "documents/Ammar_CV.pdf",
     "social": [
       {
         "name": "facebook",
@@ -62,7 +62,7 @@
         "description": "Working on Amaten - Gift Card Tokenization based on blockchain"
       },
       {
-        "company": "Self-Employeed",
+        "company": "Self-Employed",
         "title": "Freelance Fullstack Web Developer",
         "years": "April 2021 - Present",
         "description": [
