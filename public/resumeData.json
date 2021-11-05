@@ -108,13 +108,13 @@
         "title": "ONCO",
         "category": "Thoracic Cancer Diagnosis & Prognosis",
         "image": "onco.png",
-        "url": "#"
+        "url": "https://github.com/Ammar-Raneez/SDGP-ONCO"
       },
       {
         "title": "E-Ophthalmologist",
         "category": "Diabetic Retinopathy Management",
         "image": "ep.jpg",
-        "url": "#"
+        "url": "https://github.com/Ammar-Raneez/Fyp_Retinopathy_UI"
       },
       {
         "title": "PLI",
