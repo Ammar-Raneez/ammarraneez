@@ -186,7 +186,7 @@ class Resume extends Component {
 							</a>
 							<a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
 								<img
-									src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg"
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
 									alt="nextjs"
 									width="40"
 									height="40"
