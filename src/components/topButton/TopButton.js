@@ -31,7 +31,7 @@ export default function TopButton({ theme }) {
       }}
       title="Go up"
     >
-      <i class="fas fa-arrow-up" id="arrow" aria-hidden="true" />
+      <i className="fas fa-arrow-up" id="arrow" aria-hidden="true" />
     </div>
   );
 }
