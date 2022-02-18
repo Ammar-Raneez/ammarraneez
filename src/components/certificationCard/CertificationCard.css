@@ -18,8 +18,9 @@
 
 .logo_img {
   margin: 3px;
-  width: auto;
+  /* width: auto; */
   height: 100px;
+  object-fit: contain;
 }
 
 .cert-body {
