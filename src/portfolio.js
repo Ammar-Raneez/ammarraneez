@@ -436,7 +436,7 @@ const degrees = {
       duration: "2019 - Present",
       descriptions: [
         "⚡ I have explored various Computer Science concepts such as Data Structures, Algorithms, DBMS, etc.",
-        "⚡ I Have also experienced more intermediate concepts such as AI Database Modeling and Software Design & Architecture",
+        "⚡ I Have also experienced more intermediate concepts such as AI, Database Modeling and Software Design & Architecture",
         "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing mainly focused on AWS and Full Stack Web & Mobile Development.",
         "⚡ I Have also won a couple of hackathons and coding challenges",
         "⚡ Currently I have a cummulative average of > 85%"
