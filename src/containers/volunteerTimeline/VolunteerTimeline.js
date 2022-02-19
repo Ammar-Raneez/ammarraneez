@@ -27,6 +27,11 @@ function VolunteerTimeline({ work }) {
           >
             {work.company}
           </h4>
+          <img
+            src={require(`../../assests/images/${work.logo_path}`)}
+            style={{ width: '70px', objectFit: 'contain', marginTop: '10px' }}
+            alt={work.company}
+          />
           <p>
             {work.description}
           </p>
