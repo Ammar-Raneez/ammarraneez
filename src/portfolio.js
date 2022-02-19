@@ -489,7 +489,8 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/KY6SJ66ZAWQM",
       alt_name: "deeplearning.ai",
-      color_code: "#00000044",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
     },
     {
       title: "AI For Medicine",
@@ -498,7 +499,8 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/E3ZCCDMB65CQ",
       alt_name: "deeplearning.ai",
-      color_code: "#00000044",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
     },
     {
       title: "TensorFlow Developer",
@@ -507,7 +509,8 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/E3ZCCDMB65CQ",
       alt_name: "deeplearning.ai",
-      color_code: "#00000044",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
     },
     {
       title: "Data Science: Foundations using R",
@@ -517,6 +520,7 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/specialization/certificate/KRQCR5YT5JKU",
       alt_name: "johnhopkins",
       color_code: "#0A2D7544",
+      overlay_bg_color: "#0A2D75",
     },
     {
       title: "Mathematics For Machine Learning",
@@ -526,6 +530,7 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/specialization/certificate/H8CPSFXAJD2G",
       alt_name: "deeplearning.ai",
       color_code: "#01538E44",
+      overlay_bg_color: "#01538E",
     },
     {
       title: "Fullstack Web Development With React",
@@ -535,6 +540,7 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/specialization/certificate/SGTU9KWH8EVP",
       alt_name: "HK",
       color_code: "#A7833844",
+      overlay_bg_color: "#A78338",
     },
     {
       title: "Fullstack Web Development With Angular",
@@ -544,6 +550,7 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/specialization/certificate/34AENMW2G7SN",
       alt_name: "HK",
       color_code: "#A7833844",
+      overlay_bg_color: "#A78338",
     },
     {
       title: "Object Oriented Programming in Java",
@@ -553,6 +560,7 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/specialization/certificate/44KNMTEPECLB",
       alt_name: "CaliforniaSanDiego",
       color_code: "#00135444",
+      overlay_bg_color: "#001354",
     },
     {
       title: "Python (Basic)",
@@ -562,6 +570,7 @@ const certifications = {
         "https://www.hackerrank.com/certificates/54b6107b078b",
       alt_name: "hackerrank",
       color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
     },
     {
       title: "Java (Basic)",
@@ -571,6 +580,7 @@ const certifications = {
         "https://www.hackerrank.com/certificates/85b6ce7fa255s",
       alt_name: "hackerrank",
       color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
     },
     {
       title: "Problem Solving (Basic)",
@@ -580,6 +590,7 @@ const certifications = {
         "https://www.hackerrank.com/certificates/25f97cf5bbc3",
       alt_name: "hackerrank",
       color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
     },
     {
       title: "Responsive Web Design",
@@ -589,6 +600,7 @@ const certifications = {
         "https://www.freecodecamp.org/certification/ammuuu/responsive-web-design",
       alt_name: "hackerrank",
       color_code: "#11111144",
+      overlay_bg_color: "#111111",
     },
   ],
 };
@@ -598,7 +610,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development and cloud infrastructure & database design.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -735,7 +747,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "I contribute to, and create a variety of projects, ranging from simple to complex on subjects both old, or new. With a mindset of always having to learn, my GitHub profile is always busy with repositories consisting of the latest new technology that I have learnt",
   avatar_image_path: "projects_image.svg",
 };
 

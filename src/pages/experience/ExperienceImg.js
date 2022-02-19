@@ -20,7 +20,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="291.81"
@@ -29,7 +29,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="428.63"
@@ -38,7 +38,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="155"
@@ -47,7 +47,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="291.81"
@@ -56,7 +56,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="428.63"
@@ -65,7 +65,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="580.64"
@@ -74,7 +74,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="717.45"
@@ -83,7 +83,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="854.27"
@@ -92,7 +92,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="580.64"
@@ -101,7 +101,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="717.45"
@@ -110,7 +110,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="854.27"
@@ -119,7 +119,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="155"
@@ -128,7 +128,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="291.81"
@@ -137,7 +137,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="428.63"
@@ -146,7 +146,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="155"
@@ -155,7 +155,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="291.81"
@@ -164,7 +164,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="428.63"
@@ -173,7 +173,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="580.64"
@@ -182,7 +182,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="717.45"
@@ -191,7 +191,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="854.27"
@@ -200,7 +200,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="580.64"
@@ -209,7 +209,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="717.45"
@@ -218,7 +218,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <rect
           x="854.27"
@@ -227,7 +227,7 @@ export default class ExperienceImg extends Component {
           height="39.52"
           rx="7.43"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <ellipse
           cx="547"
@@ -235,7 +235,7 @@ export default class ExperienceImg extends Component {
           rx="547"
           ry="99.5"
           fill={theme.imageHighlight}
-          opacity="0.1"
+          opacity="0.15"
         />
         <polygon
           points="240 321 194 603 402 581 393 557 230.5 570.5 268.5 320.5 240 321"
@@ -275,17 +275,7 @@ export default class ExperienceImg extends Component {
         <path
           d="M406.72,244.59c1.86,2.66,5.8,3.29,7.52,6a15.73,15.73,0,0,1,1.31,3.57c1.05,3.35,3.17,6.26,4.46,9.53,1.86,4.7,1.91,9.9,1.93,14.95a49.47,49.47,0,0,1-.92,12c-.6,2.47-1.58,4.82-2.3,7.26a35.5,35.5,0,0,0-1.34,12.8,5.24,5.24,0,0,0,.72,2.65,5.75,5.75,0,0,0,2.56,1.74c2.93,1.29,6,2.61,9.2,2.31a3.37,3.37,0,0,0,1.83-.61,4.07,4.07,0,0,0,.9-1.19l2-3.38c1.81-3.09,3.7-6.55,3-10.08a20,20,0,0,0-2.27-5.17,60.78,60.78,0,0,1-3.26-8.07c-3.19-9.17-6.42-18.47-7.14-28.15a24.74,24.74,0,0,1,1.2-10.92,31.1,31.1,0,0,1,3.52-6.09,2.61,2.61,0,0,0-2.81-.95,16.72,16.72,0,0,0-2.91,1.21c-2.94,1.24-6.2.79-9.17-.06-1.16-.34-3-1.5-4.2-1.42C410.14,242.57,406.79,244.71,406.72,244.59Z"
           transform="translate(-53 -70)"
-          fill={theme.imageHighlight}
-        />
-        <path
-          d="M430.13,244.48c-.6-.48-1.53-.92-2.06-.36a2.32,2.32,0,0,0-.38.81c-.52,1.4-2.05,2.09-3.44,2.63s-2.89.84-3.73-.19a2.26,2.26,0,0,1,.13-2.67,8.16,8.16,0,0,1,2.19-1.85,21.38,21.38,0,0,0,8.72-13.72,6.52,6.52,0,0,1,2.39,4.13c.33,1.59.37,3.23.7,4.82.49,2.28,1.58,4.41,1.83,6.72.13,1.23,0,2.47,0,3.7a22.71,22.71,0,0,0,.42,3.58C434.56,249.6,432.91,246.69,430.13,244.48Z"
-          transform="translate(-53 -70)"
-          fill="#f2f2f2"
-        />
-        <path
-          d="M409.89,237.69c-1-.95-2-1.85-3-2.82a38.9,38.9,0,0,1-9.67-15.35c-1.28,1-2.69,2.32-2.72,4a6.13,6.13,0,0,0,1.32,3.25,50.68,50.68,0,0,1,7.33,19.61,5.84,5.84,0,0,1,5.05-2.69c1.58,0,8.67,4.2,9.18,3.14C418.13,245.17,411.09,238.82,409.89,237.69Z"
-          transform="translate(-53 -70)"
-          fill="#f2f2f2"
+          fill={theme.jacketColor}
         />
         <path
           d="M432.22,229.73a83,83,0,0,0,33.58,20.33,7.54,7.54,0,0,1,3.39,1.72,6.93,6.93,0,0,1,1.41,3.1c2.44,9.54,3.26,19.41,4.07,29.22a16.28,16.28,0,0,1-.1,4.88c-.59,2.62-2.45,4.74-4.28,6.71-5.74,6.15-12.29,12.58-13.26,20.94a33.45,33.45,0,0,1-.57,4.8c-.5,1.86-1.61,3.5-2.29,5.31-3.34,8.91,4.21,19.7-.39,28A50.54,50.54,0,0,1,458.84,370a19.86,19.86,0,0,0,1.37,5.88c1.37,2.86,4.19,4.68,6.41,7,6.77,6.94,7.6,17.56,8,27.25.25,5.46.17,11.73-4,15.31-2.41,2.09-5.7,2.77-8.85,3.29-4.19.7-8.75,1.2-12.46-.87-2.66-1.48-4.47-4.07-6.2-6.57-3.28-4.77-6.57-9.53-9.68-14.42-4.92-7.71-9.56-16.52-8.14-25.56-.4,9.25-2.35,18.57-6.89,26.63s-11.85,14.79-20.72,17.45-19.24.78-25.85-5.7a34.94,34.94,0,0,1-5.51-7.43,72.52,72.52,0,0,1-8.14-20.71c-.43-1.89-.75-4,.2-5.69.45-.8,1.14-1.43,1.61-2.22,1.58-2.69.06-6.08-1.47-8.82-2.33.22-4-2.52-3.79-4.86s1.61-4.37,2.6-6.5c2.9-6.28,2.26-13.59.86-20.36s-3.49-13.5-3.33-20.41c.17-7.31-5.09-13.89-9.1-20-2.24-3.44-4.85-6.64-6.8-10.25a33.07,33.07,0,0,1-2.62-24.76,64.89,64.89,0,0,1,5.48-12.22l3.3-6.19a10.21,10.21,0,0,1,7-6l22.83-9a34.35,34.35,0,0,0,8.24-4.12c2.79-2.1,4.87-5,7.53-7.24a4.22,4.22,0,0,1,3-1.31c2.14.19,2.9,2.89,3.12,5,.5,4.72,4,8.72,5.19,13.31,6.44,25.35,20.07,48.73,23.81,74.61,4.2-10.09,8.4-20.2,13.78-29.7a24.66,24.66,0,0,0,2.13-4.31,18.4,18.4,0,0,0,.71-6.69c-.27-6.51-2-12.87-3.71-19.16C436.53,246.1,434.53,238.21,432.22,229.73Z"
@@ -351,7 +341,7 @@ export default class ExperienceImg extends Component {
         <path
           d="M631.51,211.34c-18.15,20.41-22.77,49.14-26.64,76.19l-5.7,39.94c-1.48,10.36-3,20.72-4.29,31.11-.9,7.11-1.74,14.33-.76,21.43.77,5.6,2.64,11,4.2,16.39a154.56,154.56,0,0,1,6,43.49c1.21-3.56,5.4-5,9.08-5.8a146.82,146.82,0,0,1,91.86,9.81c5.05-14.15,4.1-29.63,5.51-44.59,2-21.33,8.89-42,10.93-63.29.75-7.93.84-15.9.92-23.87.06-5.85.12-11.76-1.1-17.49-1.36-6.34-4.23-12.25-7.2-18A469.1,469.1,0,0,0,687,230.24q-7.54-11.28-15.73-22.11-4.15-5.49-8.47-10.86c-2.79-3.47-4-6.48-8.43-4.4C646,196.79,637.6,204.49,631.51,211.34Z"
           transform="translate(-53 -70)"
-          fill={theme.imageHighlight}
+          fill={theme.jacketColor}
         />
         <path
           d="M641.91,381.22a98,98,0,0,1-13.27-.42c-3.27-.32-6.61-.8-9.8,0a10.2,10.2,0,0,0-3.81,1.87,2.87,2.87,0,0,0,1.63,5l3.42.3c2.17.19,4.43.41,6.12,2a3.82,3.82,0,0,1,1.24,2.41c.21,2.33-1.81,3.6-3.62,4.57a28.69,28.69,0,0,0-7.06,4.7,9.78,9.78,0,0,0-2.93,6,1.16,1.16,0,0,0,1.7,1.07c4-2,6.61-7.93,11-6.94a17.82,17.82,0,0,0-9.66,7.43,4.48,4.48,0,0,0,6,6.33,19.78,19.78,0,0,0,1.88-1.25,46.21,46.21,0,0,0,7.93-8.24c-3.2,6.75-6.44,14.65-2.76,21.36a2.13,2.13,0,0,0,2,1.18c1.16-.12,1.5-1.21,1.69-2.17.6-3.09.75-6.35,2.27-9.1,3.52-6.38,12.2-7,18.81-10.11,7.93-3.68,13.36-11.6,15.55-20.06a15.42,15.42,0,0,0,.39-7.62c-1.47-5.69-8.49-7-13-4.25C652.1,378.79,648.89,381,641.91,381.22Z"
@@ -366,27 +356,7 @@ export default class ExperienceImg extends Component {
         <path
           d="M638.53,266.55c7,10.81,19.16,16.9,29.57,24.49a24.87,24.87,0,0,1,6.51,6.26c2.63,4.06,3,9.21,2.46,14-.69,6.31-2.71,12.38-4.73,18.4l-4.37,13c-2.77,8.28-5.63,16.72-10.9,23.69-1.34,1.77-2.91,3.65-2.85,5.88a7.42,7.42,0,0,0,1.28,3.57,24.07,24.07,0,0,0,15.28,10.93,11.7,11.7,0,0,0,5.76,0c2.7-.79,4.72-3,6.61-5.07,9-9.94,18-20,24.5-31.65,6.35-11.37,10.15-24,13.65-36.52a76.08,76.08,0,0,0,3-14.12c.74-9-1.62-18-5.47-26.14s-9.17-15.49-14.64-22.64A157.65,157.65,0,0,0,687,231.06c-10.87-10.16-24.18-16.15-38.74-10.37-10.29,4.08-14.13,12.58-15.06,23.49A35.77,35.77,0,0,0,638.53,266.55Z"
           transform="translate(-53 -70)"
-          fill={theme.imageHighlight}
-        />
-        <path
-          d="M859.65,625.24a37,37,0,0,1-.8,7.76c-.1.48-.21,1-.32,1.41-2.84,11.39-10.85,19.72-20.41,20.25-.32,0-.64,0-1,0-10.11,0-18.66-8.72-21.48-20.73-.08-.32-.15-.64-.22-1a37,37,0,0,1-.8-7.76c0-16.27,10.07-29.45,22.5-29.45S859.65,609,859.65,625.24Z"
-          transform="translate(-53 -70)"
-          fill={theme.text}
-        />
-        <path
-          d="M859.65,625.24a37,37,0,0,1-.8,7.76c-.1.48-.21,1-.32,1.41-.34,0-.67,0-1,0a45.76,45.76,0,0,1-7.36-1,44.92,44.92,0,0,1-6.56,1.5,45.87,45.87,0,0,1-5.14.48l-1.74,0a46.41,46.41,0,0,1-6.16-.41,45.17,45.17,0,0,1-9.67-2.4,45.56,45.56,0,0,1-5.22,1.4c-.08-.32-.15-.64-.22-1a37,37,0,0,1-.8-7.76c0-16.27,10.07-29.45,22.5-29.45S859.65,609,859.65,625.24Z"
-          transform="translate(-53 -70)"
-          opacity="0.1"
-        />
-        <path
-          d="M907.65,570.38a45.54,45.54,0,0,0-4.9-20.61L876.29,558l23.23-13.66a45.73,45.73,0,0,0-34.36-19.58,45.65,45.65,0,0,0-3.57-4.72l-38,11.83,31.17-18.33a45.73,45.73,0,0,0-72,24.39l32.55,37.47L780,549.86a45.74,45.74,0,0,0,40.93,80.7,45.92,45.92,0,0,0,29.28.81,45.78,45.78,0,0,0,55.62-44.66c0-1,0-2-.1-3A45.63,45.63,0,0,0,907.65,570.38Z"
-          transform="translate(-53 -70)"
-          fill={theme.imageHighlight}
-        />
-        <path
-          d="M906.86,578.86a121.9,121.9,0,0,0-42.34-.54c-15.89,2.63-32.13,8.41-47.67,4.19-9.12-2.48-17-8.22-25.91-11.41a49.18,49.18,0,0,0-26.75-1.6,45.76,45.76,0,0,0,56.69,61.06,45.92,45.92,0,0,0,29.28.81,45.78,45.78,0,0,0,55.62-44.66c0-1,0-2-.1-3A45.19,45.19,0,0,0,906.86,578.86Z"
-          transform="translate(-53 -70)"
-          opacity="0.1"
+          fill={theme.jacketColor}
         />
       </svg>
     );

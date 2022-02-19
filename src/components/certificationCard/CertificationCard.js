@@ -15,7 +15,11 @@ class CertificationCard extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="content-overlay"></div>
+              <div
+                className="content-overlay"
+                style={{ backgroundColor: certificate.overlay_bg_color }}
+              >
+              </div>
               <div
                 className="cert-header"
                 style={{ backgroundColor: certificate.color_code }}
@@ -28,7 +32,7 @@ class CertificationCard extends Component {
               </div>
               <div className="content-details fadeIn-top">
                 <h3 className="content-title" style={{ color: theme.body }}>
-                  Certificate
+                  {certificate.title}
                 </h3>
               </div>
             </a>

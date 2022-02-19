@@ -1,69 +1,113 @@
 {
   "data": [
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "The complete portfolio website hosted using github pages (gh-pages). Visit the website here : ",
+      "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
+      "name": "ONCO",
+      "url": "https://github.com/Ammar-Raneez/SDGP-ONCO",
+      "description": "A Group Project that is a cancer detection, prediction & management application, focused on skin, lung and breast cancers",
+      "overlayBgColor": "#00ffff",
+      "overlayTextColor": "#fff",
       "isFork": false,
       "languages": [
-        { "name": "HTML", "iconifyClass": "logos-html-5" },
-        { "name": "CSS", "iconifyClass": "logos-css-3" },
-        { "name": "JavaScript", "iconifyClass": "logos-javascript" }
+        { "name": "Flutter", "iconifyClass": "logos-flutter" },
+        { "name": "Firebase", "iconifyClass": "logos-firebase" },
+        { "name": "Python", "iconifyClass": "logos-python" },
+        { "name": "TensorFlow", "iconifyClass": "logos-tensorflow" },
+        { "name": "Azure", "iconifyClass": "logos-azure" }
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
-      "name": "truvisory",
-      "createdAt": "2020-06-03T11:53:55Z",
-      "url": "https://github.com/ashutosh1919/truvisory",
-      "description": "This project is meant to provide resources to users who want to access good LinkedIn posts which contains resources to learn any Technology, Design, Self-Branding, Motivation etc. You can visit project by:",
+      "id": "MDEwOlJlcG9zaXDSDWAXZQSXZCSFXASAZQ=",
+      "name": "E-Ophthalmologist",
+      "url": "https://github.com/Ammar-Raneez/E-Ophthalmologist_UI",
+      "description": "A Diabetic Retinopathy detection & management application",
+      "overlayBgColor": "#264C59",
+      "overlayTextColor": "#fff",
       "isFork": false,
       "languages": [
-        { "name": "HTML", "iconifyClass": "logos-html-5" },
-        { "name": "CSS", "iconifyClass": "logos-css-3" },
-        { "name": "JavaScript", "iconifyClass": "logos-javascript" }
+        { "name": "Flutter", "iconifyClass": "logos-flutter" },
+        { "name": "Firebase", "iconifyClass": "logos-firebase" },
+        { "name": "Python", "iconifyClass": "logos-python" },
+        { "name": "TensorFlow", "iconifyClass": "logos-tensorflow" },
+        { "name": "Azure", "iconifyClass": "logos-azure" }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=",
-      "name": "ml-data-bot",
-      "createdAt": "2020-06-19T14:24:55Z",
-      "url": "https://github.com/ashutosh1919/ml-data-bot",
-      "description": "Chatbot which helps you to get important statistics from the data to get insights to build Machine learning, Deep learning and Statistical models",
+      "name": "SimpleScript",
+      "url": "https://github.com/Ammar-Raneez/Simple_Script",
+      "description": "A Personal Programming Language that supports most of the basic functionality",
+      "overlayBgColor": "#6C1C20",
+      "overlayTextColor": "#fff",
       "isFork": false,
-      "languages": [{ "name": "Python", "iconifyClass": "logos-python" }]
+      "languages": [
+        { "name": "Python", "iconifyClass": "logos-python" }
+      ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxNTU5NTE3NTk=",
-      "name": "Stock-Prediction-using-LSTM",
-      "createdAt": "2018-11-03T05:00:56Z",
-      "url": "https://github.com/ashutosh1919/Stock-Prediction-using-LSTM",
-      "description": "This Project is predicting stocks for 32 companies with error less than 1% using LSTM Networks.",
+      "name": "PL Guv'nor",
+      "url": "https://github.com/Ammar-Raneez/PL_Guvnor",
+      "description": "A Premier League management application that aims to simulate the Premier League",
+      "overlayBgColor": "#3A0243",
+      "overlayTextColor": "#fff",
       "isFork": false,
       "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "Jupyter Notebook", "iconifyClass": "logos-jupyter" }
+        { "name": "Java", "iconifyClass": "logos-java" },
+        { "name": "Play", "iconifyClass": "logos-play" },
+        { "name": "Angular", "iconifyClass": "logos-angular" }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
-      "name": "Pick-Parser",
-      "createdAt": "2019-08-13T13:13:00Z",
-      "url": "https://github.com/dsc-iiitdmk/Pick-Parser",
-      "description": "This Project is to create a tool which can parse the Resumes and transform them into our own templates",
+      "name": "Tinder Clone",
+      "url": "https://github.com/Ammar-Raneez/RN_Tinder_Clone",
+      "description": "A Clone of Tinder supporting most of the core features",
+      "overlayBgColor": "#E84B68",
+      "overlayTextColor": "#fff",
       "isFork": false,
-      "languages": [{ "name": "Python", "iconifyClass": "logos-python" }]
+      "languages": [
+        { "name": "React Native", "iconifyClass": "logos-react" },
+        { "name": "Firebase", "iconifyClass": "logos-firebase" },
+        { "name": "Expo", "iconifyClass": "logos-expo" }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
+      "name": "Text Editor Pro",
+      "url": "https://github.com/Ammar-Raneez/UCSD_Text_Editor_Pro",
+      "description": "A Text Editor with spell check, autocomplete & edit distance functionality",
+      "overlayBgColor": "#ff00ff",
+      "overlayTextColor": "#fff",
+      "isFork": false,
+      "languages": [
+        { "name": "Java", "iconifyClass": "logos-java" }
+      ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
-      "name": "Survival_3D_Game",
-      "createdAt": "2019-04-18T17:25:51Z",
-      "url": "https://github.com/ashutosh1919/Survival_3D_Game",
-      "description": "Survival Game using Unity3D",
+      "name": "Movie Recommender Engine",
+      "url": "https://github.com/Ammar-Raneez/UCSD_Earthquake_Volcano_Map",
+      "description": "A Movie Recommendation Engine that is built without ML",
+      "overlayBgColor": "#1D8E62",
+      "overlayTextColor": "#fff",
       "isFork": false,
-      "languages": [{ "name": "C#", "iconifyClass": "logos-c-sharp" }]
+      "languages": [
+        { "name": "Java", "iconifyClass": "logos-java" }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkxODAZZQSDAFAZ=",
+      "name": "AWS CDK Auction Service",
+      "url": "https://github.com/Ammar-Raneez/cdk-poc",
+      "description": "An Auction Service built with multiple AWS services, including CI/CD",
+      "overlayBgColor": "#FF9900",
+      "overlayTextColor": "#fff",
+      "isFork": false,
+      "languages": [
+        { "name": "AWS CDK", "iconifyClass": "logos-aws" },
+        { "name": "Lambda", "iconifyClass": "logos-aws-lambda" }
+      ]
     }
   ]
 }
