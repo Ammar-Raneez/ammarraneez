@@ -20,10 +20,10 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Ammar",
-  logo_name: "Ammar",
-  nickname: "Amu",
+  logo_name: "Ammar Raneez",
+  nickname: "Call me Amu, cuz almost everyone does",
   subTitle:
-    "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student",
+    "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver & Analytical Thinker with the ability to solve complex problems under pressure",
   resumeLink:
     "https://drive.google.com/file/d/1y0imwonNfItxJGBvhMKOGh7xm7XehzwK/view?usp=sharing",
   githubProfile: "https://github.com/Ammar-Raneez",
@@ -787,7 +787,7 @@ const projects = {
       id: "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
       name: "ONCO",
       url: "https://github.com/Ammar-Raneez/SDGP-ONCO",
-      description: "A Group Project that is a cancer detection, prediction & management application, focused on skin, lung and breast cancers",
+      description: "A Group Project that is a cancer diagnosis, prognosis & management application",
       overlayBgColor: "#00ffff",
       overlayTextColor: "#fff",
       isFork: false,
@@ -912,7 +912,7 @@ const contactPageData = {
   },
   phoneSection: {
     title: "Phone Number",
-    subtitle: "+94 764320855",
+    subtitle: "+94 76 432 0855",
   },
 };
 
