@@ -6,7 +6,7 @@ import './ExperienceTimeline.css';
 function ExperienceTimeline({ work }) {
   return (
     <VerticalTimeline lineColor="#11111111">
-    {work.map((work, index) => (
+      {work.map((work, index) => (
         <VerticalTimelineElement
           key={index}
           className="vertical-timeline-element--work"

@@ -41,15 +41,17 @@ class DegreeCard extends Component {
                 </h3>
               </div>
             </div>
-            <div className="body-content">
-              {degree.descriptions.map((sentence, index) => {
-                return (
-                  <p key={index} className="content-list" style={{ color: theme.text }}>
-                    {sentence}
-                  </p>
-                );
-              })}
-            </div>
+            <Fade right cascade>
+              <div className="body-content">
+                {degree.descriptions.map((sentence, index) => {
+                  return (
+                    <p key={index} className="content-list" style={{ color: theme.text }}>
+                      {sentence}
+                    </p>
+                  );
+                })}
+              </div>
+            </Fade>
           </div>
         </Fade>
       </div>

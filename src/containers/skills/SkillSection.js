@@ -41,7 +41,7 @@ class SkillSection extends Component {
                 <Fade right duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
-                <Fade right duration={2000}>
+                <Fade right duration={1000} cascade>
                   <div>
                     {skill.skills.map((skillSentence, index) => {
                       return (
