@@ -828,7 +828,7 @@ const projects = {
       ]
     },
     {
-      id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
+      id: "MDEwOlJlcG9zaXRvcnkyMDIxNQZALKLX=",
       name: "Text Editor Pro",
       url: "https://github.com/Ammar-Raneez/UCSD_Text_Editor_Pro",
       description: "A Text Editor with spell check, autocomplete & edit distance functionality",
