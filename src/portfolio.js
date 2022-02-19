@@ -608,7 +608,7 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work, Internship and Volunteers",
   description:
     "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development and cloud infrastructure, User Interfaces & database design.",
   header_image_path: "experience.svg",
@@ -626,6 +626,7 @@ const experience = {
             "Working on BLISS - A Mind-fitness Application. Implemented a POC for AWS CDK using multiple services including a CI/CD pipeline"
           ],
           bgColor: '#FF6962',
+          bgColorFaded: '#FF696233',
           headColor: '#331C7A'
         },
         {
@@ -639,6 +640,7 @@ const experience = {
             "Worked on Masjib-al-Maqbool's Jummuah Registration Site, a application to reserver Jummuah tokens to visitors during times of restriction",
           ],
           bgColor: '#00ff00',
+          bgColorFaded: '#00ff0033',
           headColor: '#476930'
         },
         {
@@ -652,10 +654,11 @@ const experience = {
             "Worked on the frontend for project Nextentry which is a blockchain-based ticketing solution, using React.js with TypeScript & Ant design",
           ],
           bgColor: '#2160B2',
+          bgColorFaded: '#2160B233',
           headColor: '#F0070D'
         },
         {
-          title: "Backend Developer",
+          title: "Freelance Backend Developer",
           company: "Inforwaves",
           logo_path: "inforwaves_logo.png",
           duration: "May 2021 - Jul 2021",
@@ -663,6 +666,7 @@ const experience = {
             "Worked on the backend of Execution Excellence creating several API's in a microservice architecture to maximize separation of concerns, using AWS RDS and Nest.js with TypeORM",
           ],
           bgColor: '#9BC5D9',
+          bgColorFaded: '#9BC5D933',
           headColor: '#4A8396'
         },
         {
@@ -674,10 +678,11 @@ const experience = {
             "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",
           ],
           bgColor: '#00634A',
+          bgColorFaded: '#00634A33',
           headColor: '#23395d'
         },
         {
-          title: "Full Stack Mobile Application Developer",
+          title: "Full Stack Mobile | Web Application Developer",
           company: "IIT",
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - May 2021",
@@ -685,12 +690,13 @@ const experience = {
             "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a final year Business Information Systems student for their thesis, using Flutter with firebase for the client-side & Azure and Python with TensorFlow, Keras & Scikit-learn for the server-side",
           ],
           bgColor: '#E90000',
+          bgColorFaded: '#E9000033',
           headColor: '#000000'
         },
       ],
     },
     {
-      title: "Volunteerships",
+      title: "Volunteers",
       experiences: [
         {
           title: "Author community guided projects",
@@ -701,6 +707,7 @@ const experience = {
           description:
             "Was invited as one of the ten members in the world to create community guided projects. Created and published community guided projects for the Coursera learner Community",
           bgColor: '#0052C7',
+          bgColorFaded: '#0052C733',
           headColor: '#1A5892'
         },
         {
@@ -712,6 +719,7 @@ const experience = {
           description:
             "Helping out students in Postman, contributing as a Student Expert",
           bgColor: '#FD6C35',
+          bgColorFaded: '#FD6C3533',
           headColor: '#676767'
         },
         {
@@ -723,6 +731,7 @@ const experience = {
           description:
             "Actively contributing to many opensource projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain.",
           bgColor: '#1B1F23',
+          bgColorFaded: '#1B1F2333',
           headColor: '#430083'
         },
         {
@@ -734,6 +743,7 @@ const experience = {
           description:
             "Took part in various events organised by the Google Developer Club including Dev Fest, Hash Code and KickStart",
           bgColor: '#33A852',
+          bgColorFaded: '#33A85233',
           headColor: '#4284F3'
         },
         {
@@ -745,6 +755,7 @@ const experience = {
           description:
             "Served as the sergeant-at-arms of the IIT Toastmasters Club",
           bgColor: '#770E29',
+          bgColorFaded: '#770E2933',
           headColor: '#003F62'
         },
         {
@@ -757,6 +768,7 @@ const experience = {
           description:
             "Lead Developer in creating the codesprint revamped website",
           bgColor: '#E90000',
+          bgColorFaded: '#E9000033',
           headColor: '#000000'
         },
       ],

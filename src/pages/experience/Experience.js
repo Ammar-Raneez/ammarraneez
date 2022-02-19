@@ -52,7 +52,7 @@ class Experience extends Component {
         <br />
         <br />
         <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
-          Volunteership
+          Volunteer Experience
         </h3>
         <br />
         <VolunteerTimeline work={experience['sections'][1]['experiences']} />=

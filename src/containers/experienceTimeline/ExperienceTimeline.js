@@ -13,7 +13,10 @@ function ExperienceTimeline({ work }) {
           contentArrowStyle={{ borderRight: `7px solid ${work.bgColor}` }}
           date={work.duration}
           iconStyle={{ backgroundColor: work.bgColor }}
-          contentStyle={{ borderTop: `4px solid ${work.headColor}` }}
+          contentStyle={{
+            borderTop: `4px solid ${work.headColor}`,
+            backgroundColor: work.bgColorFaded
+          }}
         >
           <h3
             className="vertical-timeline-element-title"
