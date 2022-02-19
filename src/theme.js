@@ -67,8 +67,8 @@ export const blackTheme = {
   secondaryText: "#5A6377",
   imageHighlight: "#fca311",
   compImgHighlight: "#E6E6E6",
-  jacketColor: "#000",
-  jacketHighlight: "#fff",
+  jacketColor: "#000000",
+  jacketHighlight: "#ffffff",
   headerColor: "#fca31177",
 };
 
