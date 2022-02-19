@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { greeting, projectsHeader, publicationsHeader } from "../../portfolio.js";
-import ProjectsData from "../../shared/opensource/projects.json";
+import { greeting, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
@@ -28,20 +26,20 @@ class Projects extends Component {
                   className="projects-heading-text"
                   style={{ color: theme.text }}
                 >
-                  {projectsHeader.title}
+                  {projects.title}
                 </h1>
                 <p
                   className="projects-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {projectsHeader["description"]}
+                  {projects["description"]}
                 </p>
               </div>
             </div>
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
+          {projects.projects.map((repo) => {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
