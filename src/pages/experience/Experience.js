@@ -7,6 +7,7 @@ import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
 import ExperienceTimeline from "../../containers/experienceTimeline/ExperienceTimeline";
+import VolunteerTimeline from "../../containers/volunteerTimeline/VolunteerTimeline";
 
 class Experience extends Component {
   render() {
@@ -46,10 +47,15 @@ class Experience extends Component {
         <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
           Work Experience
         </h3>
+        <br />
         <ExperienceTimeline work={experience['sections'][0]['experiences']} />
+        <br />
+        <br />
         <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
           Volunteership
         </h3>
+        <br />
+        <VolunteerTimeline work={experience['sections'][1]['experiences']} />=
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>

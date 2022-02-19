@@ -1,0 +1,9 @@
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+  font-family: "Google Sans Medium";
+}
+
+.vertical-timeline-element p,
+.vertical-timeline-element span {
+  font-family: "Google Sans Regular";
+}

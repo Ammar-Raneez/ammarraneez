@@ -693,14 +693,15 @@ const experience = {
       title: "Volunteerships",
       experiences: [
         {
-          title: "Author community guided projects on Coursera",
+          title: "Author community guided projects",
           company: "Coursera",
           company_url: "https://www.coursera.org/",
           logo_path: "coursera_logo.png",
           duration: "Feb 2021 - May 2021",
           description:
             "Was invited as one of the ten members in the world to create community guided projects. Created and published community guided projects for the Coursera learner Community",
-          color: "#0056D2",
+          bgColor: '#0052C7',
+          headColor: '#1A5892'
         },
         {
           title: "Postman Student Expert",
@@ -710,7 +711,8 @@ const experience = {
           duration: "Nov 2021 - PRESENT",
           description:
             "Helping out students in Postman, contributing as a Student Expert",
-          color: "#D83B01",
+          bgColor: '#FD6C35',
+          headColor: '#676767'
         },
         {
           title: "Developer Program Member",
@@ -720,17 +722,19 @@ const experience = {
           duration: "July 2019 - PRESENT",
           description:
             "Actively contributing to many opensource projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain.",
-          color: "#181717",
+          bgColor: '#1B1F23',
+          headColor: '#430083'
         },
         {
-          title: "Google Developer's Member",
+          title: "Google Developer Group Member",
           company: "Google",
           company_url: "http://google.com/",
           logo_path: "google_logo.png",
           duration: "July 2019 - PRESENT",
           description:
             "Took part in various events organised by the Google Developer Club including Dev Fest, Hash Code and KickStart",
-          color: "#34A853",
+          bgColor: '#33A852',
+          headColor: '#4284F3'
         },
         {
           title: "Sergeant At Arms",
@@ -740,7 +744,8 @@ const experience = {
           duration: "Jun 2020 - Jun 2021",
           description:
             "Served as the sergeant-at-arms of the IIT Toastmasters Club",
-          color: "#2E617E",
+          bgColor: '#770E29',
+          headColor: '#003F62'
         },
         {
           title: "Codesprint '21 Lead Developer",
@@ -751,7 +756,8 @@ const experience = {
           duration: "Nov 2020 - Jan 2021",
           description:
             "Lead Developer in creating the codesprint revamped website",
-          color: "#F40000",
+          bgColor: '#E90000',
+          headColor: '#000000'
         },
       ],
     },
