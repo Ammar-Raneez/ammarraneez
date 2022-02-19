@@ -610,72 +610,82 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development and cloud infrastructure & database design.",
+    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development and cloud infrastructure, User Interfaces & database design.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work",
       experiences: [
         {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - PRESENT",
-          location: "Hyderabad, Telangana",
-          description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
-          color: "#0879bf",
+          title: "Trainee Software Engineer",
+          company: "99X",
+          logo_path: ".png",
+          duration: "Jul 2021 - PRESENT",
+          description: [
+            "Working in an EduTech startup - Maturify. Implementing static and dynamic UI screens using Angular; Implementing services in the backend, using Serverless Framework with AWS and MongoDB; Resolving bugs on both the frontend and backend",
+            "Working on BLISS - A Mind-fitness Application. Implemented a POC for AWS CDK using multiple services including a CI/CD pipeline"
+          ],
+          bgColor: '#FF6962',
+          headColor: '#331C7A'
         },
         {
-          title: "Android and ML Developer",
-          company: "Muffito Incorporation",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
-          duration: "May 2018 - Oct 2018",
-          location: "Pune, Maharashtra",
-          description:
-            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
-          color: "#9b1578",
+          title: "Full-stack Developer",
+          company: "Freelance",
+          logo_path: ".png",
+          duration: "Jan 2021 - Jul 2021",
+          description: [
+            "Worked on Vontech, a construction-based startup using React.js with TypeScript & Firebase and Node.js with Express & mongoDB",
+            "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",
+            "Worked on Masjib-al-Maqbool's Jummuah Registration Site, a application to reserver Jummuah tokens to visitors during times of restriction",
+          ],
+          bgColor: '#00ff00',
+          headColor: '#476930'
         },
         {
-          title: "Android Developer",
-          company: "FreeCopy Pvt. Ltd.",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
-          duration: "Nov 2017 - Dec 2017",
-          location: "Ahmedabad, Gujarat",
-          description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
-        },
-      ],
-    },
-    {
-      title: "Internships",
-      experiences: [
-        {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
-          description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-          color: "#ee3c26",
+          title: "Full-stack Developer",
+          company: "Niftron",
+          logo_path: ".png",
+          duration: "Jan 2021 - Jul 2021",
+          description: [
+            "Worked on Amaten, a gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
+            "Worked on the UI for EXIP a blockchain marketing platform using React.js with TypeScript & MongoDB",
+            "Worked on the frontend for project Nextentry which is a blockchain-based ticketing solution, using React.js with TypeScript & Ant design",
+          ],
+          bgColor: '#2160B2',
+          headColor: '#F0070D'
         },
         {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
-          company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
-          description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
-          color: "#0071C5",
+          title: "Backend Developer",
+          company: "Inforwaves",
+          logo_path: ".png",
+          duration: "May 2021 - Jul 2021",
+          description: [
+            "Worked on the backend of Execution Excellence creating several API's in a microservice architecture to maximize separation of concerns, using AWS RDS and Nest.js with TypeORM",
+          ],
+          bgColor: '#9BC5D9',
+          headColor: '#4A8396'
+        },
+        {
+          title: "Full-stack Developer on Contract",
+          company: "The Radiant",
+          logo_path: ".png",
+          duration: "Jan 2021 - May 2021",
+          description: [
+            "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",
+          ],
+          bgColor: '#00634A',
+          headColor: '#23395d'
+        },
+        {
+          title: "Full Stack Mobile Application Developer",
+          company: "IIT",
+          logo_path: ".png",
+          duration: "Nov 2020 - May 2021",
+          description: [
+            "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a final year Business Information Systems student for their thesis, using Flutter with firebase for the client-side & Azure and Python with TensorFlow, Keras & Scikit-learn for the server-side",
+          ],
+          bgColor: '#E90000',
+          headColor: '#000000'
         },
       ],
     },

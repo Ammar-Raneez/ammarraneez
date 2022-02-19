@@ -120,7 +120,7 @@ export const orangeTheme = {
 };
 
 export const hackerTheme = {
-  body: "#E5E5E5",
+  body: "white",
   text: "#000000",
   highlight: "#ffffff",
   dark: "#000000",
