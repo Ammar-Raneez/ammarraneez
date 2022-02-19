@@ -93,6 +93,12 @@ export default class Main extends Component {
                   <Projects {...props} theme={this.props.theme} />
                 )}
               />
+              <Route
+                path="*"
+                render={(props) => (
+                  <Error404 {...props} theme={this.props.theme} />
+                )}
+              />
             </Switch>
           </Router>
         </div>
