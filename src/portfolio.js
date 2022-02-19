@@ -74,9 +74,9 @@ const skills = {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Develop Deep Learning & Machine Learning Models to be used for both Web & Mobile Platforms",
-        "⚡ Experienced on working with Computer Vision and NLP",
-        "⚡ Experienced on Data Cleaning, Analysis & Visualization and Forecasting & Time Series Analysis",
+        "Develop Deep Learning & Machine Learning Models to be used for both Web & Mobile Platforms",
+        "Experienced on working with Computer Vision and NLP",
+        "Experienced on Data Cleaning, Analysis & Visualization and Forecasting & Time Series Analysis",
       ],
       softwareSkills: [
         {
@@ -116,10 +116,10 @@ const skills = {
       title: "Full Stack | Cross Platform Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Develop full stack web applications, including frontend, backend, infrastructure, database design and deploy to the cloud",
-        "⚡ Develop cross platform mobile applications using Flutter and React Native",
-        "⚡ Develop CI/CD pipelines and automate infrastructure",
-        "⚡ Comfortable in using third-party libraries and frameworks",
+        "Develop full stack web applications, including frontend, backend, infrastructure, database design and cloud deployment",
+        "Develop cross platform mobile applications using Flutter and React Native",
+        "Develop CI/CD pipelines and automate infrastructure",
+        "Comfortable in using third-party libraries and frameworks",
       ],
       softwareSkills: [
         {
@@ -278,6 +278,13 @@ const skills = {
           },
         },
         {
+          skillName: "DynamoDB",
+          fontAwesomeClassname: "simple-icons:amazondynamodb",
+          style: {
+            color: "#4053D6",
+          },
+        },
+        {
           skillName: "Redis",
           fontAwesomeClassname: "simple-icons:redis",
           style: {
@@ -290,10 +297,10 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experienced on working on multiple cloud platforms",
-        "⚡ Experienced on building & designing serverless architectures",
-        "⚡ Develop multiple projects using AWS CDK & Serverless Framework",
-        "⚡ Deploy deep learning models on the cloud",
+        "Experienced on working on multiple cloud platforms",
+        "Experienced on building & designing serverless architectures",
+        "Develop multiple projects using AWS CDK & Serverless Framework",
+        "Deploy deep learning models on the cloud",
       ],
       softwareSkills: [
         {
@@ -383,6 +390,41 @@ const skills = {
             color: "#F24E1E",
           },
         },
+        {
+          skillName: "Grunt",
+          fontAwesomeClassname: "simple-icons:grunt",
+          style: {
+            color: "#FAA918",
+          },
+        },
+        {
+          skillName: "Gulp",
+          fontAwesomeClassname: "simple-icons:gulp",
+          style: {
+            color: "#CF4647",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#F05032",
+          },
+        },
+        {
+          skillName: "VSCode",
+          fontAwesomeClassname: "simple-icons:visualstudiocode",
+          style: {
+            color: "#007ACC",
+          },
+        },
+        {
+          skillName: "JetBrains",
+          fontAwesomeClassname: "simple-icons:jetbrains",
+          style: {
+            color: "#000000",
+          },
+        },
       ],
     },
   ],
@@ -447,7 +489,7 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/KY6SJ66ZAWQM",
       alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+      color_code: "#00000044",
     },
     {
       title: "AI For Medicine",
@@ -456,7 +498,7 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/E3ZCCDMB65CQ",
       alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+      color_code: "#00000044",
     },
     {
       title: "TensorFlow Developer",
@@ -465,25 +507,25 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/E3ZCCDMB65CQ",
       alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+      color_code: "#00000044",
     },
     {
       title: "Data Science: Foundations using R",
-      subtitle: "- John Hopkins University",
-      logo_path: "deeplearning_ai_logo.png",
+      subtitle: "- Coursera | John Hopkins University",
+      logo_path: "jhu_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/KRQCR5YT5JKU",
       alt_name: "johnhopkins",
-      color_code: "#00000099",
+      color_code: "#0A2D7544",
     },
     {
       title: "Mathematics For Machine Learning",
       subtitle: "- Coursera | Imperial College London",
       logo_path: "imperial_logo.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/H8CPSFXAJD2G",
       alt_name: "deeplearning.ai",
-      color_code: "#01538E16",
+      color_code: "#01538E44",
     },
     {
       title: "Fullstack Web Development With React",
@@ -492,7 +534,7 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/SGTU9KWH8EVP",
       alt_name: "HK",
-      color_code: "#A7833822",
+      color_code: "#A7833844",
     },
     {
       title: "Fullstack Web Development With Angular",
@@ -501,7 +543,7 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/34AENMW2G7SN",
       alt_name: "HK",
-      color_code: "#A7833822",
+      color_code: "#A7833844",
     },
     {
       title: "Object Oriented Programming in Java",
@@ -510,7 +552,7 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/44KNMTEPECLB",
       alt_name: "CaliforniaSanDiego",
-      color_code: "#00135422",
+      color_code: "#00135444",
     },
     {
       title: "Python (Basic)",
@@ -546,7 +588,7 @@ const certifications = {
       certificate_link:
         "https://www.freecodecamp.org/certification/ammuuu/responsive-web-design",
       alt_name: "hackerrank",
-      color_code: "#11111133",
+      color_code: "#11111144",
     },
   ],
 };
