@@ -6,7 +6,7 @@ import './ExperienceTimeline.css';
 function ExperienceTimeline({ work }) {
   return (
     <VerticalTimeline lineColor="#11111111">
-      {work.map((work, index) => (
+    {work.map((work, index) => (
         <VerticalTimelineElement
           key={index}
           className="vertical-timeline-element--work"
@@ -27,6 +27,11 @@ function ExperienceTimeline({ work }) {
           >
             {work.company}
           </h4>
+          <img
+            src={require(`../../assests/images/${work.logo_path}`)}
+            style={{ width: '70px', objectFit: 'contain', marginTop: '10px' }}
+            alt={work.company}
+          />
           {work.description.map((desc, index) => (
             <p key={index}>
               {desc}

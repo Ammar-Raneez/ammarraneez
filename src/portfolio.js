@@ -619,7 +619,7 @@ const experience = {
         {
           title: "Trainee Software Engineer",
           company: "99X",
-          logo_path: ".png",
+          logo_path: "99x_logo.png",
           duration: "Jul 2021 - PRESENT",
           description: [
             "Working in an EduTech startup - Maturify. Implementing static and dynamic UI screens using Angular; Implementing services in the backend, using Serverless Framework with AWS and MongoDB; Resolving bugs on both the frontend and backend",
@@ -631,7 +631,7 @@ const experience = {
         {
           title: "Full-stack Developer",
           company: "Freelance",
-          logo_path: ".png",
+          logo_path: "freelance_logo.png",
           duration: "Jan 2021 - Jul 2021",
           description: [
             "Worked on Vontech, a construction-based startup using React.js with TypeScript & Firebase and Node.js with Express & mongoDB",
@@ -644,7 +644,7 @@ const experience = {
         {
           title: "Full-stack Developer",
           company: "Niftron",
-          logo_path: ".png",
+          logo_path: "niftron_logo.png",
           duration: "Jan 2021 - Jul 2021",
           description: [
             "Worked on Amaten, a gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
@@ -657,7 +657,7 @@ const experience = {
         {
           title: "Backend Developer",
           company: "Inforwaves",
-          logo_path: ".png",
+          logo_path: "inforwaves_logo.png",
           duration: "May 2021 - Jul 2021",
           description: [
             "Worked on the backend of Execution Excellence creating several API's in a microservice architecture to maximize separation of concerns, using AWS RDS and Nest.js with TypeORM",
@@ -668,7 +668,7 @@ const experience = {
         {
           title: "Full-stack Developer on Contract",
           company: "The Radiant",
-          logo_path: ".png",
+          logo_path: "radiant_logo.png",
           duration: "Jan 2021 - May 2021",
           description: [
             "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",
@@ -679,7 +679,7 @@ const experience = {
         {
           title: "Full Stack Mobile Application Developer",
           company: "IIT",
-          logo_path: ".png",
+          logo_path: "iit_logo.png",
           duration: "Nov 2020 - May 2021",
           description: [
             "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a final year Business Information Systems student for their thesis, using Flutter with firebase for the client-side & Azure and Python with TensorFlow, Keras & Scikit-learn for the server-side",
