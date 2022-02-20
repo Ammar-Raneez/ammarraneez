@@ -6,10 +6,10 @@ import styled from "styled-components";
 const IconWrapper = styled.span`
   i {
     background-color: ${(props) => props.backgroundColor};
+    transition: 0.3s ease-in;
   }
   &:hover i {
     background-color: ${({ theme }) => theme.text};
-    transition: 0.3s ease-in;
   }
 `;
 
