@@ -633,7 +633,7 @@ const experience = {
           title: "Full-stack Developer",
           company: "Freelance",
           logo_path: "freelance_logo.png",
-          duration: "Jan 2021 - Jul 2021",
+          duration: "Jan 2021 - PRESENT",
           description: [
             "Worked on Vontech, a construction-based startup using React.js with TypeScript & Firebase and Node.js with Express & mongoDB",
             "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",

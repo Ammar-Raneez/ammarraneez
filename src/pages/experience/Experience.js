@@ -52,10 +52,22 @@ class Experience extends Component {
         <br />
         <br />
         <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
+          Competitions
+        </h3>
+        <br />
+        <br />
+        <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
           Volunteer Experience
         </h3>
         <br />
         <VolunteerTimeline work={experience['sections'][1]['experiences']} />=
+        <br />
+        <br />
+        <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
+          My Journey
+        </h3>
+        <br />
+        <br />
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
