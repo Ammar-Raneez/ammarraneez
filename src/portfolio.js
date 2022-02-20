@@ -605,6 +605,101 @@ const certifications = {
   ],
 };
 
+const competitions = {
+  competitions: [
+    {
+      title: "Coderally 2 (2021)",
+      subtitle: "- 1st Place",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/contests/coderally2/leaderboard",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "Cutting Edge (2021)",
+      subtitle: "- 2nd Place | Poster Design",
+      logo_path: "iit_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1yfyk_Cri2wbK_3dwt8-cUSZK6ZhkxGQV/view?usp=sharing",
+      alt_name: "iit",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
+    },
+    {
+      title: "PyHack (2021)",
+      subtitle: "- 4th Place",
+      logo_path: "iit_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/15jHsDZ0HEDqLBpwbg9zYd2syiFex0rDn/view?usp=sharing",
+      alt_name: "iit",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
+    },
+    {
+      title: "Coderally (2020)",
+      subtitle: "- 2nd Place",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/contests/coderally/leaderboard",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "Datathon (2020)",
+      subtitle: "- Merit Pass | Within Top 10",
+      logo_path: "sliit_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/17t0sF8hkZlrLDGpUi7gpfvUyZIFaPO8K/view?usp=sharing",
+      alt_name: "sliit",
+      color_code: "#00007B88",
+      overlay_bg_color: "#00007B",
+    },
+    {
+      title: "Toastmasters International",
+      subtitle: "- Innovative Planning Lv 1",
+      logo_path: "toastmasters_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1jxPaIyNUVm5S65brLWB5O9C4YfPKn3WB/view?usp=sharing",
+      alt_name: "toastmasters",
+      color_code: "#004B6E88",
+      overlay_bg_color: "#004B6E",
+    },
+    {
+      title: "Toastmasters International",
+      subtitle: "- Innovative Planning Lv 2",
+      logo_path: "toastmasters_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1jlky25SwQXzcU6a3XC1AsftAFZRgvLAI/view?usp=sharing",
+      alt_name: "toastmasters",
+      color_code: "#004B6E88",
+      overlay_bg_color: "#004B6E",
+    },
+    {
+      title: "Toastmasters International",
+      subtitle: "- Innovative Planning Lv 3",
+      logo_path: "toastmasters_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/11DVkjyxzKWG8VG8QrX2uYJUITGgSfLce/view?usp=sharing",
+      alt_name: "toastmasters",
+      color_code: "#004B6E88",
+      overlay_bg_color: "#004B6E",
+    },
+    {
+      title: "Toastmasters International",
+      subtitle: "- Innovative Planning Lv 4",
+      logo_path: "toastmasters_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1tt7Z8erzjNO-fNd9_pRvbjB40CfkZ5aX/view?usp=sharing",
+      alt_name: "toastmasters",
+      color_code: "#004B6E88",
+      overlay_bg_color: "#004B6E",
+    }
+  ],
+};
+
 // Experience Page
 const experience = {
   title: "Experience",
@@ -750,7 +845,7 @@ const experience = {
           title: "Sergeant At Arms",
           company: "Toastmasters International",
           company_url: "https://www.toastmasters.org/",
-          logo_path: "toasmasters_logo.png",
+          logo_path: "toastmasters_logo.png",
           duration: "Jun 2020 - Jun 2021",
           description:
             "Served as the sergeant-at-arms of the IIT Toastmasters Club",
@@ -925,6 +1020,7 @@ export {
   competitiveSites,
   degrees,
   certifications,
+  competitions,
   experience,
   projects,
   contactPageData,

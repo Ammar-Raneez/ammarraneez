@@ -9,6 +9,7 @@ import EducationImg from "./EducationImg";
 import { competitiveSites } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
+import Competitions from "../../containers/competitions/Competitions";
 
 class Education extends Component {
   render() {
@@ -27,7 +28,7 @@ class Education extends Component {
                   Education
                 </h1>
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                  Basic Qualification and Certifcations
+                  Qualification and Certifcations
                 </h3>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>
@@ -35,6 +36,7 @@ class Education extends Component {
           </Fade>
           <Educations theme={this.props.theme} />
           <Certifications theme={this.props.theme} />
+          <Competitions theme={this.props.theme} />
         </div>
         <Footer theme={this.props.theme} />
         <TopButton theme={this.props.theme} />

@@ -44,30 +44,22 @@ class Experience extends Component {
             </div>
           </Fade>
         </div>
-        <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
-          Work Experience
-        </h3>
+        <Fade bottom>
+          <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
+            Work Experience
+          </h3>
+        </Fade>
         <br />
         <ExperienceTimeline work={experience['sections'][0]['experiences']} />
         <br />
         <br />
-        {/* <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
-          Competitions
-        </h3>
-        <br />
-        <br /> */}
-        <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
-          Volunteer Experience
-        </h3>
+        <Fade bottom>
+          <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
+            Volunteer Experience
+          </h3>
+        </Fade>
         <br />
         <VolunteerTimeline work={experience['sections'][1]['experiences']} />=
-        <br />
-        <br />
-        <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
-          My Journey
-        </h3>
-        <br />
-        <br />
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
