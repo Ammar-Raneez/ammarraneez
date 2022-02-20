@@ -38,7 +38,9 @@ class Projects extends Component {
             </div>
           </Fade>
         </div>
-        <h3 className="projects-heading-sub-text">Few Notable Projects</h3>
+        <Fade bottom>
+          <h3 className="projects-heading-sub-text">Few Notable Projects</h3>
+        </Fade>
         <div className="repo-cards-div-main">
           {projects.projects.map((repo) => {
             return <GithubRepoCard key={repo.id} repo={repo} theme={theme} />;

@@ -341,8 +341,8 @@ const skills = {
       fileName: "DesignImg",
       gifName: "tools",
       skills: [
-        "⚡ Design user interfaces for mobile and web applications",
-        "⚡ Experienced on a variety of tools",
+        "Design user interfaces for mobile and web applications",
+        "Experienced on a variety of tools",
       ],
       softwareSkills: [
         {

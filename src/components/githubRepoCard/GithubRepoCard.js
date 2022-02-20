@@ -33,7 +33,7 @@ export default function GithubRepoCard({ repo, theme }) {
           </div>
 
           <div className="repo-name-div">
-            <p className="repo-name" style={{ color: theme.text }}>
+            <p className="repo-name" style={{ color: repo.overlayBgColor }}>
               {repo.name}
             </p>
           </div>
