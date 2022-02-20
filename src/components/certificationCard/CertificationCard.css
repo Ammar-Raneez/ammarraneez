@@ -4,9 +4,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #d9dbdf;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #d9dbdf;
+  box-shadow: 1px 1px 1px 0.2px #d9dbdf;
   margin-bottom: 30px;
   flex: 0 0 30%;
 }

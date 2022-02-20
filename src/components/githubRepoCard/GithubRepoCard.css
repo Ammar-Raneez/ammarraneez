@@ -1,14 +1,14 @@
 .repo-card-div {
   background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 5px #d9dbdf;
+  box-shadow: 1px 1px 1px 0.2px #d9dbdf;
   padding: 2rem;
   cursor: pointer;
   border-radius: 5px;
   position: relative;
 }
-.repo-card-div:hover {
+/* .repo-card-div:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
-}
+} */
 
 .repo-stats {
   display: flex;

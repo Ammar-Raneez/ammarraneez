@@ -1,6 +1,7 @@
 .skills-main-div {
   display: flex;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .skills-header {
@@ -24,10 +25,15 @@
   margin-bottom: 30px;
 }
 
+.skills-image-div {
+  display: flex;
+  justify-content: center;
+}
+
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .skills-heading {
@@ -80,6 +86,9 @@
     order: 2;
   }
   .skills-image-div > * {
+    margin-top: 0px;
+  }
+  .skills-main-div {
     margin-top: 0px;
   }
 }

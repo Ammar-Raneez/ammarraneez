@@ -3,32 +3,37 @@ import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
-import DataScienceImg from "./DataScienceImg";
-import FullStackImg from "./FullStackImg";
-import CloudInfraImg from "./CloudInfraImg";
-import DesignImg from "./DesignImg";
 
-function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
-    return <DataScienceImg theme={props.theme} />;
-  else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  return <DesignImg theme={props.theme} />;
-}
+// function GetSkillSvg(props) {
+//   if (props.fileName === "DataScienceImg")
+//     return <DataScienceImg theme={props.theme} />;
+//   else if (props.fileName === "FullStackImg")
+//     return <FullStackImg theme={props.theme} />;
+//   else if (props.fileName === "CloudInfraImg")
+//     return <CloudInfraImg theme={props.theme} />;
+//   return <DesignImg theme={props.theme} />;
+// }
 
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div>
-        {skills.data.map((skill) => {
+        {skills.data.map((skill, index) => {
           return (
-            <div className="skills-main-div" key={skill.title}>
+            <div
+              className="skills-main-div"
+              key={skill.title}
+            >
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                  <img
+                    width="500"
+                    style={{ objectFit: 'contain' }}
+                    src={require(`../../assests/images/${skill.gifName}.gif`)}
+                    alt="skill gif"
+                  />
+                  {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
                 </div>
               </Fade>
 

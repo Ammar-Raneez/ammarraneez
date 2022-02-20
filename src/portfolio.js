@@ -73,6 +73,7 @@ const skills = {
     {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
+      gifName: "data_science",
       skills: [
         "Develop Deep Learning & Machine Learning Models to be used for both Web & Mobile Platforms",
         "Experienced on working with Computer Vision and NLP",
@@ -115,6 +116,7 @@ const skills = {
     {
       title: "Full Stack | Cross Platform Development",
       fileName: "FullStackImg",
+      gifName: "full_stack_dev",
       skills: [
         "Develop full stack web applications, including frontend, backend, infrastructure, database design and cloud deployment",
         "Develop cross platform mobile applications using Flutter and React Native",
@@ -296,6 +298,7 @@ const skills = {
     {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
+      gifName: "cloud_computing",
       skills: [
         "Experienced on working on multiple cloud platforms",
         "Experienced on building & designing serverless architectures",
@@ -336,6 +339,7 @@ const skills = {
     {
       title: "Tools | Design",
       fileName: "DesignImg",
+      gifName: "tools",
       skills: [
         "⚡ Design user interfaces for mobile and web applications",
         "⚡ Experienced on a variety of tools",
