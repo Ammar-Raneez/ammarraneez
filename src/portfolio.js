@@ -356,7 +356,7 @@ const skills = {
           skillName: "Hasura",
           fontAwesomeClassname: "simple-icons:hasura",
           style: {
-            color: "#1EB4D4",
+            color: "#0B192A",
           },
         },
         {
