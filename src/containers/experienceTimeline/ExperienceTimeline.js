@@ -32,8 +32,8 @@ function ExperienceTimeline({ work }) {
           </h4>
           <img
             src={require(`../../assests/images/${work.logo_path}`)}
-            style={{ width: '70px', objectFit: 'contain', marginTop: '10px' }}
             alt={work.company}
+            className="experience-company-logo"
           />
           {work.description.map((desc, index) => (
             <p key={index}>
