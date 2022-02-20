@@ -472,7 +472,7 @@ const degrees = {
         "I have explored various Computer Science concepts such as Data Structures, Algorithms, DBMS, etc.",
         "I Have also experienced more intermediate concepts such as AI, Database Modeling and Software Design & Architecture",
         "Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing mainly focused on AWS and Full Stack Web & Mobile Development.",
-        "I Have also won a couple of hackathons and coding challenges",
+        "I Have also received merits for a couple of hackathons and coding challenges, even winning some",
         "Currently I have a cummulative average of > 85%"
       ],
       website_link: "https://www.westminster.ac.uk/",
@@ -610,7 +610,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteers",
   description:
-    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development and cloud infrastructure, User Interfaces & database design.",
+    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development, User Interfaces & database design, and Cloud Infrastructure",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -687,7 +687,7 @@ const experience = {
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - May 2021",
           description: [
-            "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a final year Business Information Systems student for their thesis, using Flutter with firebase for the client-side & Azure and Python with TensorFlow, Keras & Scikit-learn for the server-side",
+            "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a thesis of a Business Information Systems student, using Flutter with firebase for the client-side & Azure and Python with TensorFlow, OpenCV, Keras & Scikit-learn for the server-side",
           ],
           bgColor: '#E90000',
           bgColorFaded: '#E9000033',
@@ -729,7 +729,7 @@ const experience = {
           logo_path: "github_logo.png",
           duration: "July 2019 - PRESENT",
           description:
-            "Actively contributing to many opensource projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain.",
+            "Actively contributing to many opensource projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain",
           bgColor: '#1B1F23',
           bgColorFaded: '#1B1F2333',
           headColor: '#430083'
@@ -766,7 +766,7 @@ const experience = {
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - Jan 2021",
           description:
-            "Lead Developer in creating the codesprint revamped website",
+            "Was the Lead Developer in creating the codesprint revamped website",
           bgColor: '#E90000',
           bgColorFaded: '#E9000033',
           headColor: '#000000'

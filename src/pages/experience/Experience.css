@@ -30,7 +30,7 @@
 }
 
 .experience-heading-text {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
@@ -39,6 +39,13 @@
 }
 
 .experience-heading-sub-text {
+  font-size: 22px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.experience-heading-sub-header {
   font-size: 30px;
   font-family: "Google Sans Regular";
   text-align: center;
@@ -60,7 +67,10 @@
     margin-top: 80px;
   }
   .experience-heading-sub-text {
-    font-size: 25px;
+    font-size: 22px;
+  }
+  .experience-heading-sub-header {
+    font-size: 30px;
   }
 }
 
@@ -72,6 +82,10 @@
 
   .experience-heading-sub-text {
     font-size: 20px;
+  }
+
+  .experience-heading-sub-header {
+    font-size: 25px;
   }
 
   .experience-heading-div {

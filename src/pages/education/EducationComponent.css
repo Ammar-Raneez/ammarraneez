@@ -30,7 +30,7 @@
 }
 
 .heading-text {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
@@ -39,7 +39,7 @@
 }
 
 .heading-sub-text {
-  font-size: 30px;
+  font-size: 22px;
   font-family: "Google Sans Regular";
   text-align: center;
 }
@@ -50,7 +50,7 @@
     margin-top: 80px;
   }
   .heading-sub-text {
-    font-size: 25px;
+    font-size: 252x;
   }
 }
 
