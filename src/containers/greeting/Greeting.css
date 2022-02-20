@@ -39,7 +39,6 @@
 
 .greeting-nickname {
   font-size: 22px;
-  line-height: 0px;
   font-family: "Google Sans Italic";
 }
 
@@ -91,5 +90,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .greeting-nickname {
+    font-size: 14px;
   }
 }
