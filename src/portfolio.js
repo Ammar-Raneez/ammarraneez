@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "Ammar Raneez",
   nickname: "Call me Amu, cuz almost everyone does",
   subTitle:
-    "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver & Analytical Thinker with the ability to solve complex problems under pressure",
+    "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver, Analytical Thinker & an avid Cube lover with the ability to solve complex problems under pressure",
   resumeLink:
     "https://drive.google.com/file/d/1y0imwonNfItxJGBvhMKOGh7xm7XehzwK/view?usp=sharing",
   githubProfile: "https://github.com/Ammar-Raneez",
@@ -581,7 +581,47 @@ const certifications = {
       subtitle: "- Hackerrank",
       logo_path: "hackerrank_logo.png",
       certificate_link:
-        "https://www.hackerrank.com/certificates/85b6ce7fa255s",
+        "https://www.hackerrank.com/certificates/85b6ce7fa255",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "JavaScript (Basic)",
+      subtitle: "- Hackerrank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/certificates/9f22bcea6f23",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "CSS (Basic)",
+      subtitle: "- Hackerrank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/certificates/65d65608f05f",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "React (Basic)",
+      subtitle: "- Hackerrank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/certificates/cc9aa24d347b",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "Angular (Basic)",
+      subtitle: "- Hackerrank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/certificates/93e7b04d9493",
       alt_name: "hackerrank",
       color_code: "#2EC86644",
       overlay_bg_color: "#2EC866",
@@ -592,6 +632,16 @@ const certifications = {
       logo_path: "hackerrank_logo.png",
       certificate_link:
         "https://www.hackerrank.com/certificates/25f97cf5bbc3",
+      alt_name: "hackerrank",
+      color_code: "#2EC86644",
+      overlay_bg_color: "#2EC866",
+    },
+    {
+      title: "SQL (Basic)",
+      subtitle: "- Hackerrank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link:
+        "https://www.hackerrank.com/certificates/1261abe583de",
       alt_name: "hackerrank",
       color_code: "#2EC86644",
       overlay_bg_color: "#2EC866",
