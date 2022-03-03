@@ -11,6 +11,7 @@ export default class ProjectsImg extends Component {
         height="587.66492"
         viewBox="0 0 881.63115 587.66492"
       >
+        <title>Self-Journey</title>
         <polygon
           points="150.925 561.321 164.207 564.918 184.406 515.395 164.801 510.085 150.925 561.321"
           fill="#CFA185"
