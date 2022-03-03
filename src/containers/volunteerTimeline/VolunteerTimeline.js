@@ -31,7 +31,7 @@ function VolunteerTimeline({ work }) {
             {work.company}
           </h4>
           <img
-            src={require(`../../assests/images/${work.logo_path}`)}
+            src={require(`../../assets/images/${work.logo_path}`)}
             alt={work.company}
             className="experience-company-logo"
           />

@@ -1122,7 +1122,7 @@ const journey = {
     },
     {
       id: "SDASDAASDADXASXZ12",
-      date: "May 2020 - Sep 2020",
+      date: "May - Sep 2020",
       description: [
         "This was the time where everything changed. Once my first year had ended around June, we got a long summer vacation till September. It was time to learn and explore new things, although many people used this holiday as a 'holiday', I didn't. This time was when I, from morning till night, was on my laptop, learning course after course. Coursera had given us university students free access to most of their courses, since this was when the pandemic started and people started losing their jobs. Free courses taught by prestigious university professors that were once at least $50? Count me in! I went from again learning HTML to learning the MERN & MEAN stack, as well as ML, DL and DS. This was a game changer",
         "It is also the reason why my LinkedIn is flooded with over 100+ certificates. Side-note, the courses taught by AndrewNG are mind-blowing, if you know, you know :)",
@@ -1145,7 +1145,7 @@ const journey = {
     },
     {
       id: "SDASDAASDADXASXZ15",
-      date: "Nov 2020 - Dec 2020",
+      date: "Nov - Dec 2020",
       description: [
         "These months were mainly about hackathons. Took part in Coderally, which was an algorithm based inter-country competition, hosted by IIT on HackerRank. Now having the logical thinking capability required, I was able to do it well, and emerged 2nd in Sri Lanka",
         "My SDGP team took part in Datathon, which is a data science-based hackathon, hosted by SLIIT and we emerged 2nd place in the qualifers, where the finals would be held later next year",
@@ -1172,7 +1172,7 @@ const journey = {
     },
     {
       id: "SDASDAASDADXASXZ18",
-      date: "Mar 2021 - May 2021",
+      date: "Mar - May 2021",
       description: [
         "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on, and might remain for some time in the future. ONCO & E-Opthalmologist. Both medical related AI mobile applications, built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months",
         "ONCO had 6 ML models, it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung)",
@@ -1182,7 +1182,7 @@ const journey = {
     },
     {
       id: "SDASDAASDADXASXZ19",
-      date: "Jan 2021 - July 2021",
+      date: "Jan - July 2021",
       description: [
         "Worked on some freelance work with NIFTRON and Inforwaves alongside uni as well. It became clear now that I work well and don't suffer under pressure, which I feel is a really important skill in this world, be it any job at all. I'm not going to repeat all the boring details of what I did during my time working there, since everything is mentioned on the Experience section 😝",
       ],

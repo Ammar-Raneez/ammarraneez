@@ -14,7 +14,7 @@ function JourneyTimeline() {
     <div className="timeline">
       {journey.completeJourney.map((journey, index) => (
         <Fade cascade>
-          <div className={classnames[index % classnames.length]}>
+          <div key={journey.id} className={classnames[index % classnames.length]}>
             <div className="timeline__event__icon "></div>
             <div className="timeline__event__date">{journey.date}</div>
             <div className="timeline__event__content ">

@@ -30,7 +30,7 @@ class SkillSection extends Component {
                   <img
                     width="500"
                     style={{ objectFit: 'contain' }}
-                    src={require(`../../assests/images/${skill.gifName}.gif`)}
+                    src={require(`../../assets/images/${skill.gifName}.gif`)}
                     alt="skill gif"
                   />
                   {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
