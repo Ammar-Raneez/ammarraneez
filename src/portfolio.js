@@ -1193,6 +1193,7 @@ const journey = {
       description: [
         "Started falling in love with learning and exploring new things, whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts, they are all present",
         "The constant desire to learn new things keeps my contributions graph almost fully green, and I don't plan on stopping this anytime soon 🤩",
+        "Currently, I am also working on two other FYPs of two other students"
       ],
     },
     {
