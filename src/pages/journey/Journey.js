@@ -39,7 +39,6 @@ class Journey extends Component {
         </div>
         <Fade bottom>
           <h3 className="journey-heading-sub-text">{journey.subtitle}</h3>
-          <small className="journey-heading-ps"><i>This is just me sharing my story, please don't take it as any form of bragging</i></small>
           <div className="journey-timeline-div-main">
             <JourneyTimeline />
           </div>
