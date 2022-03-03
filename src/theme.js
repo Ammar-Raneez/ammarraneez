@@ -125,7 +125,7 @@ export const hackerTheme = {
   highlight: "#ffffff",
   dark: "#000000",
   secondaryText: "#111111",
-  imageHighlight: "#fca311",
+  imageHighlight: "#6C63FF",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#000000",
   jacketHighlight: "#ffffff",

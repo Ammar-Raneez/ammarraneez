@@ -82,7 +82,7 @@ class Header extends Component {
                   Projects
                 </NavLink>
               </li>
-              {/* <li>
+              <li>
                 <NavLink
                   to="/journey"
                   tag={Link}
@@ -93,7 +93,7 @@ class Header extends Component {
                 >
                   Journey
                 </NavLink>
-              </li> */}
+              </li>
               <li>
                 <NavLink
                   to="/contact"
