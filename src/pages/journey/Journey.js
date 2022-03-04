@@ -43,10 +43,10 @@ class Journey extends Component {
         </div>
         <Fade bottom>
           <h3 className="journey-heading-sub-text">{journey.subtitle}</h3>
-          <div className="journey-timeline-div-main">
-            <JourneyTimeline />
-          </div>
         </Fade>
+        <div className="journey-timeline-div-main">
+          <JourneyTimeline />
+        </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
