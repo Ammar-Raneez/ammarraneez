@@ -54,6 +54,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+div#root {
+  width: 100%;
+}
 /* Media Query */
 @media (max-width: 1380px) {
   html,

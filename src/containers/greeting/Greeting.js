@@ -3,7 +3,6 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -29,9 +28,6 @@ export default function Greeting(props) {
                 <SocialMedia theme={theme} />
               </div>
             </Fade>
-          </div>
-          <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
           </div>
         </div>
       </div>

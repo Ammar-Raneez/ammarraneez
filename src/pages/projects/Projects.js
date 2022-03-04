@@ -7,36 +7,40 @@ import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
 import { greeting, projects } from "../../portfolio.js";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+import BackgroundHeader from "../../components/backgroundHeader/BackgroundHeader";
 
 class Projects extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        <Header theme={theme} />
         <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
-                <ProjectsImg theme={theme} />
+          <BackgroundHeader
+            image={require("../../assets/images/bg2.jpg")}
+            theme={this.props.theme}
+          >
+            <Header white={true} theme={theme} />
+            <Fade bottom duration={2000} distance="40px">
+              <div className="projects-heading-div">
+                <Fade right cascade>
+                  <div className="projects-heading-text-div">
+                    <h1
+                      className="projects-heading-text"
+                      style={{ color: theme.text }}
+                    >
+                      {projects.title}
+                    </h1>
+                    <p
+                      className="projects-header-detail-text subTitle"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {projects["description"]}
+                    </p>
+                  </div>
+                </Fade>
               </div>
-              <div className="projects-heading-text-div">
-                <h1
-                  className="projects-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {projects.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projects["description"]}
-                </p>
-              </div>
-            </div>
-          </Fade>
+            </Fade>
+          </BackgroundHeader>
         </div>
         <Fade bottom>
           <h3 className="projects-heading-sub-text">Few Notable Projects</h3>

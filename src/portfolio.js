@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Ammar Raneez's Development Portfolio",
     type: "website",
-    url: "https://development-portfolio-382f4.firebaseapp.com/",
+    url: "https://ammarraneez.vercel.app/",
   },
 };
 

@@ -1,0 +1,14 @@
+.background-header {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1400px) {
+  .background-header {
+    height: 100vh;
+  }
+}

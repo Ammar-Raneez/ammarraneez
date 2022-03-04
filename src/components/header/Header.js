@@ -7,7 +7,7 @@ import SeoHeader from "../seoHeader/SeoHeader";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
-  el.style.backgroundColor = color;
+  el.style.backgroundColor = "transparent";
 };
 
 const onMouseOut = (event) => {
@@ -18,6 +18,7 @@ const onMouseOut = (event) => {
 class Header extends Component {
   render() {
     const theme = this.props.theme;
+    const white = this.props.white;
     const link = settings.isSplash ? "/splash" : "home";
     return (
       <Fade top duration={1000} distance="20px">
@@ -25,7 +26,7 @@ class Header extends Component {
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
-              <span className="logo-name" style={{ color: theme.text }}>
+              <span className="logo-name" style={{ color: white ? "white" : theme.text }}>
                 {greeting.logo_name}
               </span>
             </NavLink>
@@ -33,13 +34,13 @@ class Header extends Component {
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
-            <ul className="menu" style={{ backgroundColor: theme.body }}>
+            <ul className="menu">
               <li>
                 <NavLink
                   to="/home"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: white ? "white" : theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -51,7 +52,7 @@ class Header extends Component {
                   to="/education"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: white ? "white" : theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -63,7 +64,7 @@ class Header extends Component {
                   to="/experience"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: white ? "white" : theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -75,7 +76,7 @@ class Header extends Component {
                   to="/projects"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: white ? "white" : theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -87,7 +88,7 @@ class Header extends Component {
                   to="/journey"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: white ? "white" : theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -99,7 +100,7 @@ class Header extends Component {
                   to="/contact"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: white ? "white" : theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >

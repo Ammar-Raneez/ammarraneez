@@ -163,6 +163,7 @@
     flex-direction: column;
     align-self: center;
     width: 100%;
+    margin: 30px 0px;
   }
   .timeline__event__content {
     width: 100%;

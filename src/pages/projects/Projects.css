@@ -3,13 +3,10 @@
   text-align: center;
 }
 
-.basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .projects-heading-div {
   display: flex;
+  flex: 1;
+  align-items: center;
 }
 
 .projects-heading-div > * {
@@ -23,6 +20,10 @@
 
 .projects-heading-text-div {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
 }
 
 .projects-heading-img-div > * {
@@ -33,10 +34,11 @@
 .projects-heading-text {
   font-size: 50px;
   font-weight: 400;
+  color: white !important;
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 .projects-heading-sub-text {
@@ -44,6 +46,7 @@
   font-family: "Google Sans Regular";
   text-align: center;
   margin-bottom: 10px;
+  margin-top: 4rem;
 }
 
 .projects-header-detail-text {
@@ -52,10 +55,12 @@
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
+  color: white !important;
   font-family: "Google Sans Regular";
 }
 .publications-heading-text-div {
   text-align: center;
+  color: white !important;
   font-family: "Google Sans Regular";
   margin-top: 70px;
 }
@@ -76,7 +81,6 @@
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;
-    margin-top: 80px;
   }
   .projects-heading-sub-text {
     font-size: 25px;
@@ -87,11 +91,6 @@
   .projects-heading-text,
   .publications-heading-text {
     font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .projects-heading-sub-text {
-    font-size: 20px;
   }
 
   .projects-heading-div {

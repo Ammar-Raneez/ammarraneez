@@ -5,61 +5,71 @@ import TopButton from "../../components/topButton/TopButton";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
-import ExperienceImg from "./ExperienceImg";
 import ExperienceTimeline from "../../containers/experienceTimeline/ExperienceTimeline";
 import VolunteerTimeline from "../../containers/volunteerTimeline/VolunteerTimeline";
+import BackgroundHeader from "../../components/backgroundHeader/BackgroundHeader";
 
 class Experience extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div className="experience-main">
-        <Header theme={theme} />
         <div className="basic-experience">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="experience-heading-div">
-              <div className="experience-heading-img-div">
-                <ExperienceImg theme={theme} />
+          <BackgroundHeader
+            image={require("../../assets/images/bg2.jpg")}
+            theme={this.props.theme}
+          >
+            <Header white={true} theme={theme} />
+            <Fade bottom duration={2000} distance="40px">
+              <div className="experience-heading-div">
+                <Fade right cascade>
+                  <div className="experience-heading-text-div">
+                    <h1
+                      className="experience-heading-text"
+                      style={{ color: theme.text }}
+                    >
+                      {experience.title}
+                    </h1>
+                    <h3
+                      className="experience-heading-sub-text"
+                      style={{ color: theme.text }}
+                    >
+                      {experience["subtitle"]}
+                    </h3>
+                    <p
+                      className="experience-header-detail-text subTitle"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {experience["description"]}
+                    </p>
+                  </div>
+                </Fade>
               </div>
-              <div className="experience-heading-text-div">
-                <h1
-                  className="experience-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {experience.title}
-                </h1>
-                <h3
-                  className="experience-heading-sub-text"
-                  style={{ color: theme.text }}
-                >
-                  {experience["subtitle"]}
-                </h3>
-                <p
-                  className="experience-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {experience["description"]}
-                </p>
-              </div>
-            </div>
-          </Fade>
+            </Fade>
+          </BackgroundHeader>
         </div>
         <Fade bottom>
-          <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
+          <h3
+            className="experience-heading-sub-header"
+            style={{ color: theme.text }}
+          >
             Work Experience
           </h3>
         </Fade>
         <br />
-        <ExperienceTimeline work={experience['sections'][0]['experiences']} />
+        <ExperienceTimeline work={experience["sections"][0]["experiences"]} />
         <br />
         <br />
         <Fade bottom>
-          <h3 className="experience-heading-sub-header" style={{ color: theme.text }}>
+          <h3
+            className="experience-heading-sub-header"
+            style={{ color: theme.text }}
+          >
             Volunteer Experience
           </h3>
         </Fade>
         <br />
-        <VolunteerTimeline work={experience['sections'][1]['experiences']} />=
+        <VolunteerTimeline work={experience["sections"][1]["experiences"]} />=
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
