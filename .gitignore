@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 node_modules
+bg-copies
 public/css/font-awesome
 public/css/fontello
 public/css/fonts

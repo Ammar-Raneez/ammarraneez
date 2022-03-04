@@ -15,7 +15,7 @@ class Journey extends Component {
       <div className="journey-main">
         <div className="basic-journey">
 	    <BackgroundHeader
-            image={require("../../assets/images/bg2.jpg")}
+            image={require("../../assets/images/bg6.jpg")}
             theme={this.props.theme}
 	    >
 		    <Header white={true} theme={theme} />

@@ -16,7 +16,7 @@ class Projects extends Component {
       <div className="projects-main">
         <div className="basic-projects">
           <BackgroundHeader
-            image={require("../../assets/images/bg2.jpg")}
+            image={require("../../assets/images/bg5.jpg")}
             theme={this.props.theme}
           >
             <Header white={true} theme={theme} />

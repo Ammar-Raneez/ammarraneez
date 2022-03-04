@@ -16,7 +16,7 @@ class Experience extends Component {
       <div className="experience-main">
         <div className="basic-experience">
           <BackgroundHeader
-            image={require("../../assets/images/bg2.jpg")}
+            image={require("../../assets/images/bg4.jpg")}
             theme={this.props.theme}
           >
             <Header white={true} theme={theme} />

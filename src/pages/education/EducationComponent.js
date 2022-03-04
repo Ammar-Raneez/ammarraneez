@@ -18,7 +18,7 @@ class Education extends Component {
       <div className="education-main">
         <div className="basic-education">
           <BackgroundHeader
-            image={require("../../assets/images/bg2.jpg")}
+            image={require("../../assets/images/bg1.jpg")}
             theme={this.props.theme}
           >
             <Header white={true} theme={this.props.theme} />
