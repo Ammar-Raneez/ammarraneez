@@ -767,10 +767,26 @@ const experience = {
           description: [
             "Working in an EduTech startup - Maturify. Implementing static and dynamic UI screens using Angular; Implementing services in the backend, using Serverless Framework with AWS and MongoDB; Resolving bugs on both the frontend and backend",
             "Working on BLISS - A Mind-fitness Application. Implemented a POC for AWS CDK using multiple services including a CI/CD pipeline",
+		"Conducting Facebook Live Sessions & internal peer-to-peer sessions",
+		"Currently also acting as the Buddy of a fellow intern"
           ],
           bgColor: "#FF6962",
           bgColorFaded: "#FF696233",
           headColor: "#331C7A",
+        },
+        {
+          title: "Freelance Web | Mobile Application Developer",
+          company: "IIT",
+          logo_path: "iit_logo.png",
+          duration: "November 2020 - PRESENT",
+          description: [
+		"Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a thesis of a Business Information Systems student, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
+            "Working on Ijazah-Tours, a tourism based PWA that facilitates the procedure of booking accomodations, creating quotations etc. for tour guides, for a thesis of a Business Management student, using React with Firebase and Node with Express & MongoDB",
+		"Working on CanCure, an extension of our project ONCO that covers bone and kidney related cancers, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
+          ],
+          bgColor: "#E90000",
+          bgColorFaded: "#E9000033",
+          headColor: "#000000",
         },
         {
           title: "Full-stack Developer",
@@ -825,7 +841,7 @@ const experience = {
           headColor: "#23395d",
         },
         {
-          title: "Full Stack Mobile | Web Application Developer",
+          title: "Full Stack Mobile Application Developer",
           company: "IIT",
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - May 2021",
