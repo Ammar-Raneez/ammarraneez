@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Fade } from "react-reveal";
 import { journey } from "../../portfolio";
 import "./JourneyTimeline.css";
 
