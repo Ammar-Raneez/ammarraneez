@@ -1063,100 +1063,101 @@ const journey = {
       id: "SDASDAASDADXASXZ1",
       date: "Jun 2019",
       description: [
-        "Just completed my ALs, wasn't really sure what my next step would be, was initially looking into mechatronics engineering. Checked it out and found out that it would require some type of coding",
+        "Just had completed my ALs and wasn't sure what my next step would be. Was initially looking into mechatronics engineering and found out that it would require some type of coding",
       ],
     },
     {
       id: "SDASDAASDADXASXZ2",
       date: "Jul 2019",
       description: [
-        "Started exploring the world of programming and Wrote my first ever HTML file adding some really simple styles like background and font colors. Started liking the immediate result you get and the practical use of it in the real world",
+        "Started exploring the world of programming and Wrote my first ever HTML file adding some simple styles like background and font colors. Started liking the immediate result you get and the practical use of it in the real world",
       ],
     },
     {
       id: "SDASDAASDADXASXZ3",
       date: "Aug 2019",
       description: [
-        "Interest in technology spiked as the 'Data Science' hunger started manifesting, checked out a couple of Data Science degrees available in the country, but only found out those that are a mix of business analytics and a minute amount of practical AI development or coding in general. Was therefore not really interested in pursuing a degree as such",
+        "Interest in technology spiked as the 'Data Science' hunger started manifesting. Checked out a couple of Data Science degrees available in the country, but only found out those that are a mix of business analytics and a minute amount of practical AI development or coding in general. Was therefore not interested in pursuing a degree as such",
       ],
     },
     {
       id: "SDASDAASDADXASXZ4",
       date: "Sep 2019",
       description: [
-        "After looking at multiple unversities to pursue my higher studies, I finally decided to enroll on the CS degree at IIT. I realized that if I were to do a degree in CS in general I would be able to learn on both practical development as well as other aspects, while also getting the necessary business exposure required",
+        "After looking at multiple universities to pursue my higher studies, I finally decided to enrol in the CS degree at IIT. I realized that if I were to do a degree in CS, in general, I would be able to learn on both practical development as well as other aspects while also getting the necessary business exposure required",
       ],
     },
     {
       id: "SDASDAASDADXASXZ5",
       date: "Oct 2019",
       description: [
-        "Started learning on basic HTML CSS and JS. Programming by itself was a whole new experience to me, since I haven't written a single line of code, except for HTML, ever. And it was hard, really hard. The concept of 'Logic' and logical thinking was all very foreign. For instance, I know how I would solve a mathematical expression through Math, but how would I write code to do that?",
+        "Started learning basic HTML, CSS and JS. Programming by itself was a whole new experience to me since I haven't written a single line of code, except for HTML, ever. And it was hard, really hard. The concept of 'Logic' and logical thinking was all very foreign. For instance, I know how I'd solve a mathematical expression through Math, but how would I write code to do that?",
       ],
     },
     {
       id: "SDASDAASDADXASXZ6",
       date: "Nov 2019",
       description: [
-        "Still struggling 😅 Was trying my best to continue, and kept believing in myself. Kept pushing on with the idea that 'this is supposed to be hard, anything that is new is supposed to be hard.' Was kicking myself because the time that I spent on the Data Science hunger and searching for degrees on it could have been much more productive had I have spent it on exploring the world of CS more. I was naive on thinking that the world of DS and CS were completely different",
+        "Still struggling 😅 Was trying my best to continue and kept believing in myself. Kept pushing on with the idea that 'this is supposed to be hard, anything that is new is supposed to be hard.' I was kicking myself because the time that I spent on the Data Science hunger and searching for degrees on it could have been much more productive had I had spent it on exploring the world of CS more. I was naive in thinking that the world of DS and CS were different",
       ],
     },
     {
       id: "SDASDAASDADXASXZ7",
       date: "Dev 2019",
       description: [
-        "Started learning Python, due to a module called 'Programming Principles I' which taught the basics of programming (conditions, loops, variables, logical operators). The assignment given was pretty simple, it was just about checking an input students marks against a criteria and determining whether that student passed or failed. That too, at that time, was so difficult for me, and I only managed to get a 65%. After a successful school pathway, this score was hurtful, and I thought about giving up",
+        "Started learning Python, due to a module called 'Programming Principles I', which taught the basics of programming (conditions, loops, variables, logical operators). The assignment given was pretty simple; it was just about checking an input student's marks against criteria and determining whether that student passed or failed. That, at that time, was so difficult for me, and I only managed to get a 65%. After a successful school pathway, this score was hurtful, and I thought about giving up",
       ],
     },
     {
       id: "SDASDAASDADXASXZ8",
       date: "Jan 2020",
       description: [
-        "New Year hit. Told myself that I must do something about this, I obviously cannot continue to struggle on literally everything. The second semester had just started which introduced a module called 'Programming Principles II' where the barebones of OOP was taught in Java. Within the 2 week or so holiday after semester 1 had ended, I had learnt on Java a bit just to get ready to face the next semester. And that made a world of a difference",
+        "New Year hit. Told myself that I must do something about this, I obviously cannot continue to struggle with everything. The second semester had just started which introduced a module called 'Programming Principles II' where the barebones of OOP was taught in Java. Within the 2 weeks or so holiday after semester 1 had ended, I had learnt Java a bit just to get ready to face the next semester. And that made a world of a difference",
       ],
     },
     {
       id: "SDASDAASDADXASXZ9",
       date: "Feb 2020",
       description: [
-        "The basic concepts that were introduced in 'Programming Principles I' was reinforced now, and I have finally started feeling less stressed and more comfortable with this whole new concept of programming. Java was easy to grasp, and that was when I started feeling some progression. I thank this module on bringing me from a complete noob, to a person who finally understood this whole concept of what logic and logical thinking actually was",
+        "The basic concepts that were introduced in 'Programming Principles I' were reinforced now, and I have finally started feeling less stressed and more comfortable with this whole new concept of programming. Java was easy to grasp, and that was when I started feeling some progression. I thank this module for transforming me from a complete noob to a person who finally understood this whole concept of what logic and logical thinking was",
       ],
     },
     {
       id: "SDASDAASDADXASXZ10",
       date: "Mar 2020",
       description: [
-        "The assignment of 'Programming Principles II' was revealed, and it was miles ahead in complexity in comparison to the assignment of 'Programming Principles I'. The goal was to create a Train Ticket Booking application to facilitate the Booking of tickets for the 'Denuwara Manike' Expressway. This was the initial steps towards creating something that would actually be used in the real world and something that is 'An Actual Project'. It was difficult initially, however, as time went on I managed to grow much more just while working on this application, and managed to get a mark that was considered as one of the highest in the batch, 94%",
+        "The assignment of 'Programming Principles II' was revealed, and it was miles ahead in complexity in comparison to the one of 'Programming Principles I'. The goal was to create a Train Ticket Booking application to facilitate the Booking of tickets for the 'Denuwara Manike' Expressway. These were the initial steps towards creating something that would be used in the real world and something that was 'An Actual Project'. It was difficult initially, however, as time went on I managed to grow much more just while working on this application and managed to get a mark that was considered as one of the highest in the batch, 94%",
       ],
     },
     {
       id: "SDASDAASDADXASXZ11",
       date: "Apr 2020",
       description: [
-        "It was time to focus on a simple web application built using HTML CSS and JS, this was now much easier since I now had experience on building a 'Real Project'. Once you have had that experience, anything else that you come across in your tech journey will not be so challenging anymore, since you now know the different approaches to solve problems and your brain is trained in such a way that the logical thinking required is what comes into your mind, in my opinion",
+        "It was time to focus on a simple web application built using HTML, CSS and JS. This was now much easier since I now had experience in building a 'Real Project'. Once you have had that experience, anything else that you come across in your tech journey will not be so challenging anymore, since you now know the different approaches to solve problems and your brain is trained in such a way that the logical thinking required is what comes into your mind, in my opinion",
       ],
     },
     {
       id: "SDASDAASDADXASXZ12",
       date: "May - Sep 2020",
       description: [
-        "This was the time where everything changed. Once my first year had ended around June, we got a long summer vacation till September. It was time to learn and explore new things, although many people used this holiday as a 'holiday', I didn't. This time was when I, from morning till night, was on my laptop, learning course after course. Coursera had given us university students free access to most of their courses, since this was when the pandemic started and people started losing their jobs. Free courses taught by prestigious university professors that were once at least $50? Count me in! I went from again learning HTML to learning the MERN & MEAN stack, as well as ML, DL and DS. This was a game changer",
-        "It is also the reason why my LinkedIn is flooded with over 100+ certificates. Side-note, the courses taught by AndrewNG are mind-blowing, if you know, you know :)",
+        "This was the time when everything changed. Once my first year had ended around June, we got a long summer vacation till September. It was time to learn and explore new things, although many people used this holiday as a 'holiday', I didn't. This time was when I, from morning till night, was on my laptop, learning course after course. Coursera had given us university students free access to most of their courses since this was when the pandemic started and people started losing their jobs. Free courses taught by prestigious university professors that were once at least $50? Count me in! I went from again learning HTML to learning the MERN & MEAN stack, as well as ML, DL and DS. This was a game-changer",
+        "It is also the reason why my LinkedIn is flooded with over 100+ certificates. Side-note, the courses taught by AndrewNG are mind-blowing if you know, you know :)",
       ],
     },
+    // cont grammar check
     {
       id: "SDASDAASDADXASXZ13",
       date: "Sep 2020",
       description: [
-        "It was time to go back to college for the second year, and with my new arsenal of skills, I was ready as I'll ever be. The second year of uni was much more easier than my first. I stand by what I just said. Although the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun, this was when I knew all my hard work had paid off. OOP was introduced here and the assignment was about building a premier league simulation (this can be found in my projects section :)). Alongside OOP we got a Software Development Group Project (SDGP). This was a whole another story",
+        "It was time to go back to college for the second year, and with my new arsenal of skills, I was ready as I'd ever been. The second year of uni was much easier than my first. I stand by what I just said. Although, the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun. This was when I knew all my hard work had paid off. OOP was introduced here and the assignment was about building a premier league simulation (this can be found in my projects section :)). Alongside OOP we got a Software Development Group Project (SDGP). This was a whole another story",
       ],
     },
     {
       id: "SDASDAASDADXASXZ14",
       date: "Oct 2020",
       description: [
-        "SDGP was a group project that required the usage of Machine Learning to solve a real world problem. It is basically a capstone project, for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you have gotten the green light to continue with the idea you can, else you had to come up with another idea",
-        "Idea pitching time, my team and I honestly did not know that the idea had to be ML heavy, therefore we pitched something completely different and got turned down 😂 This upsetted my teammates a lot, since they are all smart people. I, having gone through hardship had to motivate them and carry the team at the moment to come up with a good idea, and we did, and boy did it take our whole lives within the next couple of months to produce a project of such feat in such a short period of time, at the same time focusing on other modules",
+        "SDGP was a group-project that required the usage of Machine Learning to solve a real world problem. It is basically a capstone project for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you have gotten the green light to continue with the idea, you can, else you had to come up with another idea",
+        "Idea pitching time, my team and I honestly did not know that the idea had to be ML heavy, therefore we pitched something completely different and got turned down 😂 This upsetted my teammates a lot, since they are all smart people. I, having gone through hardship, had to motivate them and carry the team at the moment to come up with a good idea, and we did, and boy, did it take our whole lives within the next couple of months to produce a project of such feat in such a short period of time, at the same time focusing on other modules",
       ],
     },
     {
@@ -1164,7 +1165,7 @@ const journey = {
       date: "Nov - Dec 2020",
       description: [
         "These months were mainly about hackathons. Took part in Coderally, which was an algorithm based inter-country competition, hosted by IIT on HackerRank. Now having the logical thinking capability required, I was able to do it well, and emerged 2nd in Sri Lanka",
-        "My SDGP team took part in Datathon, which is a data science-based hackathon, hosted by SLIIT and we emerged 2nd place in the qualifers, where the finals would be held later next year",
+        "We (SDGP team) took part in 'Datathon', a data science-based hackathon, hosted by SLIIT and emerged 2nd place in the qualifers, where the finals would be held later next year",
         "Back then hackathons were something I always took part in, although now I don't in much anymore, stuff like that is something that really gives you the confidence required in the long run",
         "Around this time I got a project to be done for a final year BIS (Business Information Systems) student (FYP - Final Year Project), which was also around Machine Learning. I specifically was reached out by them just because of the number of ML related certifications on my LinkedIn profile 😅",
       ],
@@ -1183,7 +1184,7 @@ const journey = {
       description: [
         "Datathon finals time! It was time to head to SLIIT to go against 10 other teams coming from various universities around the country. Hosted by Zone24x7, the goal of the finals was to estimate the number of vaccines required for a specific set of people. This was challenging since there weren't any proper datasets, therefore much data cleaning had to be done just to prepare a suitable dataset. Alongside a time series forecast and a rather dirty dataset, we managed to secure a merit pass. Going against teams from UOM, UOC etc. it was a challenge to remember, and a challenge that would make me love data science. Once again thank you Coursera for teaching so much about ML, specifically, thank you AndrewNG",
         "It was also at this time where I got an internship interview with 99X. The interview was rather challenging, albeit well organized, and in someway I managed to get through it",
-        "I was then to be called to start my internship on May, however my university didn't allow it since they required me to complete my 2nd year before doing. 99X was so understanding 💖 and they'd let me join after I'm done with my 2nd year, on July",
+        "I was then to be called to start my internship on May, however my university didn't allow it since they required me to complete my 2nd year before doing so. 99X was so understanding 💖 and they'd let me join after I'm done with my 2nd year, on July",
       ],
     },
     {
