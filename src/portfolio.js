@@ -1144,72 +1144,71 @@ const journey = {
         "It is also the reason why my LinkedIn is flooded with over 100+ certificates. Side-note, the courses taught by AndrewNG are mind-blowing if you know, you know :)",
       ],
     },
-    // cont grammar check
     {
       id: "SDASDAASDADXASXZ13",
       date: "Sep 2020",
       description: [
-        "It was time to go back to college for the second year, and with my new arsenal of skills, I was ready as I'd ever been. The second year of uni was much easier than my first. I stand by what I just said. Although, the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun. This was when I knew all my hard work had paid off. OOP was introduced here and the assignment was about building a premier league simulation (this can be found in my projects section :)). Alongside OOP we got a Software Development Group Project (SDGP). This was a whole another story",
+        "It was time to go back to college for the second year, and with my new arsenal of skills, I was ready as I'd ever been. The second year of uni was much easier than my first. I stand by what I just said. Although, the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun. It was then I knew all my hard work had paid off. OOP was introduced, and the assignment was about building a premier league simulation (this can be found in my projects section :)). Alongside OOP, we got a Software Development Group Project (SDGP). This was a whole another story",
       ],
     },
     {
       id: "SDASDAASDADXASXZ14",
       date: "Oct 2020",
       description: [
-        "SDGP was a group-project that required the usage of Machine Learning to solve a real world problem. It is basically a capstone project for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you have gotten the green light to continue with the idea, you can, else you had to come up with another idea",
-        "Idea pitching time, my team and I honestly did not know that the idea had to be ML heavy, therefore we pitched something completely different and got turned down 😂 This upsetted my teammates a lot, since they are all smart people. I, having gone through hardship, had to motivate them and carry the team at the moment to come up with a good idea, and we did, and boy, did it take our whole lives within the next couple of months to produce a project of such feat in such a short period of time, at the same time focusing on other modules",
+        "SDGP was a group project that required the usage of Machine Learning to solve a real-world problem. It is, in other words, a capstone project for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you have gotten the green light to continue with the idea, you can, else you had to come up with another idea",
+        "Idea pitching time, my team and I honestly did not know that the idea had to be ML heavy, therefore we pitched something different and got turned down 😂 This upset my teammates a lot since they are all smart people. I, having gone through hardship, had to motivate them and carry the team at the moment to come up with a good idea, and we did, and boy, did it take our whole lives within the next couple of months to produce a project of such feat in such a short period, at the same time focusing on other modules",
       ],
     },
     {
       id: "SDASDAASDADXASXZ15",
       date: "Nov - Dec 2020",
       description: [
-        "These months were mainly about hackathons. Took part in Coderally, which was an algorithm based inter-country competition, hosted by IIT on HackerRank. Now having the logical thinking capability required, I was able to do it well, and emerged 2nd in Sri Lanka",
-        "We (SDGP team) took part in 'Datathon', a data science-based hackathon, hosted by SLIIT and emerged 2nd place in the qualifers, where the finals would be held later next year",
-        "Back then hackathons were something I always took part in, although now I don't in much anymore, stuff like that is something that really gives you the confidence required in the long run",
-        "Around this time I got a project to be done for a final year BIS (Business Information Systems) student (FYP - Final Year Project), which was also around Machine Learning. I specifically was reached out by them just because of the number of ML related certifications on my LinkedIn profile 😅",
+        "These months were mainly about hackathons. Took part in Coderally, which was an algorithm based inter-country competition; hosted by IIT on HackerRank. Now having the logical thinking capability required, I was able to do it well and emerged 2nd in Sri Lanka",
+        "We (SDGP team) took part in 'Datathon', a data science-based hackathon; hosted by SLIIT and emerged 2nd place in the qualifiers, where the finals were held beginning next year",
+        "Back then, hackathons were something I always took part in, although now I don't in much any more stuff like that is something that gives you the confidence required in the long run",
+        "Around this time, I got a project for a final year BIS (Business Information Systems) student (FYP - Final Year Project), also around Machine Learning. I specifically was reached out by them just because of the number of ML related certifications on my LinkedIn profile 😅",
       ],
     },
     {
       id: "SDASDAASDADXASXZ16",
       date: "Jan 2021",
       description: [
-        "New year once again! It was time to submit the OOP project that I had been working on the past few months. I was nervous submitting it, eventhough it worked. This was built with Angular and Java, and we all know that the node_modules in Angular is larger than Sri Lanka's population. Obviously therefore you'd submit the project without the node_modules folder since you have the package.json. But, you also know the errors that turn up when you run 'npm i' or 'yarn' with the node gyp stuff 🙂 What if during the demo you get such an error? 🙂 Luckily, that was exactly what didn't happen 😝 The viva went well and I managed to score 90% for that alongside an exam which was 97%, again an overall that would be considered as one of the highest. Coursera, thank you so much, you really changed everything",
-        "Surprise surprise! I was invited by Coursera as one of the 10 people in the world to be able to create community guided projects for the Coursera learner community, this was mainly due to the sheer amount of work I had done during the Summer vacation the prior year",
+        "New year once again! It was time to submit the OOP project that I had been working on for the past few months. I was nervous submitting it, even though it worked. This was built with Angular and Java, and we all know that the node_modules in Angular is larger than Sri Lanka's population. Therefore you'd submit the project without the node_modules folder since you have the package.json. But, you also know the errors that turn up when you run 'npm i' or 'yarn' with the node-gyp stuff 🙂 What if during the demo you get such an error? 🙂 Luckily, that was exactly what didn't happen 😝 The viva went well and I managed to score 90% for that alongside an exam which was 97%, again an overall that would be considered as one of the highest. Coursera, thank you so much you changed everything",
+        "Surprise surprise! I was invited by Coursera as one of the 10 people in the world to create community guided projects. It was mainly due to the sheer amount of work I had done during the Summer vacation the prior year",
       ],
     },
     {
       id: "SDASDAASDADXASXZ17",
       date: "Feb 2021",
       description: [
-        "Datathon finals time! It was time to head to SLIIT to go against 10 other teams coming from various universities around the country. Hosted by Zone24x7, the goal of the finals was to estimate the number of vaccines required for a specific set of people. This was challenging since there weren't any proper datasets, therefore much data cleaning had to be done just to prepare a suitable dataset. Alongside a time series forecast and a rather dirty dataset, we managed to secure a merit pass. Going against teams from UOM, UOC etc. it was a challenge to remember, and a challenge that would make me love data science. Once again thank you Coursera for teaching so much about ML, specifically, thank you AndrewNG",
-        "It was also at this time where I got an internship interview with 99X. The interview was rather challenging, albeit well organized, and in someway I managed to get through it",
-        "I was then to be called to start my internship on May, however my university didn't allow it since they required me to complete my 2nd year before doing so. 99X was so understanding 💖 and they'd let me join after I'm done with my 2nd year, on July",
+        "Datathon finals time! It was time to head to SLIIT to go against ten other teams coming from various universities around the country. Hosted by Zone24x7, the goal of the finals was to estimate the number of vaccines required for a specific set of people. It was challenging since there weren't any proper datasets and much data cleaning had to be done to prepare a suitable dataset. Alongside a time series forecast and a rather dirty dataset, we managed a merit pass. Going against teams from UOM, UOC etc. was a challenge to remember and a challenge that would make me love data science. Once again, thank you, Coursera for teaching so much about ML, specifically, thank you, AndrewNG",
+        "It was also at this time that I got an internship interview with 99X. The interview was challenging, albeit well organized, and in some way, I managed to get through it",
+        "I was to start my internship in May however, my university didn't allow it since they required me to complete my 2nd year. 99X was so understanding 💖 and they'd let me join after my 2nd year, on July",
       ],
     },
     {
       id: "SDASDAASDADXASXZ18",
       date: "Mar - May 2021",
       description: [
-        "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on, and might remain for some time in the future. ONCO & E-Opthalmologist. Both medical related AI mobile applications, built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months",
-        "ONCO had 6 ML models, it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung)",
-        "E-Opthalmologist was about the diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes)",
-        "It was such hardwork to complete them, however, it was also then that I knew that I am capable of handling high pressure situations. It was not only SDGP and the FYP, there were 3 more modules that were required",
+        "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on and might remain for some time in the future. ONCO & E-Ophthalmologist. Both medical-related AI mobile applications built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months",
+        "ONCO had 6 ML models; it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung)",
+        "E-Ophthalmologist was about the diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes)",
+        "It was such hard work to complete them however, it was also then that I knew that I am capable of handling high-pressure situations. It was not only SDGP and the FYP - 3 more modules were required",
       ],
     },
     {
       id: "SDASDAASDADXASXZ19",
       date: "Jan - July 2021",
       description: [
-        "Worked on some freelance work with NIFTRON and Inforwaves alongside uni as well. It became clear now that I work well and don't suffer under pressure, which I feel is a really important skill in this world, be it any job at all. I'm not going to repeat all the boring details of what I did during my time working there, since everything is mentioned on the Experience section 😝",
+        "Worked on some freelance work with NIFTRON and Inforwaves alongside uni as well. It became clear now that I work well and don't suffer under pressure, which I feel is an important skill in this world, be it any job at all. I'm not going to repeat all the boring details of what I did during my time working there since everything is mentioned in the Experience section 😝",
       ],
     },
     {
       id: "SDASDAASDADXASXZ20",
       date: "Jan 2021 - PRESENT",
       description: [
-        "Started falling in love with learning and exploring new things, whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts, they are all present",
-        "The constant desire to learn new things keeps my contributions graph almost fully green, and I don't plan on stopping this anytime soon 🤩",
+        "Started falling in love with learning and exploring new things; whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts are all present",
+        "The constant desire to learn new things keeps my contributions graph almost totally green, and I don't plan on stopping this anytime soon 🤩",
         "Currently, I am also working on two other FYPs of two other students"
       ],
     },
@@ -1217,9 +1216,9 @@ const journey = {
       id: "SDASDAASDADXASXZ21",
       date: "Jul 2021 - PRESENT",
       description: [
-        "I have now joined 99X and am currently undergoing my internship. I have gotten the priviledge to work on 2 different projects. Thank you Team Maturify & BLISS, I'll always be forever grateful",
+        "I have now joined 99X and am currently undergoing my internship. I have gotten the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful",
         "Have the opportunity to conduct Mock Interviews with various university students",
-        "Fellow colleagues and I have also conducted multiple live sessions for all uni kids, and we will continue conducting more in the distant future 💖",
+        "Colleagues and I have also conducted multiple live sessions for all uni kids, and we will continue more in the distant future 💖",
         "I'm excited to see what else would I be able to accomplish within the future & see what does this current year, 2022, have in store for me 🥰"
       ],
     },
