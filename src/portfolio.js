@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver, Analytical Thinker & an avid Cube lover with the ability to solve complex problems under pressure",
   resumeLink:
-    "https://drive.google.com/file/d/1oOPFofNXKNvU-f9YOiD7x6N3NehL4C-l/view",
+    "https://drive.google.com/file/d/1p4mfAOaoALiCALFmecyD7YeFXvHRW3Iy/view",
   githubProfile: "https://github.com/Ammar-Raneez",
 };
 
@@ -47,6 +47,18 @@ const socialMediaLinks = [
     link: "https://stackoverflow.com/users/13134768/ammar",
     fontAwesomeIcon: "fa-stack-overflow", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#F58025", // Reference https://simpleicons.org/?q=linkedin
+  },
+  {
+    name: "Medium",
+    link: "https://ammarraneez.medium.com/",
+    fontAwesomeIcon: "fa-medium", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=linkedin
+  },
+  {
+    name: "Dev.to",
+    link: "https://dev.to/ammarraneez",
+    fontAwesomeIcon: "fa-dev", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=linkedin
   },
   {
     name: "Gmail",
