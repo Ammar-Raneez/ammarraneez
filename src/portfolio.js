@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver, Analytical Thinker & an avid Cube lover with the ability to solve complex problems under pressure",
   resumeLink:
-    "https://drive.google.com/file/d/13BpBobn5pT_IywiBl742di3-6za2s8sb/view",
+    "https://drive.google.com/file/d/1oOPFofNXKNvU-f9YOiD7x6N3NehL4C-l/view",
   githubProfile: "https://github.com/Ammar-Raneez",
 };
 
