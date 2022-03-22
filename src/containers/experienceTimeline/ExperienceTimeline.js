@@ -30,13 +30,22 @@ function ExperienceTimeline({ work }) {
           >
             {work.company}
           </h4>
-          <img
-            src={require(`../../assets/images/${work.logo_path}`)}
-            alt={work.company}
-            className="experience-company-logo"
-          />
-          {work.description.map((desc, index) => (
-            <p key={index}>
+          {typeof work.logo_path === 'string' ? (
+            <img
+              src={require(`../../assets/images/${work.logo_path}`)}
+              alt={work.company}
+              className="experience-company-logo"
+            />
+          ): work.logo_path.map((logo) => (
+            <img
+              src={require(`../../assets/images/${logo}`)}
+              alt={work.company}
+              className="experience-company-logo"
+              style={{ marginRight: '1rem' }}
+            />            
+          ))}
+          {work.description.map((desc, ind) => (
+            <p key={ind}>
               {desc}
             </p>
           ))}

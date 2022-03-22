@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver, Analytical Thinker & an avid Cube lover with the ability to solve complex problems under pressure",
   resumeLink:
-    "https://drive.google.com/file/d/1p4mfAOaoALiCALFmecyD7YeFXvHRW3Iy/view",
+    "https://drive.google.com/file/d/13pId8bF_Y_pzpPSq-xZ1p7PtvLkPTMKV/view",
   githubProfile: "https://github.com/Ammar-Raneez",
 };
 
@@ -771,6 +771,20 @@ const experience = {
     {
       title: "Work",
       experiences: [
+        {
+          title: "Technical Writer",
+          company: "Medium | DEV | Tealfeed",
+          logo_path: ["dev_logo.png", "tealfeed_logo.png", "medium_logo.png"],
+          duration: "Feb 2022 - PRESENT",
+          description: [
+            "Technical writer on Medium on various publications (Engineering at 99X, Enlear Academy).",
+            "Technical blogger on DEV - a place where coders share, stay up-to-date and grow their careers.",
+            "Creator on Tealfeed - a global community of knowledge seekers who want to share their knowledge and learn from the experiences of others.",
+          ],
+          bgColor: "#000000",
+          bgColorFaded: "#00000033",
+          headColor: "#008080",
+        },
         {
           title: "Trainee Software Engineer",
           company: "99X",
