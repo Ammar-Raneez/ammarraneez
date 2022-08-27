@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver, Analytical Thinker & an avid Cube lover with the ability to solve complex problems under pressure",
   resumeLink:
-    "https://drive.google.com/file/d/13pId8bF_Y_pzpPSq-xZ1p7PtvLkPTMKV/view",
+    "https://drive.google.com/file/d/1JB25xL05kWWJAHAjbFnus59FfxDJRmDP/view",
   githubProfile: "https://github.com/Ammar-Raneez",
 };
 
@@ -789,12 +789,16 @@ const experience = {
           title: "Trainee Software Engineer",
           company: "99X",
           logo_path: "99x_logo.png",
-          duration: "Jul 2021 - PRESENT",
+          duration: "Jul 2021 - Jul 2022",
           description: [
-            "Working in an EduTech startup - Maturify. Implementing static and dynamic UI screens using Angular; Implementing services in the backend, using Serverless Framework with AWS and MongoDB; Resolving bugs on both the frontend and backend",
-            "Working on BLISS - A Mind-fitness Application. Implemented a POC for AWS CDK using multiple services including a CI/CD pipeline",
-		"Conducting Facebook Live Sessions & internal peer-to-peer sessions",
-		"Currently also acting as the Buddy of a fellow intern"
+            "Implemented static and dynamic UI screens using Angular; Implemented services in the backend, using Serverless Framework with AWS and MongoDB and resolved bugs on both the frontend and backend",
+            "Implemented a POC for AWS CDK using multiple services including a CI/CD pipeline",
+            "Implemented multiple screens using React Native; infrastructure using CDK & GraphQL services using Serverless Framework, AppSync & Amplify",
+            "Implemented the Authentication Flow v1, using Cognito and CDK",
+            "Implemented the mobile application deployment pipeline using App Center",
+            "Organized webinars as the 'Tea n Tech Innovative' webinar lead & market at the university career fair",
+            "Conducted Facebook Live Sessions & internal peer-to-peer sessions",
+            "Acted as the Buddy of a fellow intern"
           ],
           bgColor: "#FF6962",
           bgColorFaded: "#FF696233",
@@ -804,11 +808,11 @@ const experience = {
           title: "Freelance Web | Mobile Application Developer",
           company: "IIT",
           logo_path: "iit_logo.png",
-          duration: "November 2020 - PRESENT",
+          duration: "Nov 2020 - Aug 2022",
           description: [
-		"Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a thesis of a Business Information Systems student, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
-            "Working on Ijazah-Tours, a tourism based PWA that facilitates the procedure of booking accomodations, creating quotations etc. for tour guides, for a thesis of a Business Management student, using React with Firebase and Node with Express & MongoDB",
-		"Working on CanCure, an extension of our project ONCO that covers bone and kidney related cancers, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
+            "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a thesis of a Business Information Systems student, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
+            "Worked on Ijazah-Tours, a tourism based platform that facilitates the procedure of booking accomodations, creating quotations etc. for tour guides, for a thesis of a Business Management student, using React, TypeScript with Firebase",
+            "Worked on CanCure, an extension of our project ONCO that covers bone and kidney related cancers, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
           ],
           bgColor: "#E90000",
           bgColorFaded: "#E9000033",
@@ -832,9 +836,11 @@ const experience = {
           title: "Full-stack Developer",
           company: "Niftron",
           logo_path: "niftron_logo.png",
-          duration: "Jan 2021 - Jul 2021",
+          duration: "Jan 2021 - Jul 2021 | Jul 2022 - PRESENT",
           description: [
-            "Worked on Amaten, a gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
+            "Working on another gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
+            "Working on a NFT Marketplace using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side",
+            "Worked on a gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
             "Worked on the UI for EXIP a blockchain marketing platform using React.js with TypeScript & MongoDB",
             "Worked on the frontend for project Nextentry which is a blockchain-based ticketing solution, using React.js with TypeScript & Ant design",
           ],
@@ -889,8 +895,9 @@ const experience = {
           company_url: "https://www.coursera.org/",
           logo_path: "coursera_logo.png",
           duration: "Feb 2021 - May 2021",
-          description:
+          description: [
             "Was invited as one of the ten members in the world to create community guided projects. Created and published community guided projects for the Coursera learner Community",
+          ],
           bgColor: "#0052C7",
           bgColorFaded: "#0052C733",
           headColor: "#1A5892",
@@ -901,8 +908,9 @@ const experience = {
           company_url: "https://www.postman.com/",
           logo_path: "postman_logo.png",
           duration: "Nov 2021 - PRESENT",
-          description:
+          description: [
             "Helping out students in Postman, contributing as a Student Expert",
+          ],
           bgColor: "#FD6C35",
           bgColorFaded: "#FD6C3533",
           headColor: "#676767",
@@ -913,8 +921,10 @@ const experience = {
           company_url: "https://github.com/",
           logo_path: "github_logo.png",
           duration: "July 2019 - PRESENT",
-          description:
+          description: [
+            "Contributed to the new aplha project of GitHub - Community Exchange, with a student repository for the community to learn from",
             "Actively contributing to many opensource projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain",
+          ],
           bgColor: "#1B1F23",
           bgColorFaded: "#1B1F2333",
           headColor: "#430083",
@@ -925,8 +935,9 @@ const experience = {
           company_url: "http://google.com/",
           logo_path: "google_logo.png",
           duration: "July 2019 - PRESENT",
-          description:
+          description: [
             "Took part in various events organised by the Google Developer Club including Dev Fest, Hash Code and KickStart",
+          ],
           bgColor: "#33A852",
           bgColorFaded: "#33A85233",
           headColor: "#4284F3",
@@ -937,8 +948,9 @@ const experience = {
           company_url: "https://www.toastmasters.org/",
           logo_path: "toastmasters_logo.png",
           duration: "Jun 2020 - Jun 2021",
-          description:
+          description: [
             "Served as the sergeant-at-arms of the IIT Toastmasters Club",
+          ],
           bgColor: "#770E29",
           bgColorFaded: "#770E2933",
           headColor: "#003F62",
@@ -949,8 +961,9 @@ const experience = {
           company_url: "https://www.iit.ac.lk/",
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - Jan 2021",
-          description:
+          description: [
             "Was the Lead Developer in creating the codesprint revamped website",
+          ],
           bgColor: "#E90000",
           bgColorFaded: "#E9000033",
           headColor: "#000000",
@@ -1235,17 +1248,31 @@ const journey = {
       description: [
         "Started falling in love with learning and exploring new things; whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts are all present",
         "The constant desire to learn new things keeps my contributions graph almost totally green, and I don't plan on stopping this anytime soon 🤩",
-        "Currently, I am also working on two other FYPs of two other students"
+        "Alongside, I also worked on two other FYPs of two other students"
       ],
     },
     {
       id: "SDASDAASDADXASXZ21",
-      date: "Jul 2021 - PRESENT",
+      date: "Jul 2021 - Jul 2022",
       description: [
-        "I have now joined 99X and am currently undergoing my internship. I have gotten the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful",
-        "Have the opportunity to conduct Mock Interviews with various university students",
-        "Colleagues and I have also conducted multiple live sessions for all uni kids, and we will continue more in the distant future 💖",
-        "I'm excited to see what else would I be able to accomplish within the future & see what does this current year, 2022, have in store for me 🥰"
+        "I joined 99X as a Trainee Software Engineer and got the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful",
+        "All my other side-hustles are mentioned in the experience section 😝",
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ22",
+      date: "Jan 2022 - PRESENT",
+      description: [
+        "I finally decided to start blogging after pushing it months and months... SO that's an improvement for this year lol. (You can find my socials in the Home Page banner 😝)",
+        "Additionally, I started answering some questions on StackOverFlow helping fellow developers in the community"
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ23",
+      date: "Jul 2022 - PRESENT",
+      description: [
+        "I was chosen to be a part of the Community Exchange alpha project of GitHub to teach the community using a personal project 💖 This was a great chance of using ONCO (cuz it's literally doing nothing now than sitting in my GitHub profile with everything else)",
+        "I'm currently working as a Full Stack Developer at NIFTRON once again 😛, since my final year will not begin till September. So, might as well do some other work till then instead of doing nothing at all 😝"
       ],
     },
   ],

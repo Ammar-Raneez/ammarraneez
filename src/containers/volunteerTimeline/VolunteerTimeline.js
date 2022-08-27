@@ -1,7 +1,10 @@
-import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import './VolunteerTimeline.css';
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import "./VolunteerTimeline.css";
 
 function VolunteerTimeline({ work }) {
   return (
@@ -15,7 +18,7 @@ function VolunteerTimeline({ work }) {
           iconStyle={{ backgroundColor: work.bgColor }}
           contentStyle={{
             borderTop: `4px solid ${work.headColor}`,
-            backgroundColor: work.bgColorFaded
+            backgroundColor: work.bgColorFaded,
           }}
         >
           <h3
@@ -35,13 +38,13 @@ function VolunteerTimeline({ work }) {
             alt={work.company}
             className="experience-company-logo"
           />
-          <p>
-            {work.description}
-          </p>
+          {work.description.map((desc) => (
+            <p>{desc}</p>
+          ))}
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
-  )
+  );
 }
 
-export default VolunteerTimeline
+export default VolunteerTimeline;
