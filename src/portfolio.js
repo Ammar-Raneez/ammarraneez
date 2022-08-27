@@ -1142,7 +1142,7 @@ const journey = {
     },
     {
       id: "SDASDAASDADXASXZ7",
-      date: "Dev 2019",
+      date: "Dec 2019",
       description: [
         "Started learning Python, due to a module called 'Programming Principles I', which taught the basics of programming (conditions, loops, variables, logical operators). The assignment given was pretty simple; it was just about checking an input student's marks against criteria and determining whether that student passed or failed. That, at that time, was so difficult for me, and I only managed to get a 65%. After a successful school pathway, this score was hurtful, and I thought about giving up",
       ],
@@ -1231,7 +1231,7 @@ const journey = {
       description: [
         "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on and might remain for some time in the future. ONCO & E-Ophthalmologist. Both medical-related AI mobile applications built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months",
         "ONCO had 6 ML models; it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung)",
-        "E-Ophthalmologist was about the diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes)",
+        "E-Ophthalmologist was about yhdszsthe diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes)",
         "It was such hard work to complete them however, it was also then that I knew that I am capable of handling high-pressure situations. It was not only SDGP and the FYP - 3 more modules were required",
       ],
     },
