@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Ammar's Portfolio",
   description:
-    "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student.",
+    "I'm a Colombo based full stack developer, passionate about blockchain, cloud computing & iOS development, and a current final year CS student.",
   og: {
     title: "Ammar Raneez's Development Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "Ammar Raneez",
   nickname: "Call me Amu, cuz almost everyone does",
   subTitle:
-    "I'm a Colombo based Aspiring Full Stack Developer, also passionate about Blockchain & Cloud Computing and a Current Third Year CS Student. Quick Problem Solver, Analytical Thinker & an avid Cube lover with the ability to solve complex problems under pressure",
+    "I'm a Colombo-based full stack developer, passionate about blockchain, cloud computing & iOS development, and a current final year CS student. Quick problem solver, analytical thinker & an avid puzzle lover with the ability to solve complex problems under pressure.",
   resumeLink:
     "https://drive.google.com/file/d/1JB25xL05kWWJAHAjbFnus59FfxDJRmDP/view",
   githubProfile: "https://github.com/Ammar-Raneez",
@@ -87,9 +87,9 @@ const skills = {
       fileName: "DataScienceImg",
       gifName: "data_science",
       skills: [
-        "Develop Deep Learning & Machine Learning Models to be used for both Web & Mobile Platforms",
-        "Experienced on working with Computer Vision and NLP",
-        "Experienced on Data Cleaning, Analysis & Visualization and Forecasting & Time Series Analysis",
+        "Develop deep learning & machine learning models to be used for both web & mobile platforms.",
+        "Experienced in working with computer vision, NLP, transfer learning & time series forecasting.",
+        "Experienced in data cleaning, analysis & visualization.",
       ],
       softwareSkills: [
         {
@@ -126,14 +126,16 @@ const skills = {
       ],
     },
     {
-      title: "Full Stack | Cross Platform Development",
+      title: "Full Stack | Cross Platform | Native Development",
       fileName: "FullStackImg",
       gifName: "full_stack_dev",
       skills: [
-        "Develop full stack web applications, including frontend, backend, infrastructure, database design and cloud deployment",
-        "Develop cross platform mobile applications using Flutter and React Native",
-        "Develop CI/CD pipelines and automate infrastructure",
-        "Comfortable in using third-party libraries and frameworks",
+        "Design infrastructure, databases and architect cloud deployments.",
+        "Develop full stack web applications.",
+        "Develop cross-platform mobile applications using Flutter and React Native.",
+        "Develop iOS applications using Swift and SwiftUI.",
+        "Develop CI/CD pipelines and automate infrastructure.",
+        "Comfortable in using third-party libraries and frameworks.",
       ],
       softwareSkills: [
         {
@@ -151,25 +153,19 @@ const skills = {
           },
         },
         {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "Tailwind",
-          fontAwesomeClassname: "simple-icons:tailwindcss",
-          style: {
-            color: "#06B6D4",
-          },
-        },
-        {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
           style: {
             backgroundColor: "#000000",
             color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#1572B6",
           },
         },
         {
@@ -243,24 +239,17 @@ const skills = {
           },
         },
         {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
           skillName: "GraphQL",
           fontAwesomeClassname: "simple-icons:graphql",
           style: {
             color: "#E10098",
+          },
+        },
+        {
+          skillName: "Prisma",
+          fontAwesomeClassname: "simple-icons:prisma",
+          style: {
+            color: "#000000",
           },
         },
         {
@@ -312,10 +301,10 @@ const skills = {
       fileName: "CloudInfraImg",
       gifName: "cloud_computing",
       skills: [
-        "Experienced on working on multiple cloud platforms",
-        "Experienced on building & designing serverless architectures",
-        "Develop multiple projects using AWS CDK & Serverless Framework",
-        "Deploy deep learning models on the cloud",
+        "Experienced in working on multiple cloud platforms.",
+        "Experienced in building & designing serverless architectures.",
+        "Develop multiple serverless applications & architectures using AWS CDK & serverless framework.",
+        "Deploy deep learning and machine learning models on the cloud.",
       ],
       softwareSkills: [
         {
@@ -333,6 +322,13 @@ const skills = {
           },
         },
         {
+          skillName: "Serverless Framework",
+          fontAwesomeClassname: "simple-icons:serverless",
+          style: {
+            color: "#FF0000",
+          },
+        },
+        {
           skillName: "Heroku",
           fontAwesomeClassname: "simple-icons:heroku",
           style: {
@@ -346,6 +342,13 @@ const skills = {
             color: "#00C7B7",
           },
         },
+        {
+          skillName: "Vercel",
+          fontAwesomeClassname: "simple-icons:vercel",
+          style: {
+            color: "#000000"
+          },
+        },
       ],
     },
     {
@@ -353,8 +356,8 @@ const skills = {
       fileName: "DesignImg",
       gifName: "tools",
       skills: [
-        "Design user interfaces for mobile and web applications",
-        "Experienced on a variety of tools",
+        "Design user interfaces for mobile and web applications.",
+        "Experienced in a variety of tools.",
       ],
       softwareSkills: [
         {
@@ -435,6 +438,13 @@ const skills = {
           },
         },
         {
+          skillName: "Xcode",
+          fontAwesomeClassname: "simple-icons:xcode",
+          style: {
+            color: "#156EE2",
+          },
+        },
+        {
           skillName: "JetBrains",
           fontAwesomeClassname: "simple-icons:jetbrains",
           style: {
@@ -487,11 +497,11 @@ const degrees = {
       alt_name: "UOW",
       duration: "2019 - Present",
       descriptions: [
-        "I have explored various Computer Science concepts such as Data Structures, Algorithms, DBMS, etc.",
-        "I Have also experienced more intermediate concepts such as AI, Database Modeling and Software Design & Architecture",
-        "Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing mainly focused on AWS and Full Stack Web & Mobile Development.",
-        "I Have also received merits for a couple of hackathons and coding challenges, even winning some",
-        "Currently I have a cummulative average of > 85%",
+        "I am proficient in various computer science theoretical concepts, including data structures, algorithms, DBMS, design & development.",
+        "I have also experienced more intermediate concepts such as AI, database modelling and software design & architecture.",
+        "Apart from this, I have done courses on deep learning, data science, cloud computing, mainly focused on AWS, and full stack web & mobile development.",
+        "I have also received merits for a couple of hackathons and coding challenges, even winning some.",
+        "Currently, I have a cumulative average of ~ 28/33.",
       ],
       website_link: "https://www.westminster.ac.uk/",
     },
@@ -500,6 +510,16 @@ const degrees = {
 
 const certifications = {
   certifications: [
+    {
+      title: "Machine Learning",
+      subtitle: "- DeepLearning.ai",
+      logo_path: "deeplearning_ai_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/VDMPDJDZ5U3K",
+      alt_name: "deeplearning.ai",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
+    },
     {
       title: "Deep Learning",
       subtitle: "- DeepLearning.ai",
@@ -531,14 +551,14 @@ const certifications = {
       overlay_bg_color: "#ff0000",
     },
     {
-      title: "Data Science: Foundations using R",
-      subtitle: "- Coursera | John Hopkins University",
-      logo_path: "jhu_logo.png",
+      title: "TensorFlow: Data and Deployment",
+      subtitle: "- DeepLearning.ai",
+      logo_path: "deeplearning_ai_logo.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/certificate/KRQCR5YT5JKU",
-      alt_name: "johnhopkins",
-      color_code: "#0A2D7544",
-      overlay_bg_color: "#0A2D75",
+        "https://www.coursera.org/account/accomplishments/specialization/5XMHEGTKMK4U",
+      alt_name: "deeplearning.ai",
+      color_code: "#ff000088",
+      overlay_bg_color: "#ff0000",
     },
     {
       title: "Mathematics For Machine Learning",
@@ -765,7 +785,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteers",
   description:
-    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development, User Interfaces & database design, and Cloud Infrastructure",
+    "I have worked on many aspects of development, including Machine Learning & Deep Learning, Full Stack Mobile & Web Development, User Interfaces & database design, and Cloud Infrastructure.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -791,14 +811,17 @@ const experience = {
           logo_path: "99x_logo.png",
           duration: "Jul 2021 - Jul 2022",
           description: [
-            "Implemented static and dynamic UI screens using Angular; Implemented services in the backend, using Serverless Framework with AWS and MongoDB and resolved bugs on both the frontend and backend",
-            "Implemented a POC for AWS CDK using multiple services including a CI/CD pipeline",
-            "Implemented multiple screens using React Native; infrastructure using CDK & GraphQL services using Serverless Framework, AppSync & Amplify",
-            "Implemented the Authentication Flow v1, using Cognito and CDK",
-            "Implemented the mobile application deployment pipeline using App Center",
-            "Organized webinars as the 'Tea n Tech Innovative' webinar lead & market at the university career fair",
-            "Conducted Facebook Live Sessions & internal peer-to-peer sessions",
-            "Acted as the Buddy of a fellow intern"
+            "Implemented static and dynamic UI screens using Angular.",
+            "Implemented services in the backend using serverless framework with AWS & MongoDB.",
+            "Resolved bugs on the frontend, backend & cloud services.",
+            "Implemented a POC for AWS CDK using multiple services, including a CI/CD pipeline.",
+            "Implemented multiple screens using React Native, infrastructure using CDK & GraphQL, and services using the serverless framework, AppSync & Amplify.",
+            "Implemented the authentication flow v1, using Cognito & CDK.",
+            "Implemented the mobile application deployment pipeline using App Center.",
+            "Organized webinars as the 'Tea n Tech Innovative' webinar lead.",
+            "Marketed the company at the university career fair.",
+            "Conducted Facebook live sessions & internal peer-to-peer sessions.",
+            "Acted as the Buddy of a fellow intern."
           ],
           bgColor: "#FF6962",
           bgColorFaded: "#FF696233",
@@ -810,9 +833,9 @@ const experience = {
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - Aug 2022",
           description: [
-            "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a thesis of a Business Information Systems student, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
-            "Worked on Ijazah-Tours, a tourism based platform that facilitates the procedure of booking accomodations, creating quotations etc. for tour guides, for a thesis of a Business Management student, using React, TypeScript with Firebase",
-            "Worked on CanCure, an extension of our project ONCO that covers bone and kidney related cancers, using Flutter with firebase and Azure & Python with TensorFlow, OpenCV, Keras & Scikit-learn",
+            "Developed E-Ophthalmologist - a diabetic retinopathy diagnosing & maintenance application built for a Business Information Systems students thesis. Flutter, Firebase, Azure and Python with TensorFlow, OpenCV, Keras & Scikit-Learn were used.",
+            "Developed Ijazah-Tours - a tourism-based platform that facilitates the procedure of booking accommodations, creating quotations etc., for tour guides, for a thesis of a Business Management student. React, TypeScript & Firebase were used.",
+            "Developed CanCure, an extension of our project ONCO that covers bone and kidney-related cancers. Flutter, Firebase, Azure, and Python with TensorFlow, OpenCV, Keras & Scikit-Learn were used.",
           ],
           bgColor: "#E90000",
           bgColorFaded: "#E9000033",
@@ -824,9 +847,9 @@ const experience = {
           logo_path: "freelance_logo.png",
           duration: "Jan 2021 - PRESENT",
           description: [
-            "Worked on Vontech, a construction-based startup using React.js with TypeScript & Firebase and Node.js with Express & mongoDB",
-            "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",
-            "Worked on Masjib-al-Maqbool's Jummuah Registration Site, a application to reserver Jummuah tokens to visitors during times of restriction",
+            "Developed Vontech - a construction-based startup using React.js, TypeScript, Firebase, and Node.js with Express & MongoDB.",
+            "Developed the Official Website of Amirah Gems & Fine Jewellery - a complete E-Commerce jewellery application using React.js, TypeScript & Firebase.",
+            "Developed Masjib-al-Maqbool's Jummuah registration site - an application to reserver Jummuah tokens to visitors during times of restriction.",
           ],
           bgColor: "#00ff00",
           bgColorFaded: "#00ff0033",
@@ -838,11 +861,11 @@ const experience = {
           logo_path: "niftron_logo.png",
           duration: "Jan 2021 - Jul 2021 | Jul 2022 - PRESENT",
           description: [
-            "Working on another gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
-            "Working on a NFT Marketplace using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side",
-            "Worked on a gift card tokenization solution using blockchain, using React.js with TypeScript, Redux & Material-UI for the client-side; AWS with the serverless framework & MongoDB for the server-side, along with Auth0 for a complete user authentication flow",
-            "Worked on the UI for EXIP a blockchain marketing platform using React.js with TypeScript & MongoDB",
-            "Worked on the frontend for project Nextentry which is a blockchain-based ticketing solution, using React.js with TypeScript & Ant design",
+            "Working on a decentralized user profiles application using React.js, TypeScript, Google Cloud & AWS with the serverless framework.",
+            "Developed an NFT Marketplace using React.js, TypeScript, Redux & Material-UI for the client-side, and AWS with the serverless framework & MongoDB for the server-side.",
+            "Developed a blockchain-based gift card tokenization solution using React.js, TypeScript, Redux & Material-UI for the client-side, AWS with the serverless framework & MongoDB for the server-side, and Auth0 for a complete user authentication flow.",
+            "Developed the UI for a blockchain marketing platform using React.js, TypeScript & MongoDB.",
+            "Developed the UI for a blockchain ticketing solution, using React.js, TypeScript & Ant design.",
           ],
           bgColor: "#2160B2",
           bgColorFaded: "#2160B233",
@@ -854,35 +877,23 @@ const experience = {
           logo_path: "inforwaves_logo.png",
           duration: "May 2021 - Jul 2021",
           description: [
-            "Worked on the backend of Execution Excellence creating several API's in a microservice architecture to maximize separation of concerns, using AWS RDS and Nest.js with TypeORM",
+            "Worked on the backend of Execution Excellence, creating several APIs in a microservice architecture to maximize the separation of concerns, using AWS RDS and Nest.js with TypeORM.",
           ],
           bgColor: "#9BC5D9",
           bgColorFaded: "#9BC5D933",
           headColor: "#4A8396",
         },
         {
-          title: "Full-stack Developer on Contract",
+          title: "Full-stack Developer",
           company: "The Radiant",
           logo_path: "radiant_logo.png",
           duration: "Jan 2021 - May 2021",
           description: [
-            "Worked on the Official Website of Amirah Gems & Fine Jewelry, a complete E-Commerce jewelry application using React.js with TypeScript & Firebase for authentication & data persistence",
+            "Worked on the Official Website of Amirah Gems & Fine Jewellery, a complete E-Commerce jewellery application using React.js with TypeScript & Firebase for authentication & data persistence.",
           ],
           bgColor: "#00634A",
           bgColorFaded: "#00634A33",
           headColor: "#23395d",
-        },
-        {
-          title: "Full Stack Mobile Application Developer",
-          company: "IIT",
-          logo_path: "iit_logo.png",
-          duration: "Nov 2020 - May 2021",
-          description: [
-            "Worked on E-Ophthalmologist, a diabetic retinopathy diagnosing & maintenance application built for a thesis of a Business Information Systems student, using Flutter with firebase for the client-side & Azure and Python with TensorFlow, OpenCV, Keras & Scikit-learn for the server-side",
-          ],
-          bgColor: "#E90000",
-          bgColorFaded: "#E9000033",
-          headColor: "#000000",
         },
       ],
     },
@@ -896,7 +907,7 @@ const experience = {
           logo_path: "coursera_logo.png",
           duration: "Feb 2021 - May 2021",
           description: [
-            "Was invited as one of the ten members in the world to create community guided projects. Created and published community guided projects for the Coursera learner Community",
+            "Was invited as one of the ten members in the world to create community guided projects, where I created and published community guided projects for the Coursera learner community.",
           ],
           bgColor: "#0052C7",
           bgColorFaded: "#0052C733",
@@ -909,7 +920,7 @@ const experience = {
           logo_path: "postman_logo.png",
           duration: "Nov 2021 - PRESENT",
           description: [
-            "Helping out students in Postman, contributing as a Student Expert",
+            "Helping out students in Postman, contributing as a Student Expert.",
           ],
           bgColor: "#FD6C35",
           bgColorFaded: "#FD6C3533",
@@ -922,8 +933,8 @@ const experience = {
           logo_path: "github_logo.png",
           duration: "July 2019 - PRESENT",
           description: [
-            "Contributed to the new aplha project of GitHub - Community Exchange, with a student repository for the community to learn from",
-            "Actively contributing to many opensource projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain",
+            "Contributed to the new alpha project of GitHub: Community Exchange, with a student repository for the community to learn from.",
+            "Actively creating multiple projects. My repo is filled with repositories of topics ranging from frontend development to data science and blockchain.",
           ],
           bgColor: "#1B1F23",
           bgColorFaded: "#1B1F2333",
@@ -936,7 +947,7 @@ const experience = {
           logo_path: "google_logo.png",
           duration: "July 2019 - PRESENT",
           description: [
-            "Took part in various events organised by the Google Developer Club including Dev Fest, Hash Code and KickStart",
+            "Took part in various events organised by the Google developer club, including DevFest, HashCode and Kickstart.",
           ],
           bgColor: "#33A852",
           bgColorFaded: "#33A85233",
@@ -949,7 +960,7 @@ const experience = {
           logo_path: "toastmasters_logo.png",
           duration: "Jun 2020 - Jun 2021",
           description: [
-            "Served as the sergeant-at-arms of the IIT Toastmasters Club",
+            "Served as the Sergeant-At-Arms of the IIT Toastmasters club.",
           ],
           bgColor: "#770E29",
           bgColorFaded: "#770E2933",
@@ -962,7 +973,7 @@ const experience = {
           logo_path: "iit_logo.png",
           duration: "Nov 2020 - Jan 2021",
           description: [
-            "Was the Lead Developer in creating the codesprint revamped website",
+            "Was the lead developer in creating the Codesprint revamped website.",
           ],
           bgColor: "#E90000",
           bgColorFaded: "#E9000033",
@@ -977,7 +988,7 @@ const experience = {
 const projects = {
   title: "Projects",
   description:
-    "I contribute to, and create a variety of projects, ranging from simple to complex on subjects both old, or new. With a mindset of always having to learn, my GitHub profile is always busy with repositories consisting of the latest new technology that I have learnt",
+    "I contribute to and create many projects, from simple to complex subjects, old or new. With a mindset of always having to learn, my GitHub profile is always busy with repositories consisting of the latest new technology that I have learnt.",
   avatar_image_path: "projects_image.svg",
   projects: [
     {
@@ -985,7 +996,7 @@ const projects = {
       name: "ONCO",
       url: "https://github.com/Ammar-Raneez/SDGP-ONCO",
       description:
-        "A Group Project that is a cancer diagnosis, prognosis & management application",
+        "A cancer diagnosis, prognosis & management application.",
       overlayBgColor: "#00ffff",
       overlayTextColor: "#fff",
       isFork: false,
@@ -1001,7 +1012,7 @@ const projects = {
       id: "MDEwOlJlcG9zaXDSDWAXZQSXZCSFXASAZQ=",
       name: "E-Ophthalmologist",
       url: "https://github.com/Ammar-Raneez/E-Ophthalmologist_UI",
-      description: "A Diabetic Retinopathy detection & management application",
+      description: "A diabetic retinopathy diagnosis & management application.",
       overlayBgColor: "#264C59",
       overlayTextColor: "#fff",
       isFork: false,
@@ -1018,7 +1029,7 @@ const projects = {
       name: "SimpleScript",
       url: "https://github.com/Ammar-Raneez/Simple_Script",
       description:
-        "A Personal Programming Language that supports most of the basic functionality",
+        "A programming language with most of the basic functionality.",
       overlayBgColor: "#6C1C20",
       overlayTextColor: "#fff",
       isFork: false,
@@ -1029,7 +1040,7 @@ const projects = {
       name: "PL Guv'nor",
       url: "https://github.com/Ammar-Raneez/PL_Guvnor",
       description:
-        "A Premier League management application that aims to simulate the Premier League",
+        "A premier league management application that aims to simulate the Premier League.",
       overlayBgColor: "#3A0243",
       overlayTextColor: "#fff",
       isFork: false,
@@ -1040,10 +1051,45 @@ const projects = {
       ],
     },
     {
+      id: "MDEwOlJlcG9zaXRvcnkyMDIxNQZALKLX=",
+      name: "Text Editor Pro",
+      url: "https://github.com/Ammar-Raneez/UCSD_Text_Editor_Pro",
+      description:
+        "A Text Editor with spell check, autocomplete & edit distance functionality.",
+      overlayBgColor: "#ff00ff",
+      overlayTextColor: "#fff",
+      isFork: false,
+      languages: [{ name: "Java", iconifyClass: "logos-java" }],
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkxODAZZQSDAFAZ=",
+      name: "AWS CDK Auction Service",
+      url: "https://github.com/Ammar-Raneez/cdk-poc",
+      description:
+        "An auction service built with multiple AWS services, including a CI/CD pipeline.",
+      overlayBgColor: "#156ee2",
+      overlayTextColor: "#fff",
+      isFork: false,
+      languages: [
+        { name: "AWS CDK", iconifyClass: "logos-aws" },
+        { name: "Lambda", iconifyClass: "logos-aws-lambda" },
+      ],
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
+      name: "Movie Recommender Engine",
+      url: "https://github.com/Ammar-Raneez/UCSD_Earthquake_Volcano_Map",
+      description: "A movie recommendation engine that is built without ML.",
+      overlayBgColor: "#1D8E62",
+      overlayTextColor: "#fff",
+      isFork: false,
+      languages: [{ name: "Java", iconifyClass: "logos-java" }],
+    },
+    {
       id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
       name: "Tinder Clone",
       url: "https://github.com/Ammar-Raneez/RN_Tinder_Clone",
-      description: "A Clone of Tinder supporting most of the core features",
+      description: "A Clone of Tinder supporting most of the core features.",
       overlayBgColor: "#E84B68",
       overlayTextColor: "#fff",
       isFork: false,
@@ -1054,38 +1100,16 @@ const projects = {
       ],
     },
     {
-      id: "MDEwOlJlcG9zaXRvcnkyMDIxNQZALKLX=",
-      name: "Text Editor Pro",
-      url: "https://github.com/Ammar-Raneez/UCSD_Text_Editor_Pro",
-      description:
-        "A Text Editor with spell check, autocomplete & edit distance functionality",
-      overlayBgColor: "#ff00ff",
-      overlayTextColor: "#fff",
-      isFork: false,
-      languages: [{ name: "Java", iconifyClass: "logos-java" }],
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
-      name: "Movie Recommender Engine",
-      url: "https://github.com/Ammar-Raneez/UCSD_Earthquake_Volcano_Map",
-      description: "A Movie Recommendation Engine that is built without ML",
-      overlayBgColor: "#1D8E62",
-      overlayTextColor: "#fff",
-      isFork: false,
-      languages: [{ name: "Java", iconifyClass: "logos-java" }],
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkxODAZZQSDAFAZ=",
-      name: "AWS CDK Auction Service",
-      url: "https://github.com/Ammar-Raneez/cdk-poc",
-      description:
-        "An Auction Service built with multiple AWS services, including CI/CD",
+      id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4OJP=",
+      name: "BitPredict",
+      url: "https://github.com/Ammar-Raneez/Bit_Predict",
+      description: "An end-to-end solution to forecast bitcoin.",
       overlayBgColor: "#FF9900",
       overlayTextColor: "#fff",
       isFork: false,
       languages: [
-        { name: "AWS CDK", iconifyClass: "logos-aws" },
-        { name: "Lambda", iconifyClass: "logos-aws-lambda" },
+        { name: "Python", iconifyClass: "logos-python" },
+        { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
       ],
     },
   ],
@@ -1096,166 +1120,166 @@ const journey = {
   title: "My Journey",
   subtitle: "A Walkthrough Of My Journey",
   description:
-    "Within the past 3 years, I have grown so much, from not being at all interested in Computer Science and not having written a single line of code till mid-2019, to the person I am now",
+    "Within the past three years, I have grown so much, from not being interested in computer science and not writing a single line of code to who I am now. Of course, I still have a long way to go :)",
   completeJourney: [
     {
       id: "SDASDAASDADXASXZ1",
       date: "Jun 2019",
       description: [
-        "Just had completed my ALs and wasn't sure what my next step would be. Was initially looking into mechatronics engineering and found out that it would require some type of coding",
+        "I just completed my ALs and wasn't sure what my next step would be. I was initially looking into mechatronics engineering and discovered it would require some coding." 
       ],
     },
     {
       id: "SDASDAASDADXASXZ2",
       date: "Jul 2019",
       description: [
-        "Started exploring the world of programming and Wrote my first ever HTML file adding some simple styles like background and font colors. Started liking the immediate result you get and the practical use of it in the real world",
+        "I started exploring the programming world and wrote my first ever HTML file adding simple styles like background and font colours. I liked the immediate result you get and the possible practical use of it in the real world."
       ],
     },
     {
       id: "SDASDAASDADXASXZ3",
       date: "Aug 2019",
       description: [
-        "Interest in technology spiked as the 'Data Science' hunger started manifesting. Checked out a couple of Data Science degrees available in the country, but only found out those that are a mix of business analytics and a minute amount of practical AI development or coding in general. Was therefore not interested in pursuing a degree as such",
+        "Interest in technology spiked as the 'data science' hunger started manifesting. I checked out a couple of data science degrees available in the country: a mix of business analytics and a minute amount of practical AI development or coding. Therefore, I was not interested in pursuing a degree as such."
       ],
     },
     {
       id: "SDASDAASDADXASXZ4",
       date: "Sep 2019",
       description: [
-        "After looking at multiple universities to pursue my higher studies, I finally decided to enrol in the CS degree at IIT. I realized that if I were to do a degree in CS, in general, I would be able to learn on both practical development as well as other aspects while also getting the necessary business exposure required",
+        "After looking at multiple universities to pursue my higher studies, I finally enrolled in the CS degree at IIT. If I were to do a degree in CS, I would be able to learn about both practical development and other aspects while also getting the necessary business exposure required."
       ],
     },
     {
       id: "SDASDAASDADXASXZ5",
       date: "Oct 2019",
       description: [
-        "Started learning basic HTML, CSS and JS. Programming by itself was a whole new experience to me since I haven't written a single line of code, except for HTML, ever. And it was hard, really hard. The concept of 'Logic' and logical thinking was all very foreign. For instance, I know how I'd solve a mathematical expression through Math, but how would I write code to do that?",
+        "I started learning basic HTML, CSS and JS. Programming was a new experience since I had yet to write a single line of code except for HTML. And it was hard, really hard. The concept of 'logic' and logical thinking was all very foreign. For instance, I know how to solve a mathematical expression through math, but how would I write code to do that? It is 100% okay to struggle! But it is your determination never to give up that will pull you :)"
       ],
     },
     {
       id: "SDASDAASDADXASXZ6",
       date: "Nov 2019",
       description: [
-        "Still struggling 😅 Was trying my best to continue and kept believing in myself. Kept pushing on with the idea that 'this is supposed to be hard, anything that is new is supposed to be hard.' I was kicking myself because the time that I spent on the Data Science hunger and searching for degrees on it could have been much more productive had I had spent it on exploring the world of CS more. I was naive in thinking that the world of DS and CS were different",
+        "Still struggling 😅 I was trying my best to continue and kept believing in myself. Kept pushing on with the idea that 'this is supposed to be hard; anything new is supposed to be hard.' I was kicking myself because the time I spent on the data science hunger and searching for degrees on it could have been much more productive had I spent it on exploring the world of CS more. I was naive in thinking that the worlds of DS and CS were different."
       ],
     },
     {
       id: "SDASDAASDADXASXZ7",
       date: "Dec 2019",
       description: [
-        "Started learning Python, due to a module called 'Programming Principles I', which taught the basics of programming (conditions, loops, variables, logical operators). The assignment given was pretty simple; it was just about checking an input student's marks against criteria and determining whether that student passed or failed. That, at that time, was so difficult for me, and I only managed to get a 65%. After a successful school pathway, this score was hurtful, and I thought about giving up",
+        "I started learning Python due to a module called 'Programming Principles I', which taught the basics of programming (conditions, loops, variables, logical operators). The assignment was simple: it was just about checking an input student's marks against criteria and determining whether that student passed or failed. That, at that time, was so difficult for me, and I only managed to get a 65%. After a successful school pathway, this score was hurtful, and I thought about giving up."
       ],
     },
     {
       id: "SDASDAASDADXASXZ8",
       date: "Jan 2020",
       description: [
-        "New Year hit. Told myself that I must do something about this, I obviously cannot continue to struggle with everything. The second semester had just started which introduced a module called 'Programming Principles II' where the barebones of OOP was taught in Java. Within the 2 weeks or so holiday after semester 1 had ended, I had learnt Java a bit just to get ready to face the next semester. And that made a world of a difference",
+        "New Year hit. I told myself that I must do something about this. I obviously cannot continue to struggle with everything. The second semester had just started introducing a module called 'Programming Principles II' where the barebones of OOP were taught in Java. Within the two weeks or so holiday after semester one had ended, I learned Java a bit to prepare for the next semester. And that made a world of difference."
       ],
     },
     {
       id: "SDASDAASDADXASXZ9",
       date: "Feb 2020",
       description: [
-        "The basic concepts that were introduced in 'Programming Principles I' were reinforced now, and I have finally started feeling less stressed and more comfortable with this whole new concept of programming. Java was easy to grasp, and that was when I started feeling some progression. I thank this module for transforming me from a complete noob to a person who finally understood this whole concept of what logic and logical thinking was",
+        "The basic concepts introduced in Programming Principles I were reinforced now, and I have finally started feeling less stressed and more comfortable with this whole new programming concept. Java was easy to grasp, and that was when I started feeling some progression. I thank this module for transforming me from a complete noob to someone who finally understood logic and logical thinking."
       ],
     },
     {
       id: "SDASDAASDADXASXZ10",
       date: "Mar 2020",
       description: [
-        "The assignment of 'Programming Principles II' was revealed, and it was miles ahead in complexity in comparison to the one of 'Programming Principles I'. The goal was to create a Train Ticket Booking application to facilitate the Booking of tickets for the 'Denuwara Manike' Expressway. These were the initial steps towards creating something that would be used in the real world and something that was 'An Actual Project'. It was difficult initially, however, as time went on I managed to grow much more just while working on this application and managed to get a mark that was considered as one of the highest in the batch, 94%",
+        "The assignment of 'Programming Principles II' was revealed and was miles ahead in complexity compared to the one of 'Programming Principles I'. The goal was to create a train ticket booking application to facilitate the booking of tickets for the Denuwara Manike expressway. These were the initial steps towards creating something to use in the real world and 'an actual project'. It wasn't easy initially; however, as time went on, I grew much more while working on this application and got a mark that was one of the highest in the batch, 94%."
       ],
     },
     {
       id: "SDASDAASDADXASXZ11",
       date: "Apr 2020",
       description: [
-        "It was time to focus on a simple web application built using HTML, CSS and JS. This was now much easier since I now had experience in building a 'Real Project'. Once you have had that experience, anything else that you come across in your tech journey will not be so challenging anymore, since you now know the different approaches to solve problems and your brain is trained in such a way that the logical thinking required is what comes into your mind, in my opinion",
+        "It was time to focus on a simple web application built using HTML, CSS and JS. This was much easier since I now had experience in building a 'Real Project'. In my opinion, once you have had that experience, anything else you face in your tech journey will not be so challenging since you know the different approaches to solving problems. Also, since your brain is now trained in such a way that the logical thinking required is what comes into your mind.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ12",
       date: "May - Sep 2020",
       description: [
-        "This was the time when everything changed. Once my first year had ended around June, we got a long summer vacation till September. It was time to learn and explore new things, although many people used this holiday as a 'holiday', I didn't. This time was when I, from morning till night, was on my laptop, learning course after course. Coursera had given us university students free access to most of their courses since this was when the pandemic started and people started losing their jobs. Free courses taught by prestigious university professors that were once at least $50? Count me in! I went from again learning HTML to learning the MERN & MEAN stack, as well as ML, DL and DS. This was a game-changer",
-        "It is also the reason why my LinkedIn is flooded with over 100+ certificates. Side-note, the courses taught by AndrewNG are mind-blowing if you know, you know :)",
+        "This was the time when everything changed. Once my first year had ended around June, we got an extended summer vacation till September. It was time to learn and explore new things, and although many people used this holiday as a 'holiday', I didn't. This time was when I was on my laptop from morning till night, learning course after course. Coursera has given us university students free access to most of their courses since the pandemic started and people started losing their jobs. Free courses taught by prestigious university professors that were once at least $50? Count me in! I went from learning HTML again to learning the MERN & MEAN stack and ML, DL and DS; this was a game-changer.",
+        "It is also why my LinkedIn is flooded with over 100+ certificates. Side note, the courses taught by AndrewNG are mind-blowing; if you know, you know :)."
       ],
     },
     {
       id: "SDASDAASDADXASXZ13",
       date: "Sep 2020",
       description: [
-        "It was time to go back to college for the second year, and with my new arsenal of skills, I was ready as I'd ever been. The second year of uni was much easier than my first. I stand by what I just said. Although, the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun. It was then I knew all my hard work had paid off. OOP was introduced, and the assignment was about building a premier league simulation (this can be found in my projects section :)). Alongside OOP, we got a Software Development Group Project (SDGP). This was a whole another story",
+        "It was time to return to college for the second year, and with my new arsenal of skills, I was ready as I'd ever been. The second year of uni was much easier than my first. I stand by what I just said. Although, the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun. It was then I knew all my hard work had paid off. OOP was introduced, and the assignment was about building a premier league simulation (you can find this in my projects section :)). Alongside OOP, we got a Software Development Group Project (SDGP); this was another story."
       ],
     },
     {
       id: "SDASDAASDADXASXZ14",
       date: "Oct 2020",
       description: [
-        "SDGP was a group project that required the usage of Machine Learning to solve a real-world problem. It is, in other words, a capstone project for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you have gotten the green light to continue with the idea, you can, else you had to come up with another idea",
-        "Idea pitching time, my team and I honestly did not know that the idea had to be ML heavy, therefore we pitched something different and got turned down 😂 This upset my teammates a lot since they are all smart people. I, having gone through hardship, had to motivate them and carry the team at the moment to come up with a good idea, and we did, and boy, did it take our whole lives within the next couple of months to produce a project of such feat in such a short period, at the same time focusing on other modules",
+        "SDGP was a group project that required the usage of machine learning to solve a real-world problem. It is a capstone project for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you got the green light to continue with the idea could you, or else you had to come up with another idea.",
+        "It was idea pitching time; my team and I just learned that the idea had to be ML-heavy. Therefore we pitched something different and got turned down 😂 This upset my teammates a lot since they are all intelligent people. Having gone through hardship, I had to motivate them and carry the team to come up with a good idea, and we did. Boy, it took our whole lives within the next couple of months to produce a project of such a feat in such a short period while focusing on other modules."
       ],
     },
     {
       id: "SDASDAASDADXASXZ15",
       date: "Nov - Dec 2020",
       description: [
-        "These months were mainly about hackathons. Took part in Coderally, which was an algorithm based inter-country competition; hosted by IIT on HackerRank. Now having the logical thinking capability required, I was able to do it well and emerged 2nd in Sri Lanka",
-        "We (SDGP team) took part in 'Datathon', a data science-based hackathon; hosted by SLIIT and emerged 2nd place in the qualifiers, where the finals were held beginning next year",
-        "Back then, hackathons were something I always took part in, although now I don't in much any more stuff like that is something that gives you the confidence required in the long run",
-        "Around this time, I got a project for a final year BIS (Business Information Systems) student (FYP - Final Year Project), also around Machine Learning. I specifically was reached out by them just because of the number of ML related certifications on my LinkedIn profile 😅",
+        "These months were mainly about hackathons. I took part in Coderally, an algorithm-based inter-country competition; hosted by IIT on HackerRank. Now having the logical thinking capability required, I did it well and emerged 2nd in Sri Lanka.",
+        "We (the SDGP team) participated in 'Datathon', a data science-based hackathon; hosted by SLIIT and emerged 2nd place in the qualifiers, where the finals were held beginning next year.",
+        "Back then, hackathons were something I always took part in. Although I don't in much anymore, stuff like that gives you the confidence required in the long run.",
+        "Around this time, I got a project for a final year BIS (Business Information Systems) student (FYP - Final Year Project) around machine learning. I specifically was reached out by them just because of the number of ML-related certifications on my LinkedIn profile 😅"
       ],
     },
     {
       id: "SDASDAASDADXASXZ16",
       date: "Jan 2021",
       description: [
-        "New year once again! It was time to submit the OOP project that I had been working on for the past few months. I was nervous submitting it, even though it worked. This was built with Angular and Java, and we all know that the node_modules in Angular is larger than Sri Lanka's population. Therefore you'd submit the project without the node_modules folder since you have the package.json. But, you also know the errors that turn up when you run 'npm i' or 'yarn' with the node-gyp stuff 🙂 What if during the demo you get such an error? 🙂 Luckily, that was exactly what didn't happen 😝 The viva went well and I managed to score 90% for that alongside an exam which was 97%, again an overall that would be considered as one of the highest. Coursera, thank you so much you changed everything",
-        "Surprise surprise! I was invited by Coursera as one of the 10 people in the world to create community guided projects. It was mainly due to the sheer amount of work I had done during the Summer vacation the prior year",
+        "New year once again! It was time to submit the OOP project I had worked on for the past few months. I was nervous about submitting it, even though it worked. This was built with Angular and Java, and we all know that the node_modules in Angular are larger than Sri Lanka's population. Therefore you'd submit the project without the node_modules folder since you have the package.json. But you also know the errors that turn up when you run 'npm i' or 'yarn' with the node-gyp stuff 🙂 What if, during the demo, you get such an error? 🙂 Luckily, that was precisely what didn't happen 😝 The viva went well, and I managed to score 90% for that alongside an exam of 97%, again an overall considered one of the highest. Coursera, thank you so much. You changed everything.",
+        "Surprise surprise! Coursera invited me as one of the ten people worldwide to create community-guided projects. It was mainly due to the sheer amount of work I had done during the Summer vacation the prior year.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ17",
       date: "Feb 2021",
       description: [
-        "Datathon finals time! It was time to head to SLIIT to go against ten other teams coming from various universities around the country. Hosted by Zone24x7, the goal of the finals was to estimate the number of vaccines required for a specific set of people. It was challenging since there weren't any proper datasets and much data cleaning had to be done to prepare a suitable dataset. Alongside a time series forecast and a rather dirty dataset, we managed a merit pass. Going against teams from UOM, UOC etc. was a challenge to remember and a challenge that would make me love data science. Once again, thank you, Coursera for teaching so much about ML, specifically, thank you, AndrewNG",
-        "It was also at this time that I got an internship interview with 99X. The interview was challenging, albeit well organized, and in some way, I managed to get through it",
-        "I was to start my internship in May however, my university didn't allow it since they required me to complete my 2nd year. 99X was so understanding 💖 and they'd let me join after my 2nd year, on July",
+        "Datathon finals time! It was time to head to SLIIT to go against ten other teams coming from various universities around the country. Hosted by Zone24x7, the goal of the finals was to estimate the number of vaccines required for a specific set of people. It was challenging since there weren't any proper datasets and much data cleaning had to be done to prepare a suitable dataset. Alongside a time series forecast and a rather dirty dataset, we managed a merit pass. Going against teams from UOM, UOC etc., was a challenge to remember and a challenge that would make me love data science. Once again, thank you, Coursera for teaching so much about ML, specifically, thank you, AndrewNG.",
+        "It was also at this time that I got an internship interview with 99X. The interview was challenging, albeit well organized, and in some way, I managed to get through it.",
+        "I was to start my internship in May however, my university didn't allow it since they required me to complete my 2nd year. 99X was so understanding 💖 and they'd let me join after my 2nd year, on July.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ18",
       date: "Mar - May 2021",
       description: [
-        "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on and might remain for some time in the future. ONCO & E-Ophthalmologist. Both medical-related AI mobile applications built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months",
-        "ONCO had 6 ML models; it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung)",
-        "E-Ophthalmologist was about yhdszsthe diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes)",
-        "It was such hard work to complete them however, it was also then that I knew that I am capable of handling high-pressure situations. It was not only SDGP and the FYP - 3 more modules were required",
+        "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on and might remain for some time in the future. ONCO & E-Ophthalmologist. Both medical-related AI mobile applications built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months.",
+        "ONCO had 6 ML models; it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung).",
+        "E-Ophthalmologist was about the diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes).",
+        "It was such hard work to complete them however, it was also then that I knew that I am capable of handling high-pressure situations. It was not only SDGP and the FYP - 3 more modules were required.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ19",
-      date: "Jan - July 2021",
+      date: "Jan - Jul 2021",
       description: [
-        "Worked on some freelance work with NIFTRON and Inforwaves alongside uni as well. It became clear now that I work well and don't suffer under pressure, which I feel is an important skill in this world, be it any job at all. I'm not going to repeat all the boring details of what I did during my time working there since everything is mentioned in the Experience section 😝",
+        "Worked on some freelance work with Niftron and Inforwaves alongside uni as well. It became clear now that I work well and don't suffer under pressure, which I feel is an important skill in this world, be it any job at all. I'm not going to repeat all the boring details of what I did during my time working there since everything is mentioned in the Experience section 😝",
       ],
     },
     {
       id: "SDASDAASDADXASXZ20",
       date: "Jan 2021 - PRESENT",
       description: [
-        "Started falling in love with learning and exploring new things; whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts are all present",
+        "Started falling in love with learning and exploring new things; whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts are all present.",
         "The constant desire to learn new things keeps my contributions graph almost totally green, and I don't plan on stopping this anytime soon 🤩",
-        "Alongside, I also worked on two other FYPs of two other students"
+        "Alongside, I also worked on two other FYPs of two other students."
       ],
     },
     {
       id: "SDASDAASDADXASXZ21",
       date: "Jul 2021 - Jul 2022",
       description: [
-        "I joined 99X as a Trainee Software Engineer and got the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful",
+        "I joined 99X as a Trainee Software Engineer and got the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful.",
         "All my other side-hustles are mentioned in the experience section 😝",
       ],
     },
@@ -1263,16 +1287,23 @@ const journey = {
       id: "SDASDAASDADXASXZ22",
       date: "Jan 2022 - PRESENT",
       description: [
-        "I finally decided to start blogging after pushing it months and months... SO that's an improvement for this year lol. (You can find my socials in the Home Page banner 😝)",
-        "Additionally, I started answering some questions on StackOverFlow helping fellow developers in the community"
+        "I finally decided to start blogging after pushing it months and months... SO that's an improvement for this year lol. (You can find my socials in the Home Page banner 😝).",
+        "Additionally, I started answering some questions on StackOverFlow helping fellow developers in the community."
       ],
     },
     {
       id: "SDASDAASDADXASXZ23",
       date: "Jul 2022 - PRESENT",
       description: [
-        "I was chosen to be a part of the Community Exchange alpha project of GitHub to teach the community using a personal project 💖 This was a great chance of using ONCO (cuz it's literally doing nothing now than sitting in my GitHub profile with everything else)",
-        "I'm currently working as a Full Stack Developer at NIFTRON once again 😛, since my final year will not begin till September. So, might as well do some other work till then instead of doing nothing at all 😝"
+        "I was chosen to be a part of the Community Exchange alpha project of GitHub to teach the community using a personal project 💖 This was a great chance of using ONCO (cuz it's literally doing nothing now than sitting in my GitHub profile with everything else).",
+        "I'm currently working as a full stack developer at Niftron once again 😛, since my final year will not begin till September. So, might as well do some other work till then instead of doing nothing at all 😝"
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ24",
+      date: "Sep 2022 - PRESENT",
+      description: [
+        "Final year of uni has begun and its going well so far... I will update this once it is completed... Which also means, once my degree is over! :)",
       ],
     },
   ],
@@ -1284,7 +1315,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "me.png",
     description:
-      "Feel free to contact me via any of the below platforms, I'm active on all of them :) Contact to convert your idea into a reality!",
+      "Feel free to contact me to convert your idea into a reality!",
   },
   addressSection: {
     title: "Address",
