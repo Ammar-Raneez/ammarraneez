@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "Ammar Raneez",
   nickname: "Call me Amu, cuz almost everyone does",
   subTitle:
-    "I'm a Colombo-based full stack developer, passionate about blockchain, cloud computing & iOS development, and a current final year CS student. Quick problem solver, analytical thinker & an avid puzzle lover with the ability to solve complex problems under pressure.",
+    "I'm a Colombo-based full stack developer, passionate about blockchain, cloud computing & iOS development, and a CS graduate. Quick problem solver, analytical thinker & an avid puzzle lover with the ability to solve complex problems under pressure.",
   resumeLink:
     "https://drive.google.com/file/d/1JB25xL05kWWJAHAjbFnus59FfxDJRmDP/view",
   githubProfile: "https://github.com/Ammar-Raneez",
@@ -74,7 +74,7 @@ const socialMediaLinks = [
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/_ammar._r/",
+    link: "https://www.instagram.com/__ammarrrrr__/",
     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
   },
@@ -239,6 +239,13 @@ const skills = {
           },
         },
         {
+          skillName: "Swift",
+          fontAwesomeClassname: "simple-icons:swift",
+          style: {
+            color: "#F05137",
+          },
+        },
+        {
           skillName: "GraphQL",
           fontAwesomeClassname: "simple-icons:graphql",
           style: {
@@ -307,6 +314,13 @@ const skills = {
         "Deploy deep learning and machine learning models on the cloud.",
       ],
       softwareSkills: [
+        {
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: {
+            color: "#0076CE",
+          },
+        },
         {
           skillName: "GCP",
           fontAwesomeClassname: "simple-icons:googlecloud",
@@ -495,13 +509,13 @@ const degrees = {
       logo_path:
         "https://www.westminster.ac.uk/themes/uow_theme/images/navbar-westminster-logo.svg",
       alt_name: "UOW",
-      duration: "2019 - Present",
+      duration: "2019 - 2023",
       descriptions: [
         "I am proficient in various computer science theoretical concepts, including data structures, algorithms, DBMS, design & development.",
         "I have also experienced more intermediate concepts such as AI, database modelling and software design & architecture.",
-        "Apart from this, I have done courses on deep learning, data science, cloud computing, mainly focused on AWS, and full stack web & mobile development.",
+        "Apart from this, I have done courses on deep learning, data science, cloud computing - mainly focused on AWS, and full stack web & mobile development.",
         "I have also received merits for a couple of hackathons and coding challenges, even winning some.",
-        "Currently, I have a cumulative average of ~ 28/33.",
+        "I obtained a 1st class honours with a cumulative average of 89.3%.",
       ],
       website_link: "https://www.westminster.ac.uk/",
     },
@@ -571,6 +585,16 @@ const certifications = {
       overlay_bg_color: "#01538E",
     },
     {
+      title: "Swift 5 iOS Application Developer",
+      subtitle: "- Coursera | LearnQuest",
+      logo_path: "learnquest_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/LWU39PXEKB56",
+      alt_name: "learnquest",
+      color_code: "#01118F44",
+      overlay_bg_color: "#01118F",
+    },
+    {
       title: "Fullstack Web Development With React",
       subtitle: "- Coursera | Hong Kong University",
       logo_path: "hongkong_logo.png",
@@ -627,15 +651,15 @@ const certifications = {
       color_code: "#2EC86644",
       overlay_bg_color: "#2EC866",
     },
-    {
-      title: "CSS (Basic)",
-      subtitle: "- Hackerrank",
-      logo_path: "hackerrank_logo.png",
-      certificate_link: "https://www.hackerrank.com/certificates/65d65608f05f",
-      alt_name: "hackerrank",
-      color_code: "#2EC86644",
-      overlay_bg_color: "#2EC866",
-    },
+    // {
+    //   title: "CSS (Basic)",
+    //   subtitle: "- Hackerrank",
+    //   logo_path: "hackerrank_logo.png",
+    //   certificate_link: "https://www.hackerrank.com/certificates/65d65608f05f",
+    //   alt_name: "hackerrank",
+    //   color_code: "#2EC86644",
+    //   overlay_bg_color: "#2EC866",
+    // },
     {
       title: "React (Basic)",
       subtitle: "- Hackerrank",
@@ -687,6 +711,16 @@ const certifications = {
 
 const competitions = {
   competitions: [
+    {
+      title: "IEEE CCWC 2023",
+      logo_path: "ccwc_logo.png",
+      subtitle: "- Liquid Time-stochasticity (LTS) algorithm proposal & publication",
+      certificate_link:
+        "https://ieeexplore.ieee.org/document/10099071",
+      alt_name: "ccwc-publication",
+      color_code: "#4786F144",
+      overlay_bg_color: "#4786F1",
+    },
     {
       title: "Coderally 2 (2021)",
       subtitle: "- 1st Place",
@@ -792,6 +826,20 @@ const experience = {
       title: "Work",
       experiences: [
         {
+          title: "Software Engineer",
+          company: "99X",
+          logo_path: "99x_logo.png",
+          duration: "May 2023 - PRESENT",
+          description: [
+            "Playing the role of a full-stack developer working on several aspects across the application.",
+            "Leading the company's AWS Focus Group.",
+            "Write technical blogs on Medium for 'Engineering at 99x'."
+          ],
+          bgColor: "#FF6962",
+          bgColorFaded: "#FF696233",
+          headColor: "#331C7A",
+        },,
+        {
           title: "Technical Writer",
           company: "Medium | DEV | Tealfeed",
           logo_path: ["dev_logo.png", "tealfeed_logo.png", "medium_logo.png"],
@@ -845,7 +893,7 @@ const experience = {
           title: "Full-stack Developer",
           company: "Freelance",
           logo_path: "freelance_logo.png",
-          duration: "Jan 2021 - PRESENT",
+          duration: "Jan 2021 - May 2023",
           description: [
             "Developed Vontech - a construction-based startup using React.js, TypeScript, Firebase, and Node.js with Express & MongoDB.",
             "Developed the Official Website of Amirah Gems & Fine Jewellery - a complete E-Commerce jewellery application using React.js, TypeScript & Firebase.",
@@ -859,8 +907,9 @@ const experience = {
           title: "Full-stack Developer",
           company: "Niftron",
           logo_path: "niftron_logo.png",
-          duration: "Jan 2021 - Jul 2021 | Jul 2022 - PRESENT",
+          duration: "Jan 2021 - Jul 2021 | Jul 2022 - May 2023",
           description: [
+            "Worked on an decentralized asset investment management platform using Next, Express & Prisma",
             "Working on a decentralized user profiles application using React.js, TypeScript, Google Cloud & AWS with the serverless framework.",
             "Developed an NFT Marketplace using React.js, TypeScript, Redux & Material-UI for the client-side, and AWS with the serverless framework & MongoDB for the server-side.",
             "Developed a blockchain-based gift card tokenization solution using React.js, TypeScript, Redux & Material-UI for the client-side, AWS with the serverless framework & MongoDB for the server-side, and Auth0 for a complete user authentication flow.",
@@ -992,11 +1041,41 @@ const projects = {
   avatar_image_path: "projects_image.svg",
   projects: [
     {
+      id: "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMQQ=",
+      name: "Liquid Time-stochasticity networks",
+      url: "https://github.com/Ammar-Raneez/Liquid-Time-stochasticity-networks",
+      description:
+        "The LTS network proposed in my publication that demonstrates flexibility useful for volatile data modelling.",
+      overlayBgColor: "#1990FF",
+      overlayTextColor: "#fff",
+      isFork: false,
+      languages: [
+        { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
+      ],
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMZR=",
+      name: "BitForecast",
+      url: "https://github.com/Ammar-Raneez/BitForecast",
+      description:
+        "A Bitcoin forecasting system utilising the LTS algorithm and multiple factors.",
+      overlayBgColor: "#1990FF",
+      overlayTextColor: "#fff",
+      isFork: false,
+      languages: [
+        { name: "React", iconifyClass: "logos-react" },
+        { name: "Firebase", iconifyClass: "logos-firebase" },
+        { name: "Python", iconifyClass: "logos-python" },
+        { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
+        { name: "Heroku", iconifyClass: "logos-heroku" },
+      ],
+    },
+    {
       id: "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
       name: "ONCO",
       url: "https://github.com/Ammar-Raneez/SDGP-ONCO",
       description:
-        "A cancer diagnosis, prognosis & management application.",
+        "A thoracic (breast, skin and lung) cancer diagnosis, prognosis & management application.",
       overlayBgColor: "#00ffff",
       overlayTextColor: "#fff",
       isFork: false,
@@ -1034,6 +1113,20 @@ const projects = {
       overlayTextColor: "#fff",
       isFork: false,
       languages: [{ name: "Python", iconifyClass: "logos-python" }],
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
+      name: "Tinder Clone",
+      url: "https://github.com/Ammar-Raneez/RN_Tinder_Clone",
+      description: "A Clone of Tinder supporting most of the core features.",
+      overlayBgColor: "#E84B68",
+      overlayTextColor: "#fff",
+      isFork: false,
+      languages: [
+        { name: "React Native", iconifyClass: "logos-react" },
+        { name: "Firebase", iconifyClass: "logos-firebase" },
+        { name: "Expo", iconifyClass: "logos-expo" },
+      ],
     },
     {
       id: "MDEwOlJlcG9zaXRvcnkxNTU5NTE3NTk=",
@@ -1075,43 +1168,29 @@ const projects = {
         { name: "Lambda", iconifyClass: "logos-aws-lambda" },
       ],
     },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
-      name: "Movie Recommender Engine",
-      url: "https://github.com/Ammar-Raneez/UCSD_Earthquake_Volcano_Map",
-      description: "A movie recommendation engine that is built without ML.",
-      overlayBgColor: "#1D8E62",
-      overlayTextColor: "#fff",
-      isFork: false,
-      languages: [{ name: "Java", iconifyClass: "logos-java" }],
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
-      name: "Tinder Clone",
-      url: "https://github.com/Ammar-Raneez/RN_Tinder_Clone",
-      description: "A Clone of Tinder supporting most of the core features.",
-      overlayBgColor: "#E84B68",
-      overlayTextColor: "#fff",
-      isFork: false,
-      languages: [
-        { name: "React Native", iconifyClass: "logos-react" },
-        { name: "Firebase", iconifyClass: "logos-firebase" },
-        { name: "Expo", iconifyClass: "logos-expo" },
-      ],
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4OJP=",
-      name: "BitPredict",
-      url: "https://github.com/Ammar-Raneez/Bit_Predict",
-      description: "An end-to-end solution to forecast bitcoin.",
-      overlayBgColor: "#FF9900",
-      overlayTextColor: "#fff",
-      isFork: false,
-      languages: [
-        { name: "Python", iconifyClass: "logos-python" },
-        { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
-      ],
-    },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
+    //   name: "Movie Recommender Engine",
+    //   url: "https://github.com/Ammar-Raneez/UCSD_Earthquake_Volcano_Map",
+    //   description: "A movie recommendation engine that is built without ML.",
+    //   overlayBgColor: "#1D8E62",
+    //   overlayTextColor: "#fff",
+    //   isFork: false,
+    //   languages: [{ name: "Java", iconifyClass: "logos-java" }],
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyMDIxNDc4OJP=",
+    //   name: "BitPredict",
+    //   url: "https://github.com/Ammar-Raneez/Bit_Predict",
+    //   description: "An end-to-end solution to forecast bitcoin.",
+    //   overlayBgColor: "#FF9900",
+    //   overlayTextColor: "#fff",
+    //   isFork: false,
+    //   languages: [
+    //     { name: "Python", iconifyClass: "logos-python" },
+    //     { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
+    //   ],
+    // },
   ],
 };
 
@@ -1126,152 +1205,156 @@ const journey = {
       id: "SDASDAASDADXASXZ1",
       date: "Jun 2019",
       description: [
-        "I just completed my ALs and wasn't sure what my next step would be. I was initially looking into mechatronics engineering and discovered it would require some coding." 
+        "I just completed my ALs, (Chemistry, Physics & Math - I know, the question is, 'How did I end up with CS?') and wasn't sure what my next step would be. I was initially considering mechatronics engineering and discovered it would require some coding skills." 
       ],
     },
     {
       id: "SDASDAASDADXASXZ2",
       date: "Jul 2019",
       description: [
-        "I started exploring the programming world and wrote my first ever HTML file adding simple styles like background and font colours. I liked the immediate result you get and the possible practical use of it in the real world."
+        "I began exploring the world of programming and wrote my very first HTML file, experimenting with simple styles such as background and font colors. I found it fascinating to see the immediate results and the practical applications it could have in the real world."
       ],
     },
     {
       id: "SDASDAASDADXASXZ3",
       date: "Aug 2019",
       description: [
-        "Interest in technology spiked as the 'data science' hunger started manifesting. I checked out a couple of data science degrees available in the country: a mix of business analytics and a minute amount of practical AI development or coding. Therefore, I was not interested in pursuing a degree as such."
+        "My interest in technology grew exponentially as the demand for 'data science' started to rise. I explored several data science degrees offered in the country, which primarily focused on business analytics with only a limited emphasis on practical AI development or coding. As a result, I was not inclined to pursue a degree in that particular field."
       ],
     },
     {
       id: "SDASDAASDADXASXZ4",
       date: "Sep 2019",
       description: [
-        "After looking at multiple universities to pursue my higher studies, I finally enrolled in the CS degree at IIT. If I were to do a degree in CS, I would be able to learn about both practical development and other aspects while also getting the necessary business exposure required."
+        "After thoroughly researching various universities for my higher studies, I made the decision to enroll in the computer science degree program at IIT. Opting for a CS degree would allow me to acquire comprehensive knowledge and skills in practical development, as well as gain exposure to other crucial aspects of the field. Additionally, I recognized the importance of obtaining the necessary business acumen alongside technical proficiency in order to thrive in the ever-evolving tech industry."
       ],
     },
     {
       id: "SDASDAASDADXASXZ5",
       date: "Oct 2019",
       description: [
-        "I started learning basic HTML, CSS and JS. Programming was a new experience since I had yet to write a single line of code except for HTML. And it was hard, really hard. The concept of 'logic' and logical thinking was all very foreign. For instance, I know how to solve a mathematical expression through math, but how would I write code to do that? It is 100% okay to struggle! But it is your determination never to give up that will pull you :)"
+        "I embarked on my journey of learning basic HTML, CSS, and JS, venturing into the world of programming. As someone with minimal coding experience, apart from HTML, the process proved to be incredibly challenging. The idea of 'logic' and logical thinking felt unfamiliar. For instance, while I knew how to solve mathematical expressions using math, translating that into code seemed daunting. It is important to acknowledge that struggling is a natural part of the learning process - it is 100% okay! However, what truly matters is the unwavering determination to persist and never give up, as it is this resilience that ultimately leads to success."
       ],
     },
     {
       id: "SDASDAASDADXASXZ6",
       date: "Nov 2019",
       description: [
-        "Still struggling 😅 I was trying my best to continue and kept believing in myself. Kept pushing on with the idea that 'this is supposed to be hard; anything new is supposed to be hard.' I was kicking myself because the time I spent on the data science hunger and searching for degrees on it could have been much more productive had I spent it on exploring the world of CS more. I was naive in thinking that the worlds of DS and CS were different."
+        "Despite the ongoing struggles 😅, I persevered with a firm belief in myself. I reminded myself that embracing new challenges often comes with difficulty, and that was a normal part of the learning process. I couldn't help but reflect on the time I had previously spent pursuing the allure of data science and searching for related degrees. I realized that redirecting that energy towards exploring the world of computer science would have been a more fruitful endeavor. It became evident that my earlier perception of data science and computer science as separate domains was naive, as I discovered their interconnectedness and the valuable skills I could gain from embracing both disciplines."
       ],
     },
     {
       id: "SDASDAASDADXASXZ7",
       date: "Dec 2019",
       description: [
-        "I started learning Python due to a module called 'Programming Principles I', which taught the basics of programming (conditions, loops, variables, logical operators). The assignment was simple: it was just about checking an input student's marks against criteria and determining whether that student passed or failed. That, at that time, was so difficult for me, and I only managed to get a 65%. After a successful school pathway, this score was hurtful, and I thought about giving up."
+        "I embarked on my journey of learning Python through a module called 'Programming Principles I.' This module covered the fundamentals of programming, including concepts like conditions, loops, variables, and logical operators. One of the assignments involved checking a student's marks against certain criteria and determining their pass or fail status. Surprisingly, this seemingly simple task proved to be quite challenging for me at that time, and I only managed to achieve a score of 65%. As someone who had previously experienced academic success, this score was disheartening, and I contemplated the idea of giving up."
       ],
     },
     {
       id: "SDASDAASDADXASXZ8",
       date: "Jan 2020",
       description: [
-        "New Year hit. I told myself that I must do something about this. I obviously cannot continue to struggle with everything. The second semester had just started introducing a module called 'Programming Principles II' where the barebones of OOP were taught in Java. Within the two weeks or so holiday after semester one had ended, I learned Java a bit to prepare for the next semester. And that made a world of difference."
+        "As the New Year began, I made a firm decision to take action and address my struggles. It was clear that I couldn't continue to struggle with every aspect of programming. Fortunately, the second semester brought a new module called 'Programming Principles II,' which focused on the foundations of Object-Oriented Programming (OOP) using Java. During the two-week holiday break between semesters, I dedicated myself to learning Java in preparation for the upcoming semester. This decision proved to be transformative and made a world of a difference."
       ],
     },
     {
       id: "SDASDAASDADXASXZ9",
       date: "Feb 2020",
       description: [
-        "The basic concepts introduced in Programming Principles I were reinforced now, and I have finally started feeling less stressed and more comfortable with this whole new programming concept. Java was easy to grasp, and that was when I started feeling some progression. I thank this module for transforming me from a complete noob to someone who finally understood logic and logical thinking."
+        "The fundamental concepts that were introduced in Programming Principles I were now being reinforced in Programming Principles II, and I could feel myself becoming less stressed and more at ease with this new world of programming. Java, with its clear syntax and intuitive structure, proved to be accessible and easy to grasp. It was during this time that I began to experience a sense of progression and growth. I am truly grateful for this module, as it played a pivotal role in transforming me from a complete beginner to someone who finally understood the principles of logic and logical thinking."
       ],
     },
     {
       id: "SDASDAASDADXASXZ10",
       date: "Mar 2020",
       description: [
-        "The assignment of 'Programming Principles II' was revealed and was miles ahead in complexity compared to the one of 'Programming Principles I'. The goal was to create a train ticket booking application to facilitate the booking of tickets for the Denuwara Manike expressway. These were the initial steps towards creating something to use in the real world and 'an actual project'. It wasn't easy initially; however, as time went on, I grew much more while working on this application and got a mark that was one of the highest in the batch, 94%."
+        "The assignment for 'Programming Principles II' introduced a significant leap in complexity compared to the previous module. We were tasked with creating a train ticket booking application to streamline the reservation process for the Denuwara Manike expressway. This project marked my first foray into developing something that could have real-world applications—an actual project.",
+        "Initially, I faced challenges and encountered difficulties in navigating the intricacies of the task. However, as I invested more time and effort into the project, I witnessed substantial personal growth and development. The experience of working on this application proved to be transformative, allowing me to acquire new skills and knowledge in the process. In the end, I was gratified to receive a mark that ranked among the highest in our batch, reflecting the progress I had made."
       ],
     },
     {
       id: "SDASDAASDADXASXZ11",
       date: "Apr 2020",
       description: [
-        "It was time to focus on a simple web application built using HTML, CSS and JS. This was much easier since I now had experience in building a 'Real Project'. In my opinion, once you have had that experience, anything else you face in your tech journey will not be so challenging since you know the different approaches to solving problems. Also, since your brain is now trained in such a way that the logical thinking required is what comes into your mind.",
+        "The next phase of my learning journey involved creating a simple web application using HTML, CSS, and JS. This task felt more manageable and approachable, primarily because I had gained prior experience in building a 'real project.' In my view, once you have undergone the process of developing an actual application, the subsequent challenges you encounter in your tech journey become more surmountable. You become acquainted with various problem-solving approaches and strategies, which instills a sense of confidence and adaptability.",
+        "Furthermore, having trained my brain to think logically through these experiences, I found that the skills and mindset required for effective problem-solving came more naturally. Logical thinking became ingrained in my thought process, allowing me to tackle new technical challenges with greater ease and efficiency. This solid foundation in problem-solving principles became a valuable asset in my ongoing journey in the field of technology."
       ],
     },
     {
       id: "SDASDAASDADXASXZ12",
       date: "May - Sep 2020",
       description: [
-        "This was the time when everything changed. Once my first year had ended around June, we got an extended summer vacation till September. It was time to learn and explore new things, and although many people used this holiday as a 'holiday', I didn't. This time was when I was on my laptop from morning till night, learning course after course. Coursera has given us university students free access to most of their courses since the pandemic started and people started losing their jobs. Free courses taught by prestigious university professors that were once at least $50? Count me in! I went from learning HTML again to learning the MERN & MEAN stack and ML, DL and DS; this was a game-changer.",
-        "It is also why my LinkedIn is flooded with over 100+ certificates. Side note, the courses taught by AndrewNG are mind-blowing; if you know, you know :)."
+        "The transition occurred when my first year came to an end around June, and we were granted an extended summer vacation that lasted until September. It marked a pivotal moment as I embraced the opportunity to learn and explore new horizons. While many people saw this break as a chance to relax and unwind, I approached it with unwavering determination. From morning till night, I immersed myself in my laptop, embarking on a relentless pursuit of knowledge.",
+        "During this time, I discovered that Coursera was offering free access to a multitude of courses for university students in response to the pandemic's impact on employment. The prospect of learning from esteemed professors at prestigious universities, courses that were once priced at least $50, was simply too good to pass up. I seized the opportunity and delved into a wide array of subjects, ranging from revisiting HTML to exploring the MERN and MEAN stacks, as well as diving into the realms of machine learning, deep learning, and data science. This newfound access to high-quality, comprehensive courses became a game-changer for me.",
+        "The extended summer vacation became an intensive period of self-directed learning and growth. It allowed me to expand my skills, deepen my understanding of various technologies, and broaden my knowledge across multiple domains. It was a transformative time that laid the foundation for my ongoing journey in the world of technology.",
+        "As a testament to my dedication, my LinkedIn profile now proudly displays over 100+ certificates, showcasing the breadth and depth of my learning journey. Notably, the courses taught by Andrew Ng have been particularly mind-blowing, leaving a lasting impact on my understanding and skills development. If you know, you know :)"
       ],
     },
     {
       id: "SDASDAASDADXASXZ13",
       date: "Sep 2020",
       description: [
-        "It was time to return to college for the second year, and with my new arsenal of skills, I was ready as I'd ever been. The second year of uni was much easier than my first. I stand by what I just said. Although, the assignments were so much more challenging. I was ready, and I enjoyed doing them. It was a great time and so much fun. It was then I knew all my hard work had paid off. OOP was introduced, and the assignment was about building a premier league simulation (you can find this in my projects section :)). Alongside OOP, we got a Software Development Group Project (SDGP); this was another story."
+        "As I embarked on my second year of college, armed with my newly acquired skills, I felt more prepared than ever before. Surprisingly, the second year turned out to be much easier overall (I stand by what I just said), despite the assignments being more challenging. I not only welcomed the challenges but also found great enjoyment in tackling them. It was during this time that I realized all my hard work and dedication had truly paid off.",
+        "One notable subject introduced in the second year was Object-Oriented Programming (OOP). The assignment for this module involved building a premier league simulation (available in the Projects section). In addition to OOP, we were also assigned a Software Development Group Project (SDGP), which is total another story.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ14",
       date: "Oct 2020",
       description: [
-        "SDGP was a group project that required the usage of machine learning to solve a real-world problem. It is a capstone project for those who are more familiar with that. As a team, we had to pitch an idea to a group of lecturers in a viva, and only if you got the green light to continue with the idea could you, or else you had to come up with another idea.",
-        "It was idea pitching time; my team and I just learned that the idea had to be ML-heavy. Therefore we pitched something different and got turned down 😂 This upset my teammates a lot since they are all intelligent people. Having gone through hardship, I had to motivate them and carry the team to come up with a good idea, and we did. Boy, it took our whole lives within the next couple of months to produce a project of such a feat in such a short period while focusing on other modules."
+        "SDGP was a group project that required the usage of machine learning to solve a real-world problem. It is a capstone project for those who are more familiar with that. As a team, we were tasked with pitching an idea to a panel of lecturers during a viva session. Only if our idea received their approval could we proceed with its development; otherwise, we would need to come up with an alternative proposal.",
+        "It was idea pitching time; my team and I just learned that the idea had to be ML-heavy. Therefore we pitched something different and got turned down 😂 This upset my teammates a lot since they are all intelligent people. Having gone through hardship, I had to motivate them and carry the team to come up with a good idea, and we did. Boy, it took our whole lives within the next couple of months to produce a project of such a feat within a relatively short timeframe, all while balancing our other academic modules."
       ],
     },
     {
       id: "SDASDAASDADXASXZ15",
       date: "Nov - Dec 2020",
       description: [
-        "These months were mainly about hackathons. I took part in Coderally, an algorithm-based inter-country competition; hosted by IIT on HackerRank. Now having the logical thinking capability required, I did it well and emerged 2nd in Sri Lanka.",
-        "We (the SDGP team) participated in 'Datathon', a data science-based hackathon; hosted by SLIIT and emerged 2nd place in the qualifiers, where the finals were held beginning next year.",
-        "Back then, hackathons were something I always took part in. Although I don't in much anymore, stuff like that gives you the confidence required in the long run.",
-        "Around this time, I got a project for a final year BIS (Business Information Systems) student (FYP - Final Year Project) around machine learning. I specifically was reached out by them just because of the number of ML-related certifications on my LinkedIn profile 😅"
+        "These months were mainly about hackathons. One notable event I took part in was Coderally, an algorithm-based inter-country competition hosted by IIT on HackerRank. Equipped with the logical thinking capabilities I had developed, I performed well and achieved the 2nd position in Sri Lanka. It was a rewarding experience that showcased my growth and proficiency in problem-solving and algorithmic skills.",
+        "As a team, we also participated in 'Datathon,' a data science-based hackathon hosted by SLIIT. We showcased our skills and knowledge in data science and emerged in 2nd place during the qualifiers. This achievement earned us a spot in the finals, which were scheduled to take place at the beginning of the following year",
+        "Back then, I used to participate in hackathons regularly, and they played a significant role in building my confidence. Although I don't participate in them as frequently now, the experience and challenges of hackathons have provided me with the confidence I need to tackle complex projects and overcome obstacles in the long run.",
+        "Around this time, I got a project for a final year BIS (Business Information Systems) student's FYP (Final Year Project) focused on machine learning. It was interesting to note that I was approached for this project specifically because of the numerous ML-related certifications listed on my LinkedIn profile 😅"
       ],
     },
     {
       id: "SDASDAASDADXASXZ16",
       date: "Jan 2021",
       description: [
-        "New year once again! It was time to submit the OOP project I had worked on for the past few months. I was nervous about submitting it, even though it worked. This was built with Angular and Java, and we all know that the node_modules in Angular are larger than Sri Lanka's population. Therefore you'd submit the project without the node_modules folder since you have the package.json. But you also know the errors that turn up when you run 'npm i' or 'yarn' with the node-gyp stuff 🙂 What if, during the demo, you get such an error? 🙂 Luckily, that was precisely what didn't happen 😝 The viva went well, and I managed to score 90% for that alongside an exam of 97%, again an overall considered one of the highest. Coursera, thank you so much. You changed everything.",
-        "Surprise surprise! Coursera invited me as one of the ten people worldwide to create community-guided projects. It was mainly due to the sheer amount of work I had done during the Summer vacation the prior year.",
+        "The new year had arrived, and it was time to submit the OOP project that I had dedicated months of work to. Despite the project functioning properly, I couldn't help but feel nervous about the submission. This project was developed using Angular and Java, and as we all know, the node_modules folder in Angular can be quite massive, perhaps even larger than Sri Lanka's population 😄. Hence, during the submission, we typically excluded the node_modules folder, relying on the package.json file instead. However, we also know about the potential errors that could arise when running 'npm i' or 'yarn' due to node-gyp dependencies 🙃. What if such an error occurred during the project demonstration? 😅 Forunately, that was exactly what didn't happen 😝 The viva went well, and I managed to score quite high, again an overall considered one of the highest. Coursera, thank you so much. You changed everything.",
+        "Surprise surprise! I received a special invitation from Coursera to be among the ten individuals worldwide chosen to create community-guided projects. This incredible opportunity came about as a result of the extensive work I had undertaken during the previous year's summer vacation. It was truly humbling to be recognized by Coursera for my dedication and commitment to learning.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ17",
       date: "Feb 2021",
       description: [
-        "Datathon finals time! It was time to head to SLIIT to go against ten other teams coming from various universities around the country. Hosted by Zone24x7, the goal of the finals was to estimate the number of vaccines required for a specific set of people. It was challenging since there weren't any proper datasets and much data cleaning had to be done to prepare a suitable dataset. Alongside a time series forecast and a rather dirty dataset, we managed a merit pass. Going against teams from UOM, UOC etc., was a challenge to remember and a challenge that would make me love data science. Once again, thank you, Coursera for teaching so much about ML, specifically, thank you, AndrewNG.",
-        "It was also at this time that I got an internship interview with 99X. The interview was challenging, albeit well organized, and in some way, I managed to get through it.",
-        "I was to start my internship in May however, my university didn't allow it since they required me to complete my 2nd year. 99X was so understanding 💖 and they'd let me join after my 2nd year, on July.",
+        "The eagerly anticipated Datathon finals had arrived, and our team made our way to SLIIT to compete against ten other teams from universities across the country. Hosted by Zone24x7, the finals presented us with the task of estimating the number of vaccines required for a specific group of people. The challenge was intensified by the absence of proper datasets, requiring us to invest significant effort in data cleaning to prepare a suitable dataset. Despite the obstacles, we achieved a merit pass, an accomplishment that held even greater significance considering the formidable competition from teams representing esteemed institutions such as UOM and UOC. This experience further solidified my passion for data science and left me grateful for the knowledge I gained from Coursera, particularly the invaluable teachings of AndrewNG.",
+        "It was also at this time that I got an internship interview with 99x. The interview was challenging, albeit well organized, and in some way, I managed to get through it.",
+        "I was to start my internship in May; however, my university didn't allow it since they required me to complete my 2nd year. 99x was so understanding 💖 and they'd let me join after my 2nd year, on July.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ18",
       date: "Mar - May 2021",
       description: [
-        "It was time to start working on the SDGP, also, not to forget, the FYP. These two projects are the two largest projects that I have worked on and might remain for some time in the future. ONCO & E-Ophthalmologist. Both medical-related AI mobile applications built around Flutter (Both of these projects can be found in the Projects section). It was a challenge, a huge milestone to be able to do two projects of such magnitude within a couple of months.",
-        "ONCO had 6 ML models; it is about the diagnosis and prognosis of cancers of the thoracic region (Breast, Skin and Lung).",
+        "The time had come to embark on the SDGP and FYP, two monumental projects that would likely stand as significant achievements for the foreseeable future. These projects, ONCO and E-Ophthalmologist, were mobile applications leveraging AI technology in the medical field. Built using Flutter, these applications aimed to make a positive impact in healthcare (both projects can be found in the Projects section). Undertaking two projects of this scale within a few months was undeniably challenging, but it also marked a remarkable milestone in my journey.",
+        "ONCO consists of 6 ML models; it is about the diagnosis and prognosis of breast lung and skin cancers.",
         "E-Ophthalmologist was about the diagnosis and management of Diabetic Retinopathy (a condition that affects the eyes caused by diabetes).",
-        "It was such hard work to complete them however, it was also then that I knew that I am capable of handling high-pressure situations. It was not only SDGP and the FYP - 3 more modules were required.",
+        "Completing both the SDGP and the FYP projects was undoubtedly a challenging endeavor. However, it was during this time that I discovered my ability to thrive under high-pressure situations. In addition to these significant projects, I also had to manage three other modules simultaneously. The workload was intense, and there were times when it felt overwhelming. Nevertheless, I persevered and learned valuable lessons in time management, teamwork, and problem-solving. This experience strengthened my confidence in my capabilities and prepared me to handle complex tasks with resilience and determination.",
       ],
     },
     {
       id: "SDASDAASDADXASXZ19",
       date: "Jan - Jul 2021",
       description: [
-        "Worked on some freelance work with Niftron and Inforwaves alongside uni as well. It became clear now that I work well and don't suffer under pressure, which I feel is an important skill in this world, be it any job at all. I'm not going to repeat all the boring details of what I did during my time working there since everything is mentioned in the Experience section 😝",
+        "In addition to my university commitments, I also took on freelance projects with companies like Niftron and Inforwaves. Balancing these responsibilities allowed me to further develop my skills and work under pressure. I discovered that I thrive in fast-paced environments, and this adaptability has proven to be a valuable asset in any professional setting. Everything about this is mentioned in the Experience section 😝",
       ],
     },
     {
       id: "SDASDAASDADXASXZ20",
-      date: "Jan 2021 - PRESENT",
+      date: "Jan 2021 - Jul 2021",
       description: [
-        "Started falling in love with learning and exploring new things; whenever I learn something, I push code related to what I had just learnt into GitHub. The 100+ repos speak for themselves. My profile is almost always updated, and I'll continue doing so. Topics ranging from the literal basics to more advanced concepts are all present.",
-        "The constant desire to learn new things keeps my contributions graph almost totally green, and I don't plan on stopping this anytime soon 🤩",
+        "I developed a deep passion for continuous learning and exploration, which is reflected in my GitHub profile. Whenever I acquire new knowledge or skills, I make it a point to translate that knowledge into practical code and share it on GitHub. As you can see from my 100+ repositories, my profile is a testament to my commitment to staying updated and embracing a wide range of topics. From fundamental concepts to more advanced subjects, I am constantly expanding my expertise and actively contributing to the coding community.",
         "Alongside, I also worked on two other FYPs of two other students."
       ],
     },
@@ -1279,31 +1362,72 @@ const journey = {
       id: "SDASDAASDADXASXZ21",
       date: "Jul 2021 - Jul 2022",
       description: [
-        "I joined 99X as a Trainee Software Engineer and got the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful.",
-        "All my other side-hustles are mentioned in the experience section 😝",
+        "I joined 99x as a Trainee Software Engineer and got the privilege to work on 2 different projects. Thank you, Team Maturify & BLISS I'll always be forever grateful 💖",
+        "All my other side-hustles are mentioned in the Experience section 😝",
       ],
     },
     {
       id: "SDASDAASDADXASXZ22",
-      date: "Jan 2022 - PRESENT",
+      date: "Jan 2022 - July 2022 (Oh Well...)",
       description: [
-        "I finally decided to start blogging after pushing it months and months... SO that's an improvement for this year lol. (You can find my socials in the Home Page banner 😝).",
+        "I finally decided to start blogging after pushing it for months and months... SO that's an improvement for this year lol. (You can find my socials in the Home Page banner 😝).",
         "Additionally, I started answering some questions on StackOverFlow helping fellow developers in the community."
       ],
     },
     {
       id: "SDASDAASDADXASXZ23",
-      date: "Jul 2022 - PRESENT",
+      date: "Jul 2022",
       description: [
-        "I was chosen to be a part of the Community Exchange alpha project of GitHub to teach the community using a personal project 💖 This was a great chance of using ONCO (cuz it's literally doing nothing now than sitting in my GitHub profile with everything else).",
-        "I'm currently working as a full stack developer at Niftron once again 😛, since my final year will not begin till September. So, might as well do some other work till then instead of doing nothing at all 😝"
+        "I had the incredible opportunity to participate in the Community Exchange alpha project of GitHub, where I was selected to teach the community through a personal project. It was a valuable experience to utilize ONCO, which was previously idle on my GitHub profile, and use it as a means to educate and engage with the community. This initiative allowed me to share my knowledge, contribute to the learning of others, and foster a collaborative environment within the developer community 💖",
+        "Rejoined Niftron as a full stack developer once again 😛, since my final year will not begin till September. So, might as well do some other work till then instead of doing nothing at all 😝",
+        "If you noticed the date of the previous description, you may have realized that I have stopped blogging 🥹 Well, the reason being, I honestly lost interest and do not see the point of it 😅. Sorry to all hell-bent bloggers out there haha."
       ],
     },
     {
       id: "SDASDAASDADXASXZ24",
-      date: "Sep 2022 - PRESENT",
+      date: "Jul 2022 - May 2023",
       description: [
-        "Final year of uni has begun and its going well so far... I will update this once it is completed... Which also means, once my degree is over! :)",
+        "While completing my final year at university, I continued to work part-time. However, in May 2023, I transitioned to a full-time role in the industry as a fresh graduate."
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ25",
+      date: "Sep 2022",
+      description: [
+        "Final year of uni begun and it went quite well to say the least 😌 No regrets whatsoever. Thanks to my strong performance in my second year, achieving a first-class degree was almost guaranteed. However, I didn't want to simply coast through my final year. Instead, I made a conscious choice to give my best effort in all of my modules, ensuring that I will have no regrets when I look back on this experience.",
+        "To emphasize the reason for my strong commitment to working hard in my final year, it boils down to my personal philosophy. I have always strived to give my best in everything I do, so that I never have to look back and think, 'I could have done better.' It's not about the grade itself that brings me satisfaction. Even if I were to score above 90, I may still not feel content if I believe I could have achieved more. True satisfaction, for me, lies in knowing that I have given my absolute best and being genuinely happy with my performance.",
+        "I could find contentment with a score of 85, while feeling dissatisfied with a 90, solely based on whether I believe I could have pushed myself further. However, that being said, there is no excuse for getting below 85 whatsoever, cuz I believe how much ever the difficulty, somehow, someway it is possible to get above that for anything, as long as I try my best."
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ26",
+      date: "Oct 2022",
+      description: [
+        "The time has finally come for me to work on my own thesis (not someone else's, to clarify 😂). Admittedly, I should have started my research much earlier, but as they say, better late than never. I discovered an intriguing avenue that captured my interest, and I was excited to dive into it as the focus of my research. Little did I know that this decision would take me on a thrilling rollercoaster ride of ups and downs.",
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ27",
+      date: "Nov 2022 - April 2023",
+      description: [
+        "Now, the spotlight is on my FYP. While there were other modules to attend to, they did not demand special attention as they all went smoothly as expected 😌",
+        "The FYP proved to be an entirely different beast altogether. Initially, my plan was to simply implement an algorithm that had been proposed in a research paper and assess its suitability for time series forecasting. However, for some unknown reason, I made the daring choice to take it a step further. I decided to infuse my own unique twist into the design, ultimately creating my very own algorithm to replace the original one.",
+        "Undoubtedly, the decision to enhance the initial algorithm proved to be one of the best choices I have made. The outcome was immensely rewarding, as I successfully published my work in a research paper (which is proudly listed under the Achievements section). This accomplishment brings me great joy and, more importantly, assured me that during the viva, there will be no room for arguments (there can be no arguments brought forward against citations 😝)."
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ27",
+      date: "May 2023 - PRESENT",
+      description: [
+        "In early May, I had my final viva, and I'm pleased to say it went exceptionally well! I performed strongly and even exceeded my own expectations with the final score. Truth be told, this remarkable outcome was largely influenced by the pivotal decision I made to create my own algorithm. Without that choice, I am certain my performance and score would not have reached the same level.",
+        "Alright, let's shift our focus back to the present timeline 😝. I recently rejoined 99x as a full-time software engineer, and I must say, I have been thoroughly enjoying this journey ever since!"
+      ],
+    },
+    {
+      id: "SDASDAASDADXASXZ26",
+      date: "June 2023",
+      description: [
+        "I am thrilled to share that my degree has been confirmed, and it's a resounding success - a first-class honor as expected! 💖 But that's not all! In a surprising turn of events, I also discovered that I achieved the highest mark for the FYP. It's truly amazing and incredibly rewarding to receive such recognition for the hard work and dedication I put into it."
       ],
     },
   ],

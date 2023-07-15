@@ -115,7 +115,6 @@
   font-size: 1rem;
   text-align: left;
   font-family: "Google Sans Regular";
-  font-style: italic;
 }
 .timeline__event--type2:after {
   background: #555ac0;
