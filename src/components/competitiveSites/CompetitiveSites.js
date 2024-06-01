@@ -1,6 +1,5 @@
 import React from "react";
 import "./CompetitiveSites.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 class CompetitiveSites extends React.Component {
   render() {

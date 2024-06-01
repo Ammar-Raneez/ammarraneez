@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Ammar's Portfolio",
   description:
-    "I'm a Colombo based full stack developer, passionate about blockchain, cloud computing & iOS development, and a current final year CS student.",
+    "I'm a Colombo based full stack developer, passionate about cloud computing and full stack development, and a CS graduate.",
   og: {
     title: "Ammar Raneez's Development Portfolio",
     type: "website",
@@ -38,7 +38,7 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ammar-raneez-246114196/",
+    link: "https://www.linkedin.com/in/ammar-raneez",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
@@ -831,19 +831,19 @@ const experience = {
           logo_path: "99x_logo.png",
           duration: "May 2023 - PRESENT",
           description: [
+            "Playing the role of a Data Scientist and and Machine Learning Engineer, developing several intelligent models to suite business requirements.",
             "Playing the role of a full-stack developer working on several aspects across the application.",
-            "Leading the company's AWS Focus Group.",
-            "Write technical blogs on Medium for 'Engineering at 99x'."
+            "Leading the company's AWS Focus Group."
           ],
           bgColor: "#FF6962",
           bgColorFaded: "#FF696233",
           headColor: "#331C7A",
-        },,
+        },
         {
           title: "Technical Writer",
           company: "Medium | DEV | Tealfeed",
           logo_path: ["dev_logo.png", "tealfeed_logo.png", "medium_logo.png"],
-          duration: "Feb 2022 - PRESENT",
+          duration: "Feb 2022 - May 2023",
           description: [
             "Technical writer on Medium on various publications (Engineering at 99X, Enlear Academy).",
             "Technical blogger on DEV - a place where coders share, stay up-to-date and grow their careers.",
@@ -1427,7 +1427,7 @@ const journey = {
       id: "SDASDAASDADXASXZ26",
       date: "June 2023",
       description: [
-        "I am thrilled to share that my degree has been confirmed, and it's a resounding success - a first-class honor as expected! 💖 But that's not all! In a surprising turn of events, I also discovered that I achieved the highest mark for the FYP. It's truly amazing and incredibly rewarding to receive such recognition for the hard work and dedication I put into it."
+        "I am thrilled to share that my degree has been confirmed, and it's a resounding success - a first-class honor as expected! 💖 But that's not all! In a surprising turn of events, I also discovered that I achieved the highest mark for the FYP and came out as the valedictorian of my graduating class. It's truly amazing and incredibly rewarding to receive such recognition for the hard work and dedication I put into it."
       ],
     },
   ],
