@@ -1,0 +1,148 @@
+/* Journey: the full long-form timeline, grouped into the film's chapters and their eras. */
+
+.journey__intro {
+  display: grid;
+  gap: 24px;
+  padding-bottom: 72px;
+}
+
+.journey__intro .mega {
+  font-size: clamp(64px, 11vw, 190px);
+}
+
+.journey__intro .quote {
+  max-width: 46ch;
+}
+
+.journey__index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+
+.journey__index a {
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .journey__index a:hover {
+    color: var(--accent);
+  }
+}
+
+.chapter {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
+  column-gap: 24px;
+  padding: 80px var(--gutter) 96px;
+}
+
+.chapter__head {
+  position: sticky;
+  top: calc(var(--hud) + 32px);
+  align-self: start;
+  display: grid;
+  gap: 14px;
+}
+
+.chapter__title {
+  font-size: clamp(40px, 5vw, 84px);
+}
+
+.chapter__entries {
+  border-top: 2px solid var(--fg);
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 8px 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry__date {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  font: 500 13px/1.4 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.entry__num {
+  color: var(--muted);
+}
+
+.entry__text {
+  display: grid;
+  gap: 14px;
+  max-width: 64ch;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.entry__more {
+  display: block;
+}
+
+.entry__more summary {
+  width: max-content;
+  cursor: pointer;
+  list-style: none;
+  font: 500 12px/1.4 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid currentColor;
+  padding: 6px 0 2px;
+}
+
+.entry__more summary::-webkit-details-marker {
+  display: none;
+}
+
+.entry__more summary::after {
+  content: " +";
+}
+
+.entry__more[open] summary::after {
+  content: " -";
+}
+
+/* details does not lay out as a grid everywhere, so spacing is set with margins. */
+.entry__more[open] summary {
+  margin-bottom: 14px;
+}
+
+.entry__more p + p {
+  margin-top: 14px;
+}
+
+.journey__end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+}
+
+@media (max-width: 899px) {
+  .chapter {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 28px;
+    padding: 64px var(--gutter) 72px;
+  }
+  .chapter__head {
+    position: static;
+  }
+  .entry {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .entry__text {
+    font-size: 17px;
+  }
+}
