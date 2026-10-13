@@ -158,6 +158,11 @@
   margin-left: auto;
 }
 
+/* Uppercase would turn τ into a capital tau, which reads as "T". */
+.greek {
+  text-transform: none;
+}
+
 /* ---------- Call simulator ---------- */
 
 .pipe {

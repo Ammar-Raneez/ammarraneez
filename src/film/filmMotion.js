@@ -27,6 +27,25 @@ const desktop = {
       .timeline({ scrollTrigger: { trigger: stage, start: "top top", end: () => `+=${dist()}`, pin: true, scrub: 0.6, invalidateOnRefresh: true } })
       .to(reel, { x: () => -dist(), ease: "none" });
   },
+  research: (s) => {
+    pin(s.querySelector("[data-pin]"), 160)
+      .from(s.querySelector(".lts"), { yPercent: 40, opacity: 0, duration: 0.3 })
+      .fromTo(s.querySelector(".chart .noisy"), { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, ease: "none", duration: 0.6 }, 0.1)
+      .fromTo(s.querySelector(".chart .smooth"), { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, ease: "none", duration: 0.6 }, 0.45)
+      .from(s.querySelectorAll(".facts > div"), { opacity: 0, y: 24, stagger: 0.08, duration: 0.25 }, 0.9)
+      .to({}, { duration: 0.2 });
+  },
+  graduation: (s) => {
+    const avg = s.querySelector("[data-avg]");
+    const target = parseFloat(avg.firstChild.nodeValue);
+    const counter = { v: 0 };
+    pin(s.querySelector("[data-pin]"), 160)
+      .to(counter, { v: target, ease: "power2.out", duration: 0.8, onUpdate: () => (avg.firstChild.nodeValue = counter.v.toFixed(1)) })
+      .fromTo(s.querySelector(".medal__ring"), { rotation: -90, svgOrigin: "200 200" }, { rotation: 90, svgOrigin: "200 200", ease: "none", duration: 1.2 }, 0)
+      .from(s.querySelector(".medal"), { scale: 0.6, opacity: 0, duration: 0.4 }, 0)
+      .from(s.querySelectorAll(".honours li"), { opacity: 0, x: -30, stagger: 0.1, duration: 0.25 }, 0.5);
+    return () => (avg.firstChild.nodeValue = target.toFixed(1));
+  },
 };
 
 // Entrances for every screen size with motion allowed.
@@ -54,6 +73,16 @@ export function useFilmMotion(rootRef) {
     mm.add(MOTION, () => {
       const cleanups = run(anySize);
       return () => cleanups.forEach((fn) => fn());
+    });
+    // /#credits (the /contact redirect) and /#research etc. land correctly once pins exist.
+    const jump = () => {
+      // getElementById, not querySelector: "#99x" is not a valid CSS selector.
+      const target = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (target) scrollTo(0, target.getBoundingClientRect().top + scrollY);
+    };
+    document.fonts?.ready.then(() => {
+      ScrollTrigger.refresh();
+      jump();
     });
     return () => mm.revert();
   }, [rootRef]);
