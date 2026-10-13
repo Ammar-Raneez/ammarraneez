@@ -1,0 +1,4 @@
+2026-10-13 pending-review surface=hero axis=structure choice="serif statement + live forecast figure (Fig. 1)" reason="single-pass build; user has not reviewed yet"
+2026-10-13 pending-review surface=palette axis=color choice="paper/ink/vermilion with dark toggle" reason="user banned purple/blue; not yet confirmed"
+2026-10-13 rejected surface=palette+type axis=color choice="paper #F1EEE7 + Bodoni Moda + vermilion" reason="user: reads like Claude/Anthropic brand design"
+2026-10-13 kept surface=palette+type axis=color choice="dark-first near-black + acid lime #C6F432 + Geist display" reason="user picked option 1 of 3 (dark live-data / swiss print / cool paper grotesk)"

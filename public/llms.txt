@@ -1,0 +1,19 @@
+# Ammar Raneez
+
+> Head of Engineering at SoftSora (Colombo, Sri Lanka), working on real-time AI systems, cloud architecture and MLOps. Visiting lecturer in Applied AI at the Informatics Institute of Technology. Author of the Liquid Time-stochasticity (LTS) network, published at IEEE CCWC 2023.
+
+## Pages
+
+- [Home](https://ammarraneez.vercel.app/): work history, research, projects, stack, awards and certifications, contact.
+- [Journey](https://ammarraneez.vercel.app/journey): a long-form timeline from 2019 to now.
+- [Notes](https://ammarraneez.vercel.app/notes): essays on engineering, AI and work.
+- [Case study: real-time AI contact center](https://ammarraneez.vercel.app/work/ai-contact-center)
+- [Case study: machine learning in production at 99x](https://ammarraneez.vercel.app/work/ml-in-production)
+- [Case study: the LTS network](https://ammarraneez.vercel.app/work/lts-network)
+
+## Links
+
+- [LinkedIn](https://www.linkedin.com/in/ammar-raneez)
+- [GitHub](https://github.com/Ammar-Raneez)
+- [LTS paper on IEEE Xplore](https://ieeexplore.ieee.org/document/10099071)
+- Email: ammarraneez@gmail.com

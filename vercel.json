@@ -1,0 +1,13 @@
+{
+  "buildCommand": "yarn build",
+  "outputDirectory": "build",
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/experience", "destination": "/#work", "permanent": true },
+    { "source": "/education", "destination": "/#recognition", "permanent": true },
+    { "source": "/projects", "destination": "/#projects", "permanent": true },
+    { "source": "/contact", "destination": "/#contact", "permanent": true }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
