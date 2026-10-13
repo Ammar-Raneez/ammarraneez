@@ -1,0 +1,257 @@
+/* The film: every scene paints its own era, so the cut between scenes is a hard film cut. */
+
+.scene {
+  position: relative;
+  overflow: hidden;
+}
+
+.scene__after {
+  padding: 0 var(--gutter) 112px;
+}
+
+/* ---------- 0. Title card ---------- */
+
+.title-card .stage {
+  align-content: end;
+  padding-bottom: 56px;
+}
+
+.title-card__name {
+  margin-top: 20px;
+  font-size: clamp(72px, 17vw, 300px);
+}
+
+.title-card__dot {
+  color: var(--red);
+}
+
+.slate {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+
+.chapters {
+  position: absolute;
+  top: calc(var(--hud) + 44px);
+  right: var(--gutter);
+  text-align: right;
+}
+
+.chapters ol {
+  display: grid;
+  gap: 10px;
+}
+
+.chapters a {
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 160ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .chapters a:hover {
+    color: var(--accent);
+  }
+}
+
+.scroll-cue {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.scroll-cue::after {
+  content: "";
+  width: 1px;
+  height: 28px;
+  background: var(--red);
+  transform-origin: top;
+  animation: cue 1.8s ease-in-out infinite;
+}
+
+@keyframes cue {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+/* ---------- 1. Cold open ---------- */
+
+.cold__intro {
+  display: grid;
+  gap: 20px;
+}
+
+.cold__mark {
+  display: grid;
+  gap: 28px;
+  justify-items: start;
+  margin-top: 64px;
+}
+
+.score {
+  position: relative;
+  display: inline-block;
+  color: var(--accent);
+}
+
+.score__num {
+  display: block;
+  font: 800 clamp(150px, 32vw, 520px) / 0.8 var(--display);
+  font-variation-settings: "wdth" 62;
+  letter-spacing: -0.02em;
+}
+
+.pen {
+  position: absolute;
+  inset: -9% -8% -4% -6%;
+  width: 114%;
+  height: 113%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.pen path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+/* In the desktop film, the score sits on top of the intro and takes its place. */
+.is-film .cold__mark {
+  position: absolute;
+  inset: calc(var(--hud) + 20px) var(--gutter) 40px;
+  margin: 0;
+  align-content: center;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: clamp(32px, 5vw, 80px);
+  align-items: end;
+}
+
+.is-film .cold__mark .kicker {
+  grid-column: 1 / -1;
+}
+
+.is-film .cold__mark .quote {
+  padding-bottom: 2vw;
+}
+
+/* ---------- 2. Learning fast: a sideways reel of cards ---------- */
+
+.reel {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  align-items: stretch;
+}
+
+.reel__intro {
+  flex: 0 0 min(560px, 42vw);
+  display: grid;
+  align-content: center;
+  gap: 24px;
+}
+
+/* Equal heights keep every card's top rule on one line as the reel slides past. */
+.card {
+  flex: 0 0 340px;
+  align-self: center;
+  min-height: 380px;
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 2px solid var(--fg);
+}
+
+.card__date {
+  font: 500 12px/1.4 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.card__title {
+  font-variation-settings: "wdth" 70;
+  font-weight: 750;
+  font-size: 40px;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.card__num {
+  font: 800 112px/0.82 var(--display);
+  font-variation-settings: "wdth" 62;
+  color: var(--accent);
+}
+
+.card p:not([class]) {
+  max-width: 32ch;
+}
+
+.card .logos {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.card .logos img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.1);
+  mix-blend-mode: multiply;
+}
+
+/* ---------- Phones: no pins, scenes stack, the reel becomes a column ---------- */
+
+@media (max-width: 899px) {
+  .stage {
+    min-height: auto;
+    padding-top: calc(var(--hud) + 40px);
+    padding-bottom: 72px;
+  }
+  .title-card .stage {
+    min-height: 100svh;
+  }
+  .title-card__name {
+    font-size: 30vw;
+  }
+  .chapters {
+    display: none;
+  }
+  .cold__mark {
+    margin-top: 48px;
+  }
+  .reel {
+    flex-direction: column;
+  }
+  .reel__intro,
+  .card {
+    flex: none;
+  }
+  .card {
+    align-self: stretch;
+    min-height: 0;
+    padding-bottom: 8px;
+  }
+  .card__title {
+    font-size: 34px;
+  }
+  .card__num {
+    font-size: 96px;
+  }
+}
