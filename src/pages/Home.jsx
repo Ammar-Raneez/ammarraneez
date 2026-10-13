@@ -6,6 +6,8 @@ import ColdOpen from "../film/scenes/ColdOpen.jsx";
 import LearningFast from "../film/scenes/LearningFast.jsx";
 import Research from "../film/scenes/Research.jsx";
 import Graduation from "../film/scenes/Graduation.jsx";
+import NinetyNineX from "../film/scenes/NinetyNineX.jsx";
+import ContactCenter from "../film/scenes/ContactCenter.jsx";
 import "../film/film.css";
 
 const byId = Object.fromEntries(scenes.map((s) => [s.id, s]));
@@ -20,6 +22,8 @@ export default function Home() {
       <LearningFast scene={byId["learning-fast"]} />
       <Research scene={byId.research} />
       <Graduation scene={byId.graduation} />
+      <NinetyNineX scene={byId["99x"]} />
+      <ContactCenter scene={byId["contact-center"]} />
     </div>
   );
 }

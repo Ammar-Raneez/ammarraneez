@@ -9,6 +9,12 @@
   padding: 0 var(--gutter) 112px;
 }
 
+/* Held scenes must fit one screen, so their padding tightens on desktop. */
+.is-film .stage[data-pin] {
+  padding-top: calc(var(--hud) + 24px);
+  padding-bottom: 32px;
+}
+
 /* ---------- 0. Title card ---------- */
 
 .title-card .stage {
@@ -109,7 +115,7 @@
 
 .score__num {
   display: block;
-  font: 800 clamp(150px, 32vw, 520px) / 0.8 var(--display);
+  font: 800 clamp(150px, min(32vw, 56vh), 520px) / 0.8 var(--display);
   font-variation-settings: "wdth" 62;
   letter-spacing: -0.02em;
 }
@@ -247,7 +253,7 @@
 /* ---------- 3. Research ---------- */
 
 .scene--research .stage {
-  gap: 28px;
+  gap: clamp(16px, 3vh, 28px);
 }
 
 .research__head {
@@ -259,7 +265,7 @@
 }
 
 .lts {
-  font: 800 clamp(120px, 24vw, 400px) / 0.78 var(--display);
+  font: 800 clamp(96px, min(24vw, 30vh), 400px) / 0.78 var(--display);
   font-variation-settings: "wdth" 62;
   letter-spacing: -0.02em;
   color: var(--accent);
@@ -271,7 +277,7 @@
 
 .chart {
   width: 100%;
-  height: clamp(160px, 26vh, 260px);
+  height: clamp(120px, 22vh, 240px);
   overflow: visible;
 }
 
@@ -331,7 +337,7 @@
 
 .avg {
   margin: 0.1em 0 0.06em;
-  font: 800 clamp(140px, 22vw, 380px) / 0.8 var(--display);
+  font: 800 clamp(120px, min(22vw, 34vh), 380px) / 0.8 var(--display);
   font-variation-settings: "wdth" 62;
   letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
@@ -412,6 +418,202 @@
   text-transform: uppercase;
 }
 
+/* ---------- 5. 99x ---------- */
+
+.scene--99x .stage {
+  gap: clamp(20px, 4vh, 40px);
+}
+
+.ninety__title {
+  margin-top: 16px;
+}
+
+.ladder {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 2px solid var(--fg);
+}
+
+.step {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 18px 20px 0 0;
+}
+
+.step + .step {
+  padding-left: 20px;
+  border-left: 1px solid var(--rule);
+}
+
+.step h3 {
+  font-variation-settings: "wdth" 70;
+  font-weight: 750;
+  font-size: clamp(26px, 3vw, 48px);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.step.is-top h3 {
+  color: var(--accent);
+}
+
+.prod {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: end;
+}
+
+.bar-wrap {
+  display: grid;
+  gap: 10px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 56px;
+  padding: 0 14px;
+  background: var(--fg);
+  color: var(--bg);
+  font: 500 14px var(--mono);
+  transform-origin: left;
+}
+
+.bar--after {
+  width: 5%;
+  min-width: 8px;
+  padding: 0;
+  background: var(--accent);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.stat {
+  display: grid;
+  gap: 8px;
+}
+
+.stat dt {
+  order: 2;
+}
+
+.stat dd {
+  order: 1;
+  font: 800 clamp(56px, min(7vw, 12vh), 120px) / 0.85 var(--display);
+  font-variation-settings: "wdth" 62;
+  color: var(--accent);
+}
+
+/* ---------- 6. The contact center ---------- */
+
+.scene--contact-center .stage {
+  gap: clamp(16px, 3vh, 32px);
+}
+
+.contact__title {
+  margin-top: 16px;
+  max-width: 24ch;
+  font-size: clamp(34px, min(4.6vw, 7.5vh), 76px);
+}
+
+.wave {
+  display: grid;
+  gap: 8px;
+}
+
+.wave canvas {
+  width: 100%;
+}
+
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.node {
+  display: grid;
+  gap: 8px;
+  padding: 18px 20px 18px 0;
+  border-top: 2px solid var(--accent);
+}
+
+.node + .node {
+  padding-left: 20px;
+}
+
+.node h3 {
+  font-variation-settings: "wdth" 62;
+  font-weight: 800;
+  font-size: clamp(40px, min(5.4vw, 9vh), 92px);
+  line-height: 0.82;
+  text-transform: uppercase;
+  transition: color 200ms ease;
+}
+
+.node .kicker {
+  color: var(--accent);
+}
+
+/* Lit by default (phones, reduced motion); the desktop film dims nodes until their cue. */
+.is-film .node:not(.is-live) {
+  border-top-color: var(--rule);
+}
+
+.is-film .node:not(.is-live) h3 {
+  color: #3a3a37;
+}
+
+.is-film .node:not(.is-live) .kicker {
+  color: var(--muted);
+}
+
+.night-foot .quote {
+  max-width: 44ch;
+}
+
+.scene__link {
+  margin-bottom: 40px;
+}
+
+.night-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px 40px;
+}
+
+.stamp {
+  display: inline-grid;
+  gap: 4px;
+  padding: 14px 18px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  transform: rotate(-4deg);
+  font: 800 clamp(28px, 3vw, 44px) / 0.9 var(--display);
+  font-variation-settings: "wdth" 62;
+  text-transform: uppercase;
+}
+
+.stamp small {
+  font: 500 11px/1.2 var(--mono);
+  letter-spacing: 0.1em;
+}
+
 /* ---------- Phones: no pins, scenes stack, the reel becomes a column ---------- */
 
 @media (max-width: 899px) {
@@ -464,5 +666,22 @@
     padding-left: 0;
     border-left: 0;
     border-top: 1px solid var(--rule);
+  }
+  .prod,
+  .ladder,
+  .pipeline {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .step + .step,
+  .node + .node {
+    margin-top: 16px;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .step + .step {
+    border-top: 1px solid var(--rule);
+  }
+  .stats {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }

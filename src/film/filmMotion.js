@@ -46,6 +46,25 @@ const desktop = {
       .from(s.querySelectorAll(".honours li"), { opacity: 0, x: -30, stagger: 0.1, duration: 0.25 }, 0.5);
     return () => (avg.firstChild.nodeValue = target.toFixed(1));
   },
+  "99x": (s) => {
+    pin(s.querySelector("[data-pin]"), 180)
+      .from(s.querySelectorAll(".step"), { opacity: 0.15, stagger: 0.25, duration: 0.25 })
+      .from(s.querySelector(".bar:not(.bar--after)"), { scaleX: 0.05, duration: 0.4 }, 0.8)
+      .from(s.querySelector(".bar--after"), { opacity: 0, duration: 0.2 }, 1.15)
+      .from(s.querySelectorAll(".stat"), { opacity: 0, y: 30, stagger: 0.1, duration: 0.3 }, 1.2)
+      .to({}, { duration: 0.2 });
+  },
+  "contact-center": (s) => {
+    const nodes = [...s.querySelectorAll(".node")];
+    const light = (i) => nodes.forEach((n, j) => n.classList.toggle("is-live", j <= i));
+    const tl = pin(s.querySelector("[data-pin]"), 180);
+    tl.call(() => light(-1), null, 0.01);
+    nodes.forEach((_, i) => tl.call(() => light(i), null, 0.15 + i * 0.3));
+    tl.from(s.querySelector(".night-foot .quote"), { opacity: 0, y: 30, duration: 0.3 }, 0.9)
+      .from(s.querySelector(".stamp"), { scale: 2.4, opacity: 0, rotation: -14, ease: "back.out(2)", duration: 0.3 }, 1.25)
+      .to({}, { duration: 0.2 });
+    return () => light(nodes.length - 1);
+  },
 };
 
 // Entrances for every screen size with motion allowed.
