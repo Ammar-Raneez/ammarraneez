@@ -8,6 +8,5 @@
     { "source": "/education", "destination": "/#recognition", "permanent": true },
     { "source": "/projects", "destination": "/#projects", "permanent": true },
     { "source": "/contact", "destination": "/#contact", "permanent": true }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  ]
 }

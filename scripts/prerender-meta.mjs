@@ -1,8 +1,8 @@
-// Post-build: give every route its own index.html with the right <title>, description,
+// Post-build: give every route its own HTML file with the right <title>, description,
 // canonical URL and Open Graph tags, and write sitemap.xml.
 // Link-preview crawlers (LinkedIn, Slack, WhatsApp) don't run JavaScript, so without this
-// every shared link would show the home page's card. Vercel serves these files before
-// falling back to the SPA rewrite.
+// every shared link would show the home page's card. Any other path gets 404.html, which
+// boots the same app (rendering its not-found page) with a real 404 status.
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { notes } from "../src/notes.js";
@@ -64,6 +64,8 @@ for (const route of routes) {
   mkdirSync(new URL(".", file), { recursive: true });
   writeFileSync(file, html);
 }
+
+writeFileSync(new URL("404.html", OUT), template.replace("<head>", '<head>\n    <meta name="robots" content="noindex" />'));
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
