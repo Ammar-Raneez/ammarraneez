@@ -1,4 +1,4 @@
-import Masthead from "./components/Masthead.jsx";
+import Hud from "./components/Hud.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import Journey from "./pages/Journey.jsx";
@@ -31,7 +31,7 @@ export default function App() {
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
-      <Masthead path={path} />
+      <Hud film={Page === Home} path={path} />
       <main id="main">
         <Page slug={slug} />
       </main>

@@ -1,0 +1,104 @@
+/* Top bar: a film slate on the home page, plain navigation elsewhere. It carries the era
+ * of the scene in view, so it recolours with every cut. */
+.hud {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 10;
+  height: var(--hud);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 0 var(--gutter);
+  font: 500 12px/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 300ms ease, background-color 300ms ease;
+}
+
+.hud__name {
+  justify-self: start;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hud__scene {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.hud__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+  animation: rec 1.6s steps(1) infinite;
+}
+
+[data-era="red"] .hud__dot {
+  background: #111111;
+}
+
+.hud__nav {
+  display: flex;
+  gap: 24px;
+}
+
+.hud__nav a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 160ms ease;
+}
+
+.hud__nav a[aria-current="page"] {
+  color: var(--fg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hud__nav a:hover {
+    color: var(--fg);
+  }
+}
+
+.hud__meta {
+  justify-self: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  height: 3px;
+  background: var(--red);
+  transform-origin: left;
+  transform: scaleX(0);
+  pointer-events: none;
+}
+
+@keyframes rec {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 899px) {
+  .hud {
+    grid-template-columns: auto 1fr;
+  }
+  .hud__scene,
+  .hud__nav {
+    justify-self: end;
+  }
+  .hud__title,
+  .hud__meta {
+    display: none;
+  }
+  .hud__nav {
+    gap: 14px;
+  }
+}
