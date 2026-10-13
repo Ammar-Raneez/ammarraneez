@@ -73,6 +73,22 @@ const anySize = {
     gsap.from(s.querySelectorAll(".line > span"), { yPercent: 110, duration: 1.1, ease: "expo.out", stagger: 0.08, delay: 0.1 });
     gsap.from(s.querySelectorAll(".slate, .scroll-cue"), { opacity: 0, y: 12, duration: 0.8, delay: 0.6, stagger: 0.1 });
   },
+  "plot-twist": (s) => {
+    gsap.from(s.querySelector(".twist"), { opacity: 0.1, y: 60, scrollTrigger: { trigger: s, start: "top 75%", end: "top 20%", scrub: 0.5 } });
+    // The red pen strikes the 65% as you read.
+    gsap.fromTo(
+      s.querySelector(".twist s"),
+      { textDecorationColor: "rgba(17, 17, 17, 0)" },
+      { textDecorationColor: "rgba(17, 17, 17, 1)", scrollTrigger: { trigger: s, start: "top 30%", end: "top 5%", scrub: true } },
+    );
+  },
+  now: (s) => {
+    gsap.fromTo(
+      s.querySelector("[data-shutter]"),
+      { clipPath: "inset(100% 0% 0% 0%)", scale: 1.1 },
+      { clipPath: "inset(0% 0% 0% 0%)", scale: 1, ease: "none", scrollTrigger: { trigger: s, start: "top 85%", end: "top 25%", scrub: 0.5 } },
+    );
+  },
 };
 
 export function useFilmMotion(rootRef) {
@@ -91,6 +107,15 @@ export function useFilmMotion(rootRef) {
     });
     mm.add(MOTION, () => {
       const cleanups = run(anySize);
+      const credits = root.querySelector("#credits");
+      if (credits) {
+        gsap.from(credits.querySelectorAll(".credits__list > div, .fin"), {
+          opacity: 0,
+          y: 40,
+          stagger: 0.12,
+          scrollTrigger: { trigger: credits, start: "top 80%", end: "center 60%", scrub: 0.5 },
+        });
+      }
       return () => cleanups.forEach((fn) => fn());
     });
     // /#credits (the /contact redirect) and /#research etc. land correctly once pins exist.

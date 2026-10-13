@@ -8,6 +8,9 @@ import Research from "../film/scenes/Research.jsx";
 import Graduation from "../film/scenes/Graduation.jsx";
 import NinetyNineX from "../film/scenes/NinetyNineX.jsx";
 import ContactCenter from "../film/scenes/ContactCenter.jsx";
+import PlotTwist from "../film/scenes/PlotTwist.jsx";
+import Now from "../film/scenes/Now.jsx";
+import Credits from "../film/Credits.jsx";
 import "../film/film.css";
 
 const byId = Object.fromEntries(scenes.map((s) => [s.id, s]));
@@ -24,6 +27,9 @@ export default function Home() {
       <Graduation scene={byId.graduation} />
       <NinetyNineX scene={byId["99x"]} />
       <ContactCenter scene={byId["contact-center"]} />
+      <PlotTwist scene={byId["plot-twist"]} />
+      <Now scene={byId.now} />
+      <Credits />
     </div>
   );
 }

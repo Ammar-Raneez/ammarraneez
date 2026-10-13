@@ -46,12 +46,13 @@ function useScene(enabled) {
   const [scene, setScene] = useState(null);
   const update = useRef(() => {
     const line = innerHeight * 0.4;
-    const scenes = document.querySelectorAll("section[data-scene]");
+    const scenes = [...document.querySelectorAll("section[data-scene]")];
+    // Past the last scene (the credits), the slate stays on the last scene, not back at the title.
     const el =
-      [...scenes].find((s) => {
+      scenes.find((s) => {
         const r = s.getBoundingClientRect();
         return r.top <= line && r.bottom > line;
-      }) ?? scenes[0];
+      }) ?? (scenes.length && scenes[scenes.length - 1].getBoundingClientRect().bottom <= line ? scenes.at(-1) : scenes[0]);
     if (!el) return;
     const next = { num: el.dataset.scene, title: el.dataset.title, year: el.dataset.year, era: el.dataset.era };
     setScene((prev) => (prev?.num === next.num ? prev : next));
