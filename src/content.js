@@ -45,6 +45,12 @@ export const work = [
     company: "SoftSora",
     period: "May 2025 - Present",
     caseStudy: "ai-contact-center",
+    metrics: [
+      { value: "<2s", label: "AI response and transcription latency" },
+      { value: "+30%", label: "Response accuracy" },
+      { value: "-50%", label: "Infrastructure provisioning time" },
+      { value: "~80%", label: "Less manual analysis, Figma to user stories" },
+    ],
     points: [
       "Lead Software Engineer from May 2025, Head of Engineering since Mar 2026.",
       "Built a production AI call center system with sub-2s latency and 30% better response accuracy, on AWS, Bedrock and real-time streaming pipelines.",
@@ -63,6 +69,12 @@ export const work = [
     logo: "99x_logo.png",
     period: "Jul 2024 - Jun 2025",
     caseStudy: "ml-in-production",
+    metrics: [
+      { value: "85%+", label: "IoU on microscopic image segmentation" },
+      { value: "<2h", label: "Data labeling, down from 40+ hours" },
+      { value: "+50%", label: "Carbon credit forecast accuracy" },
+      { value: "40%", label: "Faster frontends, at best" },
+    ],
     points: [
       "Led an AI image segmentation system reaching 85%+ IoU on complex microscopic imagery, with TensorFlow and custom CNN architectures.",
       "Built the full ML pipeline: FastAPI preprocessing, TensorFlow training, Docker, deployment to Azure, and MLflow for experiment tracking.",
@@ -76,8 +88,10 @@ export const work = [
   {
     role: "Visiting Lecturer",
     company: "Informatics Institute of Technology",
+    lane: "IIT",
     logo: "iit_logo.png",
     period: "Jul 2023 - Present",
+    metrics: [{ value: "500+", label: "Undergraduates taught" }],
     points: [
       "Lecture Applied AI for part-time students.",
       "Run tutorials on software development foundations, object-oriented programming and web design.",
@@ -89,6 +103,10 @@ export const work = [
     company: "99x",
     logo: "99x_logo.png",
     period: "May 2023 - Jun 2024",
+    metrics: [
+      { value: "+50%", label: "Time-series forecast accuracy" },
+      { value: "85%+", label: "Real-time object detection accuracy" },
+    ],
     points: [
       "Led a time-series forecasting system that improved prediction accuracy by over 50%.",
       "Automated data ingestion and preprocessing with Azure Data Factory ETL pipelines.",
@@ -113,6 +131,7 @@ export const work = [
   {
     role: "Freelance Developer",
     company: "Contract",
+    lane: "Freelance",
     logo: "freelance_logo.png",
     period: "Jan 2022 - May 2022",
     points: [
@@ -137,9 +156,12 @@ export const work = [
     company: "Niftron",
     logo: "niftron_logo.png",
     period: "Jan 2021 - Jul 2021",
+    metrics: [
+      { value: "<3s", label: "Render time" },
+      { value: "500+", label: "Users on the gift card platform" },
+    ],
     points: [
-      "Led frontend development for reliability and speed.",
-      "Built a blockchain gift card tokenization product.",
+      "Led frontend development of a blockchain gift card tokenization product, keeping rendering under 3s for 500+ users.",
       "Worked on the frontend of the Nextentry ticketing platform with React and Ant Design.",
       "Designed interfaces for the EXIP marketing platform with TypeScript and MongoDB.",
     ],

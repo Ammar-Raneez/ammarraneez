@@ -1076,6 +1076,68 @@ button {
   }
 }
 
+/* Role figures inside an open ledger row: the case-study fact strip, scaled down. */
+.facts--compact {
+  grid-column: 2;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-bottom: var(--space-6);
+  border-top-color: var(--border);
+}
+
+.facts--compact > div {
+  padding: var(--space-4) var(--space-4) var(--space-4) 0;
+}
+
+.facts--compact > div + div {
+  padding-left: var(--space-4);
+}
+
+.facts--compact dt {
+  order: 2;
+  font-size: 11px;
+}
+
+.facts--compact dd {
+  order: 1;
+  font-size: clamp(30px, 2.8vw, 44px);
+  color: var(--accent);
+}
+
+.ledger__tools {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+  margin: calc(var(--space-2) * -1) 0 var(--space-6);
+  font: 400 12px/1.4 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .facts--compact,
+  .ledger__tools {
+    grid-column: 1;
+  }
+  .facts--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .facts--compact > div + div {
+    border-top: 0;
+  }
+  .facts--compact > div:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .facts--compact > div:nth-child(even) {
+    padding-left: var(--space-4);
+    border-left: 1px solid var(--border);
+  }
+  .facts--compact > div:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
+  }
+}
+
 /* ---------- Statement ---------- */
 
 .statement {

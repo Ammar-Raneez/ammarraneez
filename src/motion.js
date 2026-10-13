@@ -6,6 +6,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Fonts change line heights, so re-measure every trigger once they're in.
 document.fonts?.ready.then(() => ScrollTrigger.refresh());
+// Opening a work row or a journey "Read more" changes the page height below it, which would
+// leave every later trigger (sticky year, journey line) measured against the old layout.
+document.addEventListener("transitionend", (e) => e.propertyName === "grid-template-rows" && ScrollTrigger.refresh());
+document.addEventListener("toggle", () => ScrollTrigger.refresh(), true);
 
 const MOTION = "(prefers-reduced-motion: no-preference)";
 const DESKTOP = "(min-width: 961px)";
@@ -150,7 +154,7 @@ function yearTrack(root) {
   });
   return () => {
     display.textContent = initial;
-    root.querySelectorAll("[data-year].is-current").forEach((row) => row.classList.remove("is-current"));
+    root.querySelectorAll(".is-current").forEach((el) => el.classList.remove("is-current"));
   };
 }
 
