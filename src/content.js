@@ -53,7 +53,8 @@ export const work = [
       "Architect the ML and cloud infrastructure (S3, Lambda, RDS, EC2, Cognito, EventBridge, Bedrock, App Runner, Amplify) as code, cutting provisioning time by 50% with zero-downtime deployments.",
       "Built low-latency audio and WebSocket pipelines with Redis caching and Zustand state, and high-throughput REST APIs with Express and Nest.",
       "Shipped analytics dashboards, live UI and admin tools with React, Tailwind CSS, Express and automated CI/CD, plus a rules-based credit scoring engine.",
-      "Own authentication and authorization, and created the full-stack MVP templates and mono-repo boilerplates (Next.js, Express) the team starts from.",
+      "Built an agentic tool that turns Figma designs into structured engineering user stories, cutting manual analysis effort by ~80%.",
+      "Own authentication and authorization, and set the full-stack architecture standards: NX mono-repo patterns plus the MVP templates and boilerplates (Next.js, Express) the team starts from, cutting developer onboarding time by ~50%.",
     ],
   },
   {
@@ -76,7 +77,7 @@ export const work = [
     role: "Visiting Lecturer",
     company: "Informatics Institute of Technology",
     logo: "iit_logo.png",
-    period: "Sep 2023 - Present",
+    period: "Jul 2023 - Present",
     points: [
       "Lecture Applied AI for part-time students.",
       "Run tutorials on software development foundations, object-oriented programming and web design.",
@@ -385,7 +386,7 @@ export const learningProfiles = [
 export const teaching = {
   role: "Visiting Lecturer",
   place: "Informatics Institute of Technology",
-  since: "Sep 2023",
+  since: "Jul 2023",
   subjects: ["Applied AI", "Software development foundations", "Object-oriented programming", "Web design"],
   points: [
     "Lecture Applied AI for part-time students.",

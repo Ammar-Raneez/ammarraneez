@@ -1,5 +1,5 @@
 // Long-form timeline. Entries up to June 2023 are from the original site (typo fixes only);
-// entries from Sep 2023 onwards were added in Oct 2026.
+// entries from Jul 2023 onwards were added in Oct 2026.
 export const journey = {
   title: "My Journey",
   subtitle: "A Walkthrough Of My Journey",
@@ -207,7 +207,7 @@ export const journey = {
       ],
     },
     {
-      date: "Sep 2023",
+      date: "Jul 2023",
       description: [
         "Plot twist: I went back to IIT, this time on the other side of the classroom 😅 I started as a visiting lecturer, teaching Applied AI to part-time students and running tutorials on software development foundations, object-oriented programming and web design.",
         "Remember the guy who scored 65% on his first Python assignment? He now marks assignments and sits on viva panels. Reviewing final-year theses has been the most humbling part. I know exactly how much those projects take out of you, so I try to give the kind of feedback I would have wanted back then.",
