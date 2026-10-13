@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ammar Raneez Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  /* Body: cool concrete bench. Screens: dark instrument glass with a stain-magenta trace. */
+  --bg: #e4e5e0;
+  --panel: #f3f4f0;
+  --ink: #111213;
+  --muted: #55585a;
+  --line: #c3c5bf;
+  --mag: #e0007a;       /* fills, marks */
+  --mag-ink: #b0005f;   /* magenta text on light */
+  --screen: #101112;
+  --screen-2: #1a1c1d;
+  --screen-line: #2c2f30;
+  --screen-text: #e9eae6;
+  --screen-muted: #9a9f9c;
+  --trace: #ff4dad;
+  --display: "Unbounded", system-ui, sans-serif;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --gutter: clamp(16px, 3vw, 40px);
+}
+* { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.55 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+.mono { font-family: var(--mono); }
+.tag {
+  font: 500 11px/1.2 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.tag b { color: var(--mag-ink); font-weight: 500; }
+
+/* ---------- Bench header ---------- */
+.bar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 24px;
+  padding: 12px var(--gutter);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.bar__mark { font: 700 15px/1 var(--display); letter-spacing: -0.02em; text-decoration: none; }
+.bar__mark span { color: var(--mag); }
+.bar nav { display: flex; gap: 20px; margin-left: auto; }
+.bar nav a { font: 500 12px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: var(--muted); }
+.bar nav a:hover { color: var(--ink); }
+.led { display: inline-flex; align-items: center; gap: 8px; font: 500 11px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.led::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--mag); box-shadow: 0 0 0 3px color-mix(in srgb, var(--mag) 22%, transparent); animation: blink 2.4s infinite; }
+@keyframes blink { 50% { opacity: 0.35; } }
+
+/* ---------- Hero ---------- */
+.hero { padding: clamp(40px, 7vw, 96px) var(--gutter) 64px; display: grid; gap: 40px; }
+.hero__top { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px; align-items: end; }
+.hero h1 {
+  font: 700 clamp(40px, 6.6vw, 104px)/0.95 var(--display);
+  letter-spacing: -0.045em;
+}
+.hero h1 em { font-style: normal; color: var(--mag); }
+.hero__intro { display: grid; gap: 18px; max-width: 46ch; }
+.hero__intro p { color: var(--muted); }
+.hero__intro strong { color: var(--ink); font-weight: 500; }
+
+/* ---------- Instrument shell ---------- */
+.instrument {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 1px 0 #fff inset, 0 18px 40px -28px rgb(0 0 0 / 0.45);
+}
+.instrument__head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 4px 6px 12px; }
+.instrument__head .tag:first-child { color: var(--ink); }
+.instrument__head .spacer { flex: 1; }
+.screen {
+  position: relative;
+  background: var(--screen);
+  border-radius: 8px;
+  overflow: hidden;
+  color: var(--screen-text);
+}
+.screen canvas { display: block; width: 100%; }
+.seg-grid canvas { height: auto; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 14px 6px 4px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  font: 500 12px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase;
+  transition: background-color 160ms, color 160ms, transform 120ms;
+}
+.btn:hover { background: var(--ink); color: var(--panel); }
+.btn:active { transform: translateY(1px); }
+.btn--hot { background: var(--mag); border-color: var(--mag); color: #fff; }
+.btn--hot:hover { background: var(--mag-ink); border-color: var(--mag-ink); color: #fff; }
+.btn:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--mag); outline-offset: 3px; }
+.knob { display: inline-flex; align-items: center; gap: 10px; font: 500 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.knob input { accent-color: var(--mag); width: 120px; }
+.note { padding: 10px 6px 2px; font: 400 12px/1.5 var(--mono); color: var(--muted); }
+
+/* Screen overlays */
+.readout {
+  position: absolute; top: 12px; left: 14px; right: 14px;
+  display: flex; flex-wrap: wrap; gap: 6px 22px;
+  font: 500 11px/1.3 var(--mono); letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--screen-muted);
+  pointer-events: none;
+}
+.readout b { color: var(--screen-text); font-weight: 500; }
+.readout .hot { color: var(--trace); }
+.readout__hint { margin-left: auto; }
+@media (max-width: 860px) { .readout__hint { display: none; } }
+
+/* ---------- Sections ---------- */
+.section { padding: 96px var(--gutter); border-top: 1px solid var(--line); }
+.section__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 32px; margin-bottom: 40px; align-items: end; }
+.section__head h2 { font: 700 clamp(30px, 4.2vw, 60px)/1 var(--display); letter-spacing: -0.04em; }
+.section__head p { color: var(--muted); max-width: 56ch; }
+.section__head .tag { display: block; margin-bottom: 18px; }
+
+/* ---------- Call the AI ---------- */
+.pipe { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; padding: 18px; }
+.stage { position: relative; padding: 14px 16px 16px; border: 1px solid var(--screen-line); background: var(--screen-2); }
+.stage + .stage { border-left: 0; }
+.stage h3 { font: 700 15px/1.2 var(--display); letter-spacing: -0.01em; margin-bottom: 10px; }
+.stage ul { list-style: none; padding: 0; display: grid; gap: 4px; font: 400 12px/1.4 var(--mono); color: var(--screen-muted); }
+.stage .ms { position: absolute; top: 14px; right: 16px; font: 500 12px/1 var(--mono); color: var(--screen-muted); font-variant-numeric: tabular-nums; }
+.stage.is-on { background: color-mix(in srgb, var(--trace) 14%, var(--screen-2)); border-color: var(--trace); }
+.stage.is-on .ms, .stage.is-done .ms { color: var(--trace); }
+.stage.is-on + .stage { border-left: 0; }
+.stage .fill { position: absolute; left: 0; bottom: 0; height: 3px; width: 0; background: var(--trace); }
+.convo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; padding: 0 18px 18px; }
+.bubble { min-height: 92px; padding: 14px 16px; border: 1px dashed var(--screen-line); border-radius: 6px; font: 400 15px/1.45 var(--sans); }
+.bubble .tag { display: block; margin-bottom: 8px; color: var(--screen-muted); }
+.bubble--ai { border-style: solid; }
+.bubble--ai.is-in { border-color: var(--trace); }
+.caret { display: inline-block; width: 8px; height: 1em; vertical-align: -2px; background: var(--trace); animation: blink 1s steps(1) infinite; }
+.budget { padding: 0 18px 18px; }
+.budget__track { position: relative; height: 26px; border: 1px solid var(--screen-line); border-radius: 4px; overflow: hidden; display: flex; }
+.budget__seg { height: 100%; width: 0; transition: width 120ms linear; }
+.budget__seg:nth-child(1) { background: color-mix(in srgb, var(--trace) 45%, var(--screen)); }
+.budget__seg:nth-child(2) { background: color-mix(in srgb, var(--trace) 75%, var(--screen)); }
+.budget__seg:nth-child(3) { background: var(--trace); }
+.budget__limit { position: absolute; top: -1px; bottom: -1px; right: 0; width: 2px; background: var(--screen-text); }
+.budget__legend { display: flex; justify-content: space-between; margin-top: 8px; font: 500 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--screen-muted); }
+.budget__legend b { color: var(--screen-text); font-weight: 500; }
+.seg-switch { display: inline-flex; border: 1px solid var(--ink); border-radius: 999px; overflow: hidden; }
+.seg-switch button { border: 0; background: none; padding: 9px 14px; font: 500 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+.seg-switch button[aria-pressed="true"] { background: var(--ink); color: var(--panel); }
+
+/* ---------- Segmenter ---------- */
+.seg-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(220px, 0.62fr); gap: 14px; align-items: start; }
+.seg-panel { display: grid; gap: 18px; justify-items: start; padding: 4px 6px; }
+.seg-panel .knob { width: 100%; justify-content: space-between; }
+.seg-panel .knob input { width: 60%; }
+.legend { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.legend li { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 2px; }
+.seg-grid figure { display: grid; gap: 8px; }
+.seg-grid figcaption { font: 500 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.iou { display: grid; gap: 10px; width: 100%; }
+.iou__value { font: 700 clamp(40px, 5vw, 64px)/1 var(--display); letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.iou__value.is-pass { color: var(--mag); }
+.iou__meter { height: 10px; border-radius: 99px; background: var(--line); position: relative; overflow: hidden; }
+.iou__meter span { position: absolute; inset: 0 auto 0 0; background: var(--ink); transition: width 200ms; }
+.iou__meter i { position: absolute; top: -4px; bottom: -4px; left: 85%; width: 2px; background: var(--mag); }
+
+/* ---------- Compact info ---------- */
+.who { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 40px; align-items: start; }
+.who img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); filter: grayscale(0.15) contrast(1.02); }
+.who__copy { display: grid; gap: 20px; }
+.who__title { font: 700 clamp(30px, 4.2vw, 60px)/1 var(--display); letter-spacing: -0.04em; }
+.who__copy p { font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; max-width: 48ch; }
+.specs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+.specs div { padding: 16px 16px 16px 0; display: grid; gap: 6px; }
+.specs div + div { padding-left: 16px; border-left: 1px solid var(--line); }
+.specs dd { font: 700 clamp(22px, 2.4vw, 32px)/1 var(--display); letter-spacing: -0.03em; }
+.log { list-style: none; padding: 0; border-top: 1px solid var(--ink); }
+.log li { display: grid; grid-template-columns: 170px minmax(0, 1fr) minmax(0, 0.8fr) 120px; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.log .when { font: 400 12px/1.4 var(--mono); color: var(--muted); }
+.log .role { font: 500 18px/1.3 var(--sans); }
+.log .org { color: var(--muted); }
+.log .stat { font: 500 13px/1 var(--mono); color: var(--mag-ink); text-align: right; }
+.notes { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.notes a { display: grid; gap: 14px; height: 100%; padding: 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; text-decoration: none; transition: border-color 160ms, transform 160ms; }
+.notes a:hover { border-color: var(--ink); transform: translateY(-2px); }
+.notes h3 { font: 500 19px/1.3 var(--sans); }
+.notes p { color: var(--muted); font-size: 14px; }
+.contact { display: grid; gap: 28px; }
+.contact__mail { font: 700 clamp(26px, 5.4vw, 80px)/1 var(--display); letter-spacing: -0.045em; text-decoration: none; overflow-wrap: anywhere; }
+.contact__mail:hover { color: var(--mag); }
+.contact__links { display: flex; flex-wrap: wrap; gap: 10px; }
+footer { padding: 24px var(--gutter); border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 860px) {
+  .bar nav { display: none; }
+  .led { margin-left: auto; }
+  .hero__top, .section__head, .who { grid-template-columns: minmax(0, 1fr); }
+  .who img { max-width: 260px; }
+  .pipe { grid-template-columns: minmax(0, 1fr); }
+  .stage + .stage { border-left: 1px solid var(--screen-line); border-top: 0; }
+  .convo, .seg-grid { grid-template-columns: minmax(0, 1fr); }
+  .seg-panel .knob input { width: 64%; }
+  .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .specs div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .specs div:nth-child(n + 3) { border-top: 1px solid var(--line); }
+  .log li { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
+  .log .when { grid-column: 1 / -1; }
+  .log .org { grid-column: 1; }
+  .log .stat { grid-row: 2; grid-column: 2; }
+  .notes { grid-template-columns: minmax(0, 1fr); }
+  .section { padding: 64px var(--gutter); }
+  .knob input { width: 96px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .led::before, .caret { animation: none; }
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="bar__mark" href="#top">AR<span>/</span>LAB</a>
+  <nav aria-label="Sections">
+    <a href="#forecaster">01 Forecaster</a>
+    <a href="#call">02 Call the AI</a>
+    <a href="#segment">03 Segmenter</a>
+    <a href="#who">Who</a>
+    <a href="#notes">Notes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <span class="led">Colombo <span id="clock">--:--</span></span>
+</header>
+
+<main id="top">
+  <!-- ======================= HERO: FORECASTER ======================= -->
+  <section class="hero" id="forecaster" aria-labelledby="hero-title">
+    <div class="hero__top">
+      <h1 id="hero-title">Don't read my work. <em>Play</em> with it.</h1>
+      <div class="hero__intro">
+        <p class="tag">Ammar Raneez <b>/</b> Head of Engineering, SoftSora <b>/</b> Visiting lecturer, IIT</p>
+        <p><strong>I build real-time AI systems</strong>, from the model to the stack around it. Everything on this bench is a small, simulated version of something I've built or published. Poke it.</p>
+      </div>
+    </div>
+
+    <div class="instrument">
+      <div class="instrument__head">
+        <span class="tag">01 / Forecaster</span>
+        <span class="tag">After my LTS network, IEEE CCWC 2023</span>
+        <span class="spacer"></span>
+        <span class="tag"><b>Illustration</b>, not the published model</span>
+      </div>
+      <div class="screen">
+        <canvas id="fc" height="360" aria-label="A noisy time series with a forecast band. Use the buttons below to disturb it." role="img"></canvas>
+        <div class="readout" aria-live="polite">
+          <span>Volatility <b id="fc-sig">0.00</b></span>
+          <span>Time constant τ <b id="fc-tau" class="hot">0.0</b></span>
+          <span>Band 80% <b id="fc-band">±0.0</b></span>
+          <span>Status <b id="fc-status">steady</b></span>
+          <span class="readout__hint">Click the screen to shock it</span>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn btn--hot" id="fc-shock" type="button">Inject shock</button>
+        <button class="btn" id="fc-calm" type="button">Calm it down</button>
+        <label class="knob">Noise <input id="fc-noise" type="range" min="0" max="100" value="35" /></label>
+      </div>
+      <p class="note">The idea in LTS: when the data turns volatile, the network's time constant shrinks so it adapts faster, then relaxes as things settle. Watch τ drop on a shock and the band widen, then both recover.</p>
+    </div>
+  </section>
+
+  <!-- ======================= CALL THE AI ======================= -->
+  <section class="section" id="call" aria-labelledby="call-title">
+    <div class="section__head">
+      <div>
+        <span class="tag">02 / Real-time AI contact center, SoftSora</span>
+        <h2 id="call-title">Call the AI. It has under two seconds.</h2>
+      </div>
+      <p>The production system I lead streams the caller's audio in, understands it and answers while they're still on the line, with sub-2s latency. This bench runs a toy version of that path. Swapping fuzzy matching for semantic similarity on Bedrock embeddings raised response relevance by 30%+; flip the switch to see why.</p>
+    </div>
+
+    <div class="instrument">
+      <div class="instrument__head">
+        <span class="tag">Pipeline</span>
+        <span class="spacer"></span>
+        <span class="tag"><b>Simulated</b> timings and sample utterances</span>
+      </div>
+      <div class="screen">
+        <div class="pipe">
+          <div class="stage" data-stage="0"><span class="ms">0 ms</span><h3>Ingest</h3><ul><li>Kinesis Video Streams</li><li>Lambda</li><li>AWS Transcribe</li></ul><span class="fill"></span></div>
+          <div class="stage" data-stage="1"><span class="ms">0 ms</span><h3>Understand</h3><ul><li>Bedrock embeddings</li><li>Semantic similarity</li><li>Amazon Bedrock</li></ul><span class="fill"></span></div>
+          <div class="stage" data-stage="2"><span class="ms">0 ms</span><h3>Deliver</h3><ul><li>WebSocket pipeline</li><li>Redis cache</li><li>Live UI</li></ul><span class="fill"></span></div>
+        </div>
+        <div class="convo">
+          <div class="bubble"><span class="tag">Caller</span><span id="said">Press "Place a call" to start.</span></div>
+          <div class="bubble bubble--ai" id="ai-bubble"><span class="tag" id="ai-tag">Agent</span><span id="answer">Waiting for audio.</span></div>
+        </div>
+        <div class="budget">
+          <div class="budget__track"><span class="budget__seg"></span><span class="budget__seg"></span><span class="budget__seg"></span><span class="budget__limit"></span></div>
+          <div class="budget__legend"><span>Latency budget</span><span><b id="total">0</b> / 2000 ms</span></div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn btn--hot" id="call-btn" type="button">Place a call</button>
+        <div class="seg-switch" role="group" aria-label="Matching method">
+          <button type="button" data-match="fuzzy" aria-pressed="false">Fuzzy match</button>
+          <button type="button" data-match="semantic" aria-pressed="true">Semantic</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SEGMENTER ======================= -->
+  <section class="section" id="segment" aria-labelledby="seg-title">
+    <div class="section__head">
+      <div>
+        <span class="tag">03 / Microscopy segmentation, 99x</span>
+        <h2 id="seg-title">Find the grains. Beat 85% IoU.</h2>
+      </div>
+      <p>At 99x I led a segmentation system for microscopic imagery that reached 85%+ IoU with custom CNNs, and an OpenCV pre-labeling workflow that cut manual labeling from 40+ hours to under 2. Here you're the model: pick a threshold, add pre-labeling smoothing, and chase the score.</p>
+    </div>
+    <div class="instrument">
+      <div class="instrument__head">
+        <span class="tag">Segmenter</span>
+        <span class="spacer"></span>
+        <span class="tag"><b>Synthetic</b> sample, thresholding instead of a CNN</span>
+      </div>
+      <div class="seg-grid">
+        <figure><div class="screen"><canvas id="seg-in" width="320" height="220" role="img" aria-label="Noisy synthetic micrograph"></canvas></div><figcaption>Input, noisy sample</figcaption></figure>
+        <figure><div class="screen"><canvas id="seg-out" width="320" height="220" role="img" aria-label="Predicted mask compared with the ground truth"></canvas></div><figcaption>Your mask vs ground truth</figcaption></figure>
+        <div class="seg-panel">
+          <div class="iou">
+            <span class="tag">IoU</span>
+            <span class="iou__value" id="iou" aria-live="polite">0%</span>
+            <span class="iou__meter" aria-hidden="true"><span id="iou-bar"></span><i></i></span>
+            <span class="tag">Pink tick: the 85% line</span>
+          </div>
+          <label class="knob">Threshold <input id="seg-t" type="range" min="20" max="80" value="30" /></label>
+          <label class="knob">Smoothing <input id="seg-s" type="range" min="0" max="4" value="0" /></label>
+          <button class="btn" id="seg-new" type="button">New sample</button>
+          <ul class="legend">
+            <li><i style="background:#ff4dad"></i>Hit</li>
+            <li><i style="background:#82285a"></i>False grain</li>
+            <li><i style="background:#464a4c"></i>Missed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= WHO ======================= -->
+  <section class="section" id="who" aria-labelledby="who-title">
+    <div class="who">
+      <img src="assets/portrait.jpg" alt="Portrait of Ammar Raneez" width="880" height="880" loading="lazy" />
+      <div class="who__copy">
+        <span class="tag">Who's at the bench</span>
+        <h2 id="who-title" class="who__title">Ammar, Amu to most people.</h2>
+        <p>Head of Engineering at SoftSora and a visiting lecturer in applied AI at IIT. Before that, four years at 99x across machine learning, full-stack product and AWS. My LTS network for volatile time series was published at IEEE CCWC 2023.</p>
+        <dl class="specs">
+          <div><dt class="tag">Degree average</dt><dd>89.3%</dd></div>
+          <div><dt class="tag">Final-year project</dt><dd>Best</dd></div>
+          <div><dt class="tag">Published</dt><dd>IEEE</dd></div>
+          <div><dt class="tag">Certified</dt><dd>AWS SAA</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= WORK LOG ======================= -->
+  <section class="section" aria-labelledby="log-title">
+    <div class="section__head">
+      <div><span class="tag">Run log</span><h2 id="log-title">Where it was built.</h2></div>
+      <p>Freelance builds to head of engineering, since Oct 2020.</p>
+    </div>
+    <ol class="log">
+      <li><span class="when">May 2025 - Present</span><span class="role">Head of Engineering</span><span class="org">SoftSora</span><span class="stat">&lt;2s latency</span></li>
+      <li><span class="when">Jul 2024 - Jun 2025</span><span class="role">Senior Software Engineer</span><span class="org">99x</span><span class="stat">85%+ IoU</span></li>
+      <li><span class="when">Jul 2023 - Present</span><span class="role">Visiting Lecturer</span><span class="org">IIT</span><span class="stat">500+ students</span></li>
+      <li><span class="when">May 2023 - Jun 2024</span><span class="role">Software Engineer</span><span class="org">99x</span><span class="stat">+50% accuracy</span></li>
+      <li><span class="when">Jul 2022 - Apr 2023</span><span class="role">Full-stack Developer</span><span class="org">Niftron</span><span class="stat"></span></li>
+      <li><span class="when">Jul 2021 - Jul 2022</span><span class="role">Trainee Software Engineer</span><span class="org">99x</span><span class="stat"></span></li>
+      <li><span class="when">Oct 2020 - Jul 2021</span><span class="role">Full-stack Developer</span><span class="org">Inforwaves, Niftron, The Radiant</span><span class="stat">&lt;3s render</span></li>
+    </ol>
+  </section>
+
+  <!-- ======================= NOTES ======================= -->
+  <section class="section" id="notes" aria-labelledby="notes-title">
+    <div class="section__head">
+      <div><span class="tag">Notes</span><h2 id="notes-title">Things I keep telling engineers.</h2></div>
+      <p>Short essays first published on LinkedIn.</p>
+    </div>
+    <ul class="notes">
+      <li><a href="#"><span class="tag">10 Jun 2026</span><h3>“I don’t have time” is one of the most accepted lies in tech.</h3><p>Most people who say they lack time actually lack priority.</p></a></li>
+      <li><a href="#"><span class="tag">19 Feb 2026</span><h3>Logical thinking is in decline.</h3><p>LLMs are an incredible co-pilot. But you still need to know how to fly the plane.</p></a></li>
+      <li><a href="#"><span class="tag">15 Jan 2026</span><h3>I didn’t leave corporate because it was bad. I left because I outgrew it.</h3><p>Why I chose a startup after the corporate world.</p></a></li>
+    </ul>
+  </section>
+
+  <!-- ======================= CONTACT ======================= -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <span class="tag" id="contact-title">Got something volatile to model?</span>
+    <a class="contact__mail" href="mailto:ammarraneez@gmail.com">ammarraneez@gmail.com</a>
+    <div class="contact__links">
+      <a class="btn btn--hot" href="https://www.linkedin.com/in/ammar-raneez">Follow on LinkedIn</a>
+      <a class="btn" href="https://github.com/Ammar-Raneez">GitHub</a>
+      <a class="btn" href="https://ieeexplore.ieee.org/document/10099071">The LTS paper</a>
+    </div>
+  </section>
+</main>
+<footer><span class="tag">Concept 1 / Playable work, prototype</span><span class="tag">Colombo, Sri Lanka</span></footer>
+
+<script>
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
+// Colombo clock
+const clock = document.getElementById("clock");
+const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Colombo", hour: "2-digit", minute: "2-digit" });
+const tick = () => (clock.textContent = fmt.format(new Date()));
+tick(); setInterval(tick, 10000);
+
+// Sizes a canvas to its CSS width at device pixel ratio; returns a 2D context in CSS pixels.
+function fit(canvas, height) {
+  const dpr = Math.min(2, devicePixelRatio || 1);
+  const w = canvas.clientWidth;
+  canvas.width = Math.round(w * dpr);
+  canvas.height = Math.round(height * dpr);
+  canvas.style.height = height + "px";
+  const ctx = canvas.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  return { ctx, w, h: height };
+}
+
+/* ========================= 01 FORECASTER =========================
+   Toy "liquid" forecaster: an exponentially weighted level and volatility whose time constant
+   tau shrinks when the last error is large (adapt fast) and relaxes back when calm. */
+(() => {
+  const canvas = document.getElementById("fc");
+  const PAST = 160, AHEAD = 36;
+  const noiseInput = document.getElementById("fc-noise");
+  let series = [], level = 0, vol = 0.6, tau = 8, shockLeft = 0, calm = false, view;
+  let rand = gaussian();
+
+  function gaussian() {
+    return () => { let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  }
+  function nextValue() {
+    const prev = series.length ? series[series.length - 1] : 0;
+    const base = (Number(noiseInput.value) / 100) * 1.6 + 0.15;
+    const sigma = (calm ? 0.12 : base) * (shockLeft > 0 ? 3.2 : 1);
+    if (shockLeft > 0) shockLeft--;
+    const drift = shockLeft > 14 ? (Math.random() < 0.5 ? -1 : 1) * 0.0 : 0;
+    return prev * 0.985 + drift + sigma * rand();
+  }
+  function learn(x) {
+    const err = x - level;
+    // Large surprise shrinks tau (fast adaptation); calm lets it relax toward 12.
+    const surprise = Math.min(4, Math.abs(err) / (vol + 1e-6));
+    tau = Math.max(1.5, Math.min(12, tau + (12 - tau) * 0.06 - surprise * 1.2 + 0.4));
+    const a = 1 / tau;
+    level += a * err;
+    vol = Math.sqrt((1 - a) * vol * vol + a * err * err);
+  }
+  function push() { const x = nextValue(); series.push(x); learn(x); if (series.length > PAST) series.shift(); }
+  for (let i = 0; i < PAST; i++) push();
+
+  function resize() { view = fit(canvas, innerWidth < 860 ? 280 : 360); draw(); }
+  function draw() {
+    const { ctx, w, h } = view;
+    ctx.clearRect(0, 0, w, h);
+    const padT = 54, padB = 22;
+    const n = PAST + AHEAD;
+    const x = (i) => (i / (n - 1)) * w;
+    const band = (k) => 1.28 * vol * k ** 0.4; // 80% band, widening sub-linearly
+    const lo = Math.min(...series, level - band(AHEAD)), hi = Math.max(...series, level + band(AHEAD));
+    const span = Math.max(2, hi - lo) * 1.15, mid = (hi + lo) / 2;
+    const y = (v) => padT + (h - padT - padB) * (0.5 - (v - mid) / span);
+
+    // grid
+    ctx.strokeStyle = css("--screen-line"); ctx.lineWidth = 1;
+    for (let g = 0; g <= 4; g++) { const gy = padT + ((h - padT - padB) * g) / 4; ctx.beginPath(); ctx.moveTo(0, gy + 0.5); ctx.lineTo(w, gy + 0.5); ctx.stroke(); }
+    const nowX = x(PAST - 1);
+    ctx.setLineDash([3, 4]); ctx.beginPath(); ctx.moveTo(nowX + 0.5, padT - 10); ctx.lineTo(nowX + 0.5, h - padB + 6); ctx.stroke(); ctx.setLineDash([]);
+
+    // forecast band
+    const trace = css("--trace");
+    ctx.beginPath();
+    for (let k = 0; k <= AHEAD; k++) ctx.lineTo(x(PAST - 1 + k), y(level + band(k + 0.0001)));
+    for (let k = AHEAD; k >= 0; k--) ctx.lineTo(x(PAST - 1 + k), y(level - band(k + 0.0001)));
+    ctx.closePath(); ctx.fillStyle = trace + "2e"; ctx.fill();
+    ctx.strokeStyle = trace; ctx.setLineDash([6, 5]); ctx.beginPath(); ctx.moveTo(nowX, y(level)); ctx.lineTo(x(n - 1), y(level)); ctx.stroke(); ctx.setLineDash([]);
+
+    // series
+    ctx.strokeStyle = css("--screen-text"); ctx.lineWidth = 1.6; ctx.lineJoin = "round"; ctx.beginPath();
+    series.forEach((v, i) => (i ? ctx.lineTo(x(i), y(v)) : ctx.moveTo(x(i), y(v))));
+    ctx.stroke();
+    // now dot
+    ctx.fillStyle = trace; ctx.beginPath(); ctx.arc(nowX, y(series[series.length - 1]), 4, 0, Math.PI * 2); ctx.fill();
+
+    ctx.font = "500 11px IBM Plex Mono, monospace"; ctx.fillStyle = css("--screen-muted");
+    ctx.fillText("PAST", 8, h - 7);
+    ctx.textAlign = "right"; ctx.fillText("NOW", nowX - 6, h - 7);
+    if (w - nowX > 80) ctx.fillText("FORECAST", w - 8, h - 7);
+    ctx.textAlign = "left";
+
+    document.getElementById("fc-sig").textContent = vol.toFixed(2);
+    document.getElementById("fc-tau").textContent = tau.toFixed(1);
+    document.getElementById("fc-band").textContent = "±" + band(AHEAD).toFixed(1);
+    document.getElementById("fc-status").textContent = shockLeft > 0 ? "shock" : tau < 6 ? "adapting" : "steady";
+  }
+  const shock = () => { shockLeft = 22; calm = false; };
+  document.getElementById("fc-shock").onclick = shock;
+  canvas.addEventListener("click", shock);
+  document.getElementById("fc-calm").onclick = () => { calm = true; shockLeft = 0; };
+  noiseInput.oninput = () => { calm = false; };
+  addEventListener("resize", resize);
+  resize();
+  if (!REDUCED) setInterval(() => { push(); draw(); }, 90);
+  else { canvas.addEventListener("click", () => { for (let i = 0; i < 24; i++) push(); draw(); }); document.getElementById("fc-shock").addEventListener("click", () => { for (let i = 0; i < 24; i++) push(); draw(); }); }
+})();
+
+/* ========================= 02 CALL THE AI =========================
+   Toy pipeline: stream words in (Ingest), match against a tiny FAQ (Understand), stream the
+   answer out (Deliver). Timings are random within a made-up range, always labelled simulated. */
+(() => {
+  const calls = [
+    { said: "Hi, I moved last week and need my parcels to go to the new place.", fuzzy: "Sorry, I can't help with lost parcels.", semantic: "Sure, I can update your delivery address. What's the new one?" },
+    { said: "My card got charged twice for the same thing.", fuzzy: "Your card balance is shown in the app.", semantic: "Let me check that duplicate charge and start a refund for you." },
+    { said: "Can someone call me back after six? I'm in meetings till then.", fuzzy: "Our opening hours are nine to five.", semantic: "Done, I've booked a callback for after 6 pm." },
+  ];
+  let mode = "semantic", busy = false, which = 0;
+  const stages = [...document.querySelectorAll(".stage")];
+  const segs = [...document.querySelectorAll(".budget__seg")];
+  const said = document.getElementById("said"), answer = document.getElementById("answer");
+  const aiBubble = document.getElementById("ai-bubble"), aiTag = document.getElementById("ai-tag"), total = document.getElementById("total");
+  const wait = (ms) => new Promise((r) => setTimeout(r, REDUCED ? 0 : ms));
+
+  document.querySelectorAll("[data-match]").forEach((b) => (b.onclick = () => {
+    mode = b.dataset.match;
+    document.querySelectorAll("[data-match]").forEach((o) => o.setAttribute("aria-pressed", String(o === b)));
+  }));
+
+  async function run(i, ms, onStep) {
+    const st = stages[i]; st.classList.add("is-on");
+    const start = performance.now(), fill = st.querySelector(".fill"), label = st.querySelector(".ms");
+    const steps = Math.max(1, Math.round(ms / 40));
+    for (let s = 1; s <= steps; s++) {
+      await wait(ms / steps);
+      const done = Math.round((ms * s) / steps);
+      label.textContent = done + " ms"; fill.style.width = (100 * s) / steps + "%";
+      segs[i].style.width = (done / 2000) * 100 + "%";
+      onStep?.(s / steps);
+    }
+    st.classList.remove("is-on"); st.classList.add("is-done");
+    return ms;
+  }
+  function reset() {
+    stages.forEach((s) => { s.classList.remove("is-on", "is-done"); s.querySelector(".ms").textContent = "0 ms"; s.querySelector(".fill").style.width = 0; });
+    segs.forEach((s) => (s.style.width = 0)); total.textContent = "0"; aiBubble.classList.remove("is-in");
+  }
+  document.getElementById("call-btn").onclick = async () => {
+    if (busy) return; busy = true; reset();
+    const c = calls[which++ % calls.length];
+    const words = c.said.split(" ");
+    const t = [380 + Math.random() * 220, 420 + Math.random() * 260, 260 + Math.random() * 180].map(Math.round);
+    said.textContent = ""; answer.innerHTML = '<span class="caret"></span>'; aiTag.textContent = mode === "semantic" ? "Agent, semantic match" : "Agent, fuzzy match";
+    let sum = 0;
+    sum += await run(0, t[0], (p) => (said.textContent = words.slice(0, Math.ceil(words.length * p)).join(" ")));
+    total.textContent = sum;
+    sum += await run(1, t[1]);
+    total.textContent = sum;
+    const reply = c[mode].split(" ");
+    aiBubble.classList.add("is-in");
+    sum += await run(2, t[2], (p) => (answer.textContent = reply.slice(0, Math.ceil(reply.length * p)).join(" ")));
+    total.textContent = sum;
+    busy = false;
+  };
+})();
+
+/* ========================= 03 SEGMENTER =========================
+   Synthetic micrograph: smooth blob field = ground truth grains; add speckle noise for the input.
+   Visitor thresholds (optionally after box-blur "pre-labeling") and gets a live IoU. */
+(() => {
+  const W = 160, H = 110;
+  const cin = document.getElementById("seg-in"), cout = document.getElementById("seg-out");
+  const tIn = document.getElementById("seg-t"), sIn = document.getElementById("seg-s");
+  let truth, noisy;
+
+  function sample() {
+    const seeds = Array.from({ length: 30 }, () => ({ x: Math.random() * W, y: Math.random() * H, r: 4 + Math.random() * 6 }));
+    truth = new Uint8Array(W * H); noisy = new Float32Array(W * H);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+      let f = 0;
+      // max, not sum, so neighbouring grains stay separate like a real microstructure
+      for (const s of seeds) f = Math.max(f, Math.exp(-((x - s.x) ** 2 + (y - s.y) ** 2) / (2 * s.r * s.r)));
+      const i = y * W + x;
+      truth[i] = f > 0.55 ? 1 : 0;
+      noisy[i] = Math.min(1, Math.max(0, 0.2 + 0.6 * Math.min(1, f) + (Math.random() - 0.5) * 0.6));
+    }
+  }
+  function blur(src, r) {
+    if (!r) return src;
+    const out = new Float32Array(W * H);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+      let s = 0, n = 0;
+      for (let dy = -r; dy <= r; dy++) for (let dx = -r; dx <= r; dx++) {
+        const xx = x + dx, yy = y + dy;
+        if (xx >= 0 && yy >= 0 && xx < W && yy < H) { s += src[yy * W + xx]; n++; }
+      }
+      out[y * W + x] = s / n;
+    }
+    return out;
+  }
+  function paint(canvas, fn) {
+    const ctx = canvas.getContext("2d"); canvas.width = W; canvas.height = H;
+    const img = ctx.createImageData(W, H);
+    for (let i = 0; i < W * H; i++) { const [r, g, b] = fn(i); img.data.set([r, g, b, 255], i * 4); }
+    ctx.putImageData(img, 0, 0);
+  }
+  function render() {
+    const t = Number(tIn.value) / 100, field = blur(noisy, Number(sIn.value));
+    let inter = 0, uni = 0;
+    paint(cin, (i) => { const v = noisy[i] * 235; return [v, v * 0.97, v * 0.9]; }); // warm grey, like a stained section
+    paint(cout, (i) => {
+      const p = field[i] > t ? 1 : 0, g = truth[i];
+      if (p && g) inter++; if (p || g) uni++;
+      if (p && g) return [255, 77, 173];      // hit
+      if (p && !g) return [130, 40, 90];      // false positive
+      if (!p && g) return [70, 74, 76];       // missed
+      return [16, 17, 18];
+    });
+    const iou = uni ? inter / uni : 0, el = document.getElementById("iou");
+    el.textContent = Math.round(iou * 100) + "%";
+    el.classList.toggle("is-pass", iou >= 0.85);
+    document.getElementById("iou-bar").style.width = iou * 100 + "%";
+  }
+  tIn.oninput = sIn.oninput = render;
+  document.getElementById("seg-new").onclick = () => { sample(); render(); };
+  sample(); render();
+})();
+</script>
+</body>
+</html>
