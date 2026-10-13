@@ -1,0 +1,116 @@
+/* Case studies: the article column, with the outcome strip, system map and playable wider. */
+
+.case .case__outcomes,
+.case .system,
+.case .case__instrument {
+  grid-column: 2 / span 10;
+}
+
+.case__summary {
+  max-width: 46ch;
+}
+
+.case__outcomes {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border-top: 2px solid var(--fg);
+}
+
+.case__outcomes > div + div {
+  border-left: 1px solid var(--rule);
+}
+
+.case__outcomes dt {
+  order: 2;
+}
+
+.case__outcomes dd {
+  order: 1;
+  font: 800 clamp(48px, 5vw, 84px) / 0.9 var(--display);
+  font-variation-settings: "wdth" 62;
+  text-transform: none;
+  color: var(--accent);
+}
+
+.system {
+  display: grid;
+  gap: 16px;
+}
+
+.system__stages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 2px solid var(--fg);
+}
+
+.system__stage {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 18px 20px 20px 0;
+}
+
+.system__stage + .system__stage {
+  padding-left: 20px;
+  border-left: 1px solid var(--rule);
+}
+
+.system ul {
+  display: grid;
+  gap: 6px;
+  font: 400 14px/1.4 var(--mono);
+}
+
+.system__platform {
+  display: grid;
+  gap: 12px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.system__platform ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+
+.case__meta {
+  display: grid;
+  gap: 24px;
+}
+
+.case__stack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  font: 400 13px/1.4 var(--mono);
+}
+
+.case__tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 899px) {
+  .case .case__outcomes,
+  .case .system,
+  .case .case__instrument {
+    grid-column: 1 / -1;
+  }
+  .case__outcomes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .case__outcomes > div + div {
+    border-left: 0;
+  }
+  .system__stages {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .system__stage + .system__stage {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+}

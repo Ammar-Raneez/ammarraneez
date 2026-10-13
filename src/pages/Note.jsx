@@ -4,6 +4,7 @@ import { usePageMotion } from "../motion.js";
 import { formatDate, useDocumentTitle } from "../pageMeta.js";
 import { notes } from "../notes.js";
 import { socials } from "../content.js";
+import "./notes.css";
 
 const linkedin = socials.find((s) => s.name === "LinkedIn").link;
 
@@ -18,15 +19,12 @@ export default function Note({ slug }) {
   const next = notes[(index + 1) % notes.length];
 
   return (
-    <article ref={root} className="page article">
-      <header className="page__intro">
-        <p className="label" data-intro>
-          <span className="label__index">Note</span>
-          <time dateTime={note.date}>{formatDate(note.date)}</time>
+    <article ref={root} className="page article" data-era="paper">
+      <header className="article__head">
+        <p className="kicker">
+          <b>Note</b> · <time dateTime={note.date}>{formatDate(note.date)}</time>
         </p>
-        <h1 className="article__title" data-intro>
-          {note.title}
-        </h1>
+        <h1 className="big article__title">{note.title}</h1>
       </header>
 
       <div className="article__body prose">
@@ -43,16 +41,16 @@ export default function Note({ slug }) {
         )}
       </div>
 
-      <footer className="article__footer">
-        <p className="muted">
-          First published on{" "}
-          <a className="arrow-link" href={linkedin} target="_blank" rel="noreferrer">
-            LinkedIn
+      <footer className="article__foot">
+        <p className="links">
+          <a href={linkedin} target="_blank" rel="noreferrer">
+            First published on LinkedIn
           </a>
+          <a href="/notes">All notes</a>
         </p>
         {next !== note && (
           <a className="article__next" href={`/notes/${next.slug}`}>
-            <span className="label">Next note</span>
+            <span className="kicker">Next note</span>
             <span className="article__next-title">{next.title}</span>
           </a>
         )}

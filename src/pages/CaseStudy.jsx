@@ -1,10 +1,18 @@
 import { useRef } from "react";
 import NotFound from "./NotFound.jsx";
-import ForecastFigure from "../components/ForecastFigure.jsx";
 import Logo from "../components/Logo.jsx";
+import CallSimulator from "../instruments/CallSimulator.jsx";
+import Forecaster from "../instruments/Forecaster.jsx";
+import Segmenter from "../instruments/Segmenter.jsx";
 import { usePageMotion } from "../motion.js";
 import { useDocumentTitle } from "../pageMeta.js";
 import { cases } from "../cases.js";
+import "./notes.css";
+import "./case.css";
+
+// Each case study reads in the era of its film scene and ends on its matching playable.
+const ERA = { "ai-contact-center": "night", "ml-in-production": "paper", "lts-network": "forest" };
+const INSTRUMENT = { "ai-contact-center": CallSimulator, "ml-in-production": Segmenter, "lts-network": Forecaster };
 
 function SystemMap({ diagram }) {
   return (
@@ -12,9 +20,8 @@ function SystemMap({ diagram }) {
       <ol className="system__stages">
         {diagram.stages.map((stage, i) => (
           <li key={stage.title} className="system__stage">
-            {i > 0 && <span className="system__arrow" aria-hidden="true" />}
-            <span className="label">
-              <span className="label__index">{String(i + 1).padStart(2, "0")}</span> {stage.title}
+            <span className="kicker">
+              <b>{String(i + 1).padStart(2, "0")}</b> {stage.title}
             </span>
             <ul>
               {stage.items.map((item) => (
@@ -25,17 +32,14 @@ function SystemMap({ diagram }) {
         ))}
       </ol>
       <div className="system__platform">
-        <span className="label">{diagram.platform.title}</span>
+        <span className="kicker">{diagram.platform.title}</span>
         <ul>
           {diagram.platform.items.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
       </div>
-      <figcaption className="forecast__caption">
-        <span className="label">Fig. 1</span>
-        <span>{diagram.caption}</span>
-      </figcaption>
+      <figcaption className="kicker">Fig. 1 · {diagram.caption}</figcaption>
     </figure>
   );
 }
@@ -63,61 +67,59 @@ export default function CaseStudy({ slug }) {
 
   if (!study) return <NotFound />;
   const next = cases[(index + 1) % cases.length];
+  const Instrument = INSTRUMENT[study.slug];
 
   return (
-    <article ref={root} className="page article case">
-      <header className="page__intro">
-        <p className="label" data-intro>
-          <span className="label__index">Case study</span>
-          {study.org}, {study.period}
+    <article ref={root} className="page article case" data-era={ERA[study.slug] ?? "paper"}>
+      <header className="article__head">
+        <p className="kicker">
+          <b>Case study</b> · {study.org}, {study.period}
         </p>
-        <h1 className="article__title" data-intro>
-          {study.title}
-        </h1>
-        <p className="lede" data-intro>
-          {study.summary}
-        </p>
-        <p className="label case__role" data-intro>
-          Role: <span>{study.role}</span>
-        </p>
+        <h1 className="big article__title">{study.title}</h1>
+        <p className="quote case__summary">{study.summary}</p>
+        <p className="kicker">Role: {study.role}</p>
       </header>
 
       <dl className="facts case__outcomes" data-reveal>
         {study.outcomes.map((o) => (
           <div key={o.label}>
-            <dt>{o.label}</dt>
+            <dt className="kicker">{o.label}</dt>
             <dd data-count>{o.value}</dd>
           </div>
         ))}
       </dl>
 
-      <div className="case__figure">
-        {study.diagram && <SystemMap diagram={study.diagram} />}
-        {study.figure && <ForecastFigure />}
-      </div>
+      {study.diagram && <SystemMap diagram={study.diagram} />}
 
       <div className="article__body prose">
         {study.sections.map((section) => (
-          <section key={section.heading} className="case__section" data-reveal>
-            <h2 className="case__heading">{section.heading}</h2>
+          <section key={section.heading} data-reveal>
+            <h2>{section.heading}</h2>
             <Body blocks={section.body} />
           </section>
         ))}
+      </div>
 
+      {Instrument && (
+        <div className="case__instrument">
+          <Instrument />
+        </div>
+      )}
+
+      <div className="case__meta">
         {study.links && (
-          <p className="case__links">
+          <p className="links">
             {study.links.map((l) => (
-              <a key={l.href} className="arrow-link" href={l.href} target="_blank" rel="noreferrer">
+              <a key={l.href} href={l.href} target="_blank" rel="noreferrer">
                 {l.label}
               </a>
             ))}
           </p>
         )}
-
         <p className="case__stack">
-          <span className="label">Stack</span>
+          <span className="kicker">Stack</span>
           {study.stack.map((tool) => (
-            <span key={tool} className="project__tool">
+            <span key={tool} className="case__tool">
               <Logo name={tool} />
               {tool}
             </span>
@@ -125,9 +127,9 @@ export default function CaseStudy({ slug }) {
         </p>
       </div>
 
-      <footer className="article__footer">
+      <footer className="article__foot">
         <a className="article__next" href={`/work/${next.slug}`}>
-          <span className="label">Next case study</span>
+          <span className="kicker">Next case study</span>
           <span className="article__next-title">{next.title}</span>
         </a>
       </footer>

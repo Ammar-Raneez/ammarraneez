@@ -125,7 +125,6 @@ export const cases = [
       { value: "Best", label: "Final Year Project, IIT 2023" },
       { value: "Merit", label: "NBQSA '23, tertiary student project (technology)" },
     ],
-    figure: true,
     sections: [
       {
         heading: "The idea",

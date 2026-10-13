@@ -243,6 +243,12 @@ ol {
   align-content: center;
 }
 
+.stage.notfound {
+  min-height: 80svh;
+  gap: 24px;
+  align-content: center;
+}
+
 .page {
   padding: calc(var(--hud) + 64px) var(--gutter) 96px;
 }
