@@ -16,4 +16,5 @@
 - [LinkedIn](https://www.linkedin.com/in/ammar-raneez)
 - [GitHub](https://github.com/Ammar-Raneez)
 - [LTS paper on IEEE Xplore](https://ieeexplore.ieee.org/document/10099071)
+- [CV (PDF)](https://ammarraneez.vercel.app/Ammar_Raneez_CV.pdf)
 - Email: ammarraneez@gmail.com

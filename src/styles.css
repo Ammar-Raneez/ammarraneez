@@ -207,7 +207,7 @@ button {
 }
 
 .arrow-link[href^="mailto"]::after,
-.arrow-link[href^="/"]::after,
+.arrow-link[href^="/"]:not([href$=".pdf"])::after,
 .arrow-link[href^="#"]::after {
   content: "→";
 }
@@ -1222,6 +1222,10 @@ button {
   margin-top: var(--space-12);
   padding-top: var(--space-4);
   border-top: 1px solid var(--border);
+}
+
+.contact__call {
+  margin-top: var(--space-8);
 }
 
 /* ---------- Footer ---------- */

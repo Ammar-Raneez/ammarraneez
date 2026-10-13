@@ -358,6 +358,17 @@ export default function Home() {
           <a className="contact__email" href={`mailto:${person.email}`} data-reveal>
             {person.email}
           </a>
+          <p className="contact__call" data-reveal>
+            {person.booking ? (
+              <a className="button" href={person.booking} target="_blank" rel="noreferrer">
+                Book a call
+              </a>
+            ) : (
+              <a className="button" href={`mailto:${person.email}?subject=${encodeURIComponent("A quick call")}`}>
+                Ask for a call
+              </a>
+            )}
+          </p>
           <ul className="contact__links" data-reveal>
             {socials.map((s) => (
               <li key={s.name}>
@@ -365,7 +376,7 @@ export default function Home() {
               </li>
             ))}
             <li>
-              <External href={person.resume}>Résumé</External>
+              <External href={person.resume}>CV (PDF)</External>
             </li>
           </ul>
         </div>

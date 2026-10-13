@@ -16,7 +16,6 @@ const slugs = {
   "VS Code": "visualstudiocode",
   "React Native": "react",
   "Java": "openjdk",
-  "Airflow": "apacheairflow",
 };
 
 function urlFor(name) {

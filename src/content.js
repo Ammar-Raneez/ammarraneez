@@ -9,7 +9,9 @@ export const person = {
   city: "Colombo",
   timeZone: "Asia/Colombo",
   email: "ammarraneez@gmail.com",
-  resume: "https://drive.google.com/file/d/1JB25xL05kWWJAHAjbFnus59FfxDJRmDP/view",
+  resume: "/Ammar_Raneez_CV.pdf",
+  // A Cal.com or Google Calendar booking page. Until set, "Ask for a call" opens an email.
+  booking: null,
   github: "https://github.com/Ammar-Raneez",
 };
 
@@ -270,24 +272,6 @@ export const projects = [
     description: "An auction service across multiple AWS services, including a CI/CD pipeline.",
     stack: ["AWS", "Lambda"],
   },
-  {
-    name: "Guns Detection with DVC",
-    url: "https://github.com/Ammar-Raneez/Guns_Detection_DVC",
-    description: "End-to-end gun object detection, with DVC pipelines.",
-    stack: ["Python", "DVC"],
-  },
-  {
-    name: "Anime Recommender on K8s",
-    url: "https://github.com/Ammar-Raneez/Anime_Recommender_K8s",
-    description: "End-to-end anime recommendation system, deployed with Jenkins and Kubernetes.",
-    stack: ["Python", "Jenkins", "Kubernetes"],
-  },
-  {
-    name: "Data Science with Airflow and Grafana",
-    url: "https://github.com/Ammar-Raneez/E2E_Data_Science_Airflow_Grafana",
-    description: "An end-to-end data science project, with Airflow for ETL and Grafana for monitoring.",
-    stack: ["Python", "Airflow", "Grafana"],
-  },
 ];
 
 export const stack = [
@@ -374,7 +358,7 @@ export const certifications = [
   { title: "Machine Learning", issuer: "DeepLearning.AI", link: coursera("VDMPDJDZ5U3K") },
   { title: "TensorFlow: Data and Deployment", issuer: "DeepLearning.AI", link: "https://www.coursera.org/account/accomplishments/specialization/5XMHEGTKMK4U" },
   // The old site linked this to the TensorFlow Developer certificate. Add the right URL to restore the link.
-  { title: "AI for Medicine", issuer: "DeepLearning.AI" },
+  { title: "AI for Medicine", issuer: "DeepLearning.AI", link: "https://www.coursera.org/account/accomplishments/specialization/FX8WL7NCES6E" },
   { title: "Mathematics for Machine Learning", issuer: "Imperial College London, 2020", link: coursera("QY27NBKN8NZC") },
   { title: "Full-stack Web Development with React", issuer: "HKUST, 2020", link: coursera("SGTU9KWH8EVP") },
   { title: "Full-stack Web Development with Angular", issuer: "HKUST", link: coursera("34AENMW2G7SN") },
