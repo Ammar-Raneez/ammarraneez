@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { seeded } from "../src/instruments/random.js";
 import { createForecaster, PAST, AHEAD } from "../src/instruments/forecast.js";
 import { W, H, makeSample, blur, predict, iou } from "../src/instruments/segment.js";
+import { BUDGET_MS, STAGES, SAMPLE_CALLS, planTimings } from "../src/instruments/callSim.js";
 
 test("seeded random is deterministic and in range", () => {
   const a = seeded(42), b = seeded(42);
@@ -64,4 +65,19 @@ test("the segmentation game is winnable but not by default", () => {
     assert.ok(best >= 0.85, `seed ${seed}: best IoU ${best.toFixed(3)} should reach 85%`);
     assert.ok(iou(predict(noisy, 0.3), truth) < 0.85, `seed ${seed}: the default settings should not already win`);
   }
+});
+
+test("simulated calls always land inside the 2s budget", () => {
+  const random = seeded(11);
+  for (let i = 0; i < 1000; i++) {
+    const t = planTimings(random);
+    assert.equal(t.length, 3);
+    assert.ok(t.every((ms) => Number.isInteger(ms) && ms > 0));
+    assert.ok(t[0] + t[1] + t[2] < BUDGET_MS);
+  }
+});
+
+test("pipeline stages and samples are complete", () => {
+  assert.deepEqual(STAGES.map((s) => s.title), ["Ingest", "Understand", "Deliver"]);
+  for (const c of SAMPLE_CALLS) assert.ok(c.said && c.fuzzy && c.semantic && c.fuzzy !== c.semantic);
 });
