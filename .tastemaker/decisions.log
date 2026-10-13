@@ -2,3 +2,5 @@
 2026-10-13 pending-review surface=palette axis=color choice="paper/ink/vermilion with dark toggle" reason="user banned purple/blue; not yet confirmed"
 2026-10-13 rejected surface=palette+type axis=color choice="paper #F1EEE7 + Bodoni Moda + vermilion" reason="user: reads like Claude/Anthropic brand design"
 2026-10-13 kept surface=palette+type axis=color choice="dark-first near-black + acid lime #C6F432 + Geist display" reason="user picked option 1 of 3 (dark live-data / swiss print / cool paper grotesk)"
+2026-10-13 rejected surface=all axis=direction choice="dark near-black + acid lime + Geist editorial" reason="user wanted something more exciting and fun after the data-viz pass"
+2026-10-13 kept surface=all axis=direction choice="cinematic story film with era palettes + playable instruments (concepts 3 and 1)" reason="user picked the mix after reviewing four prototypes"

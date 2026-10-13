@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="2 -2 88 88">
-  <defs><clipPath id="c"><rect x="2" y="-2" width="82" height="88"/></clipPath></defs>
-  <rect x="2" y="-2" width="88" height="88" fill="#C6F432"/>
-  <image href="logo.png" x="0" y="0" width="360" height="162" clip-path="url(#c)"/>
-</svg>

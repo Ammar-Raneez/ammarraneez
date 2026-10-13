@@ -4,7 +4,8 @@
 
 ## Pages
 
-- [Home](https://ammarraneez.vercel.app/): work history, research, projects, stack, awards and certifications, contact.
+- [Home](https://ammarraneez.vercel.app/): a scroll-driven film of the journey, with playable versions of the forecaster, segmentation and real-time call work.
+- [Archive](https://ammarraneez.vercel.app/archive): every role, project, tool, award and certificate.
 - [Journey](https://ammarraneez.vercel.app/journey): a long-form timeline from 2019 to now.
 - [Notes](https://ammarraneez.vercel.app/notes): essays on engineering, AI and work.
 - [Case study: real-time AI contact center](https://ammarraneez.vercel.app/work/ai-contact-center)

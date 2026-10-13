@@ -4,9 +4,9 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/experience", "destination": "/#work", "permanent": true },
-    { "source": "/education", "destination": "/#recognition", "permanent": true },
-    { "source": "/projects", "destination": "/#projects", "permanent": true },
-    { "source": "/contact", "destination": "/#contact", "permanent": true }
+    { "source": "/experience", "destination": "/archive", "permanent": true },
+    { "source": "/education", "destination": "/archive", "permanent": true },
+    { "source": "/projects", "destination": "/archive", "permanent": true },
+    { "source": "/contact", "destination": "/#credits", "permanent": true }
   ]
 }

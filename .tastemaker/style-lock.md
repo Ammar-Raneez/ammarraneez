@@ -1,45 +1,69 @@
 # Style lock: Ammar Raneez portfolio
 
-Established: 2026-10-13, revised the same day. Source: reference board (viewed) for structure; palette hand-picked and verified with `check_contrast.py --matrix`.
-Mood: technical / live-data, dark-first. (Revised 2026-10-13: the first pass, paper + Bodoni + vermilion, was rejected for reading like Anthropic/Claude's own brand.)
+Established: 2026-10-13 (third direction).
+Source: chosen from four prototypes; merges concept 3 (cinematic story) with concept 1 (playable work).
+Mood: cinematic, editorial, technical.
+The home page is a scroll-driven film of the journey with playable instruments inside it.
 
-## Palette (dark, default)
-- Background `#0B0C0B`, Surface `#151714`, Text `#ECEEE8`, Muted `#8F948A`, Border `#2A2D28`, Accent `#C6F432` (acid lime), On-accent `#0B0C0B`.
-- Lime marks what is live or primary: the chart forecast and "now" dot, section index numbers, the hero's accented word, primary buttons, big figures.
+## Eras
 
-## Palette (light, via toggle)
-- Background `#F3F4F1` (cool, not cream), Surface `#E8EAE5`, Text `#0E0F0D`, Muted `#585D53`, Border `#D2D5CD`, Accent `#3F5C00` (deep lime, readable as text), On-accent `#FFFFFF`.
-- Dark mode: runtime toggle, both modes ship. Dark is the default regardless of system setting; a saved toggle choice wins.
+Every scene and page declares `data-era`, which sets `--bg`, `--fg`, `--accent`, `--muted` and `--trace`.
+
+| Era | Background | Text | Accent | Muted | Used for |
+|---|---|---|---|---|---|
+| night | `#0A0A0A` | `#F2F2EF` | `#FF3B30` | `#9A9A96` | Title, cold open, contact center, now, credits, journey intro, 404 |
+| paper | `#F2F2EF` | `#111111` | `#D6261C` | `#5E5E5A` | Learning fast, 99x, archive, notes, ML case study |
+| forest | `#0E3B2E` | `#E9F2EC` | `#B8F2D3` | `#9FC2B2` | Research, LTS case study |
+| gold | `#E9B824` | `#141414` | `#141414` | `#4A3D0E` | Graduation |
+| red | `#FF3B30` | `#111111` | `#111111` | `#3B0F0C` | Plot twist |
+
+The paper era also has a marker highlight `#FFE14D`, behind ink text only.
 
 ## Color contract
-Both modes, from `check_contrast.py --matrix`:
-- Text-safe: text/bg, text/surface, muted/bg, muted/surface, accent/bg, accent/surface, accent/on-accent, accent/border.
-- Decorative only: text next to accent, muted next to accent, bg/border, surface/border, bg/surface.
+
+Checked with `check_contrast.py --matrix` on 2026-10-13.
+- Text-safe in every era: text/bg, muted/bg, and accent/bg where an accent is used as text.
+- Instrument screens (`#141413`): text, muted and trace (red `#FF3B30` or mint `#B8F2D3`) all pass AA.
+- Decorative only: text next to accent, muted next to accent, rules at 18% of the text colour.
+
+## The red pen
+
+One recurring mark: it circles the 65%, strikes it in the plot twist, underlines links and draws instrument traces.
+It is always the era's accent.
 
 ## Typography
-- Display: Geist 500 with tight tracking (-0.035em to -0.055em). No serif anywhere.
-- Body: Geist 400/500.
-- Labels, dates, data: Geist Mono 400/500, uppercase, 0.04em tracking. Never for paragraphs.
 
-## Shape language
-- Corner radius: 0 everywhere.
-- Shadows: none. Separation is 1px hairlines; ink-colour rule on top of each list.
+- Display: Archivo variable, width 62 and weight 800 for scene type; width 70 to 75 for headings.
+- Body: Archivo at width 100, 17 to 19px.
+- Labels, top bar, readouts, credits: IBM Plex Mono 500, uppercase, 0.06 to 0.08em tracking.
+- No serif anywhere; nothing from the earlier Geist and lime look.
 
-## Density & spacing
-- Tokens: 8, 12, 16, 24, 32, 48, 64, 96, 128.
-- Sections: 96px top / 128px bottom on desktop, 64 / 96 below 960px.
-- 12-column grid, gutter clamp(16px, 3vw, 40px); section labels in columns 1-3, content in 4-12.
+## Shape
+
+Square corners, 1px hairlines, 2px rules on top of lists and strips, no shadows.
+
+## Instruments
+
+Dark screen panels with a mono readout row, an honesty label ("Illustration", "Simulated", "Sample") and controls below.
+Forecaster in Research and the LTS case study, segmenter in 99x and the ML case study, call simulator in the contact center scene and its case study.
+Loops run only on screen and never under reduced motion.
 
 ## Motion
-- GSAP + ScrollTrigger in `src/motion.js`, all inside `gsap.matchMedia`. Reduced motion gets the fully static page; held (pinned) sections are desktop only (min-width 961px).
-- Scroll-linked effects use `scrub` and never take over scroll speed or snap.
-- Desktop: hero holds while the headline lifts and the chart widens to full width and grows taller; the system map in case studies holds while stages and arrows light up in order; a sticky year tracks the work row in view; a lime line draws down the journey.
-- Everywhere: word-by-word statement reveal, figures count up (`data-count`), portrait shutter reveal (`data-shutter`), fade-up entrances (`data-reveal`).
-- Pinned triggers are created first because ScrollTrigger measures in creation order.
-- UI transitions 160-280ms, `cubic-bezier(0.22, 1, 0.36, 1)`, hover gated by `(hover: hover) and (pointer: fine)`.
+
+- GSAP + ScrollTrigger inside `gsap.matchMedia`; scrub only, never scroll-jacking or snapping.
+- Scenes hold (pin) only on desktop (min-width 900px) with motion allowed; phones get one stacked scroll.
+- Pinned timelines are created first, in document order.
+- Held scenes must fit one screen: type uses `min(vw, vh)` sizes.
+- Reduced motion shows every final state.
+- Crossing the breakpoint keeps the reader on the same scene.
+
+## Layout
+
+- Top bar: a film slate on the home page, plain navigation elsewhere, plus a red progress line.
+- Archive, journey chapters and case studies: labels in a left column, content in the right, one column on phones.
 
 ## Assets
-- Portrait: `src/assets/images/portrait.jpg` (from OneDrive "Professional New.png", 880px JPEG), natural colour, 4:5 crop with a hairline offset frame.
-- Brand marks: Simple Icons via Iconify, monochrome, tinted with currentColor through CSS mask (`src/assets/logos`).
-- Company logos: existing PNGs, grayscale, shown only inside expanded work rows.
-- No illustrations: the forecast figure is the only bespoke visual. unDraw library not used.
+
+- Portrait: `src/assets/images/portrait.jpg`, shown grayscale.
+- Brand marks: Simple Icons through a CSS mask, tinted with the text colour.
+- Share image and icons: rendered from `scripts/og/og.html` and `scripts/og/icon.html`.

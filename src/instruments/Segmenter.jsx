@@ -77,7 +77,7 @@ export default function Segmenter() {
             {Math.round(score * 100)}%
           </span>
           <span className="iou__meter" aria-hidden="true">
-            <span style={{ width: `${score * 100}%` }} />
+            <span style={{ transform: `scaleX(${score})` }} />
             <i />
           </span>
           <span className="kicker">Red tick: the 85% line</span>

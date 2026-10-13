@@ -928,9 +928,10 @@
     grid-template-columns: minmax(0, 1fr) 24px;
   }
   .note-row__date {
-    grid-row: auto;
+    grid-row: 1;
   }
+  .note-row__title,
   .note-row__summary {
-    grid-column: 1;
+    grid-column: 1 / -1;
   }
 }

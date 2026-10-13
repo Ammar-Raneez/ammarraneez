@@ -74,7 +74,7 @@ const anySize = {
     gsap.from(s.querySelectorAll(".slate, .scroll-cue"), { opacity: 0, y: 12, duration: 0.8, delay: 0.6, stagger: 0.1 });
   },
   "plot-twist": (s) => {
-    gsap.from(s.querySelector(".twist"), { opacity: 0.1, y: 60, scrollTrigger: { trigger: s, start: "top 75%", end: "top 20%", scrub: 0.5 } });
+    gsap.from(s.querySelector(".twist"), { y: 80, scrollTrigger: { trigger: s, start: "top 75%", end: "top 20%", scrub: 0.5 } });
     // The red pen strikes the 65% as you read.
     gsap.fromTo(
       s.querySelector(".twist s"),
@@ -118,6 +118,33 @@ export function useFilmMotion(rootRef) {
       }
       return () => cleanups.forEach((fn) => fn());
     });
+    // Crossing the desktop breakpoint adds or removes pins, which changes every scroll offset.
+    // Keep the reader on the scene they were watching instead of wherever the old offset lands.
+    let current = null;
+    let raf = 0;
+    const track = () => {
+      raf = 0;
+      const line = innerHeight * 0.4;
+      const s = scenes.find((el) => {
+        const r = el.getBoundingClientRect();
+        return r.top <= line && r.bottom > line;
+      });
+      if (s) current = s.id;
+    };
+    const onScroll = () => (raf ||= requestAnimationFrame(track));
+    addEventListener("scroll", onScroll, { passive: true });
+    const wide = matchMedia(DESKTOP);
+    const keepPlace = () => {
+      const keep = current;
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          const el = keep && document.getElementById(keep);
+          if (el) scrollTo(0, el.getBoundingClientRect().top + scrollY);
+        }),
+      );
+    };
+    wide.addEventListener("change", keepPlace);
+
     // /#credits (the /contact redirect) and /#research etc. land correctly once pins exist.
     const jump = () => {
       // getElementById, not querySelector: "#99x" is not a valid CSS selector.
@@ -128,7 +155,12 @@ export function useFilmMotion(rootRef) {
       ScrollTrigger.refresh();
       jump();
     });
-    return () => mm.revert();
+    return () => {
+      removeEventListener("scroll", onScroll);
+      wide.removeEventListener("change", keepPlace);
+      cancelAnimationFrame(raf);
+      mm.revert();
+    };
   }, [rootRef]);
 }
 

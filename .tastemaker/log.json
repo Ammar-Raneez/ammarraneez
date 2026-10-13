@@ -1,3 +1,22 @@
 [
-  { "date": "2026-10-13", "page": "home+journey", "macrostructure": "Editorial Index", "nav": "rule-bar masthead", "hero": "type statement + live figure", "footer": "hairline meta row", "knobs": "hero=statement/serif/left; figure=canvas forecast; lists=ledgers", "brief": "Ammar Raneez · developer portfolio" }
+  {
+    "date": "2026-10-13",
+    "page": "home+journey",
+    "macrostructure": "Editorial Index",
+    "nav": "rule-bar masthead",
+    "hero": "type statement + live figure",
+    "footer": "hairline meta row",
+    "knobs": "hero=statement/serif/left; figure=canvas forecast; lists=ledgers",
+    "brief": "Ammar Raneez \u00b7 developer portfolio"
+  },
+  {
+    "date": "2026-10-13",
+    "page": "home+archive+journey",
+    "macrostructure": "Scroll film",
+    "nav": "film slate top bar",
+    "hero": "title card with scene index",
+    "footer": "film credits",
+    "knobs": "eras per scene; instruments after held scenes; archive for reference",
+    "brief": "Ammar Raneez \u00b7 developer portfolio"
+  }
 ]

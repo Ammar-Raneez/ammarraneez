@@ -1,28 +1,21 @@
 <!doctype html><html><head><meta charset="utf-8">
-<!-- Source for public/og.png (1200x630). Edit, open in a browser at 1200x630, screenshot to public/og.png. -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500&family=Geist:wght@400;500&display=block">
+<!-- Source for public/og.png (1200x630): npx -y playwright@1.64.0 screenshot --viewport-size=1200,630 --wait-for-timeout=1500 "file://$PWD/scripts/og/og.html" public/og.png -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@500&display=block">
 <style>
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:630px;background:#0B0C0B;color:#ECEEE8;font-family:Geist,sans-serif;overflow:hidden;position:relative}
-.label{position:absolute;left:64px;top:56px;font:500 18px/1 "Geist Mono",monospace;letter-spacing:.04em;text-transform:uppercase;color:#8F948A}
-.label b{color:#C6F432;font-weight:500;margin-right:12px}
-h1{position:absolute;left:60px;top:112px;width:740px;font:500 80px/.95 Geist,sans-serif;letter-spacing:-.045em}
-em{color:#C6F432}
-svg{position:absolute;left:64px;bottom:58px}
-.rule{position:absolute;left:64px;right:64px;bottom:44px;border-top:1px solid #2A2D28}
-.url{position:absolute;right:64px;bottom:14px;font:500 16px/1 "Geist Mono",monospace;color:#8F948A;letter-spacing:.04em}
-.name{position:absolute;left:64px;bottom:14px;font:500 16px/1 "Geist Mono",monospace;letter-spacing:.04em;text-transform:uppercase}
-img{position:absolute;right:64px;top:56px;width:300px;height:375px;object-fit:cover;object-position:50% 20%;outline:1px solid #2A2D28;outline-offset:8px}
+body{width:1200px;height:630px;background:#0A0A0A;color:#F2F2EF;font-family:Archivo,sans-serif;overflow:hidden;position:relative}
+.slate{position:absolute;left:64px;right:64px;top:52px;display:flex;justify-content:space-between;font:500 18px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.slate span:nth-child(2){display:flex;gap:12px;align-items:center}
+.dot{width:12px;height:12px;border-radius:50%;background:#FF3B30}
+h1{position:absolute;left:58px;bottom:150px;font:800 196px/.84 Archivo,sans-serif;font-variation-settings:"wdth" 62;text-transform:uppercase;letter-spacing:-.01em}
+h1 b{color:#FF3B30}
+.roles{position:absolute;left:64px;right:64px;bottom:72px;padding-top:20px;border-top:1px solid #2A2A28;display:flex;gap:36px;font:500 18px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#9A9A96}
+img{position:absolute;right:64px;top:112px;width:300px;height:375px;object-fit:cover;object-position:50% 20%;filter:grayscale(1) contrast(1.05)}
+.bar{position:absolute;left:0;bottom:0;height:8px;width:64%;background:#FF3B30}
 </style></head><body>
-<p class="label"><b>01</b>Head of Engineering, SoftSora, Colombo</p>
-<h1>I architect <em style="font-style:normal">real&#8209;time</em> AI, from the model to the stack around it.</h1>
-<svg width="640" height="150" viewBox="0 0 640 150" style="height:100px;width:427px">
-<path d="M532.7,82.6 L536.3,75.3 L539.9,73.0 L543.5,71.3 L547.0,70.0 L550.6,68.8 L554.2,67.7 L557.8,66.8 L561.3,65.9 L564.9,65.1 L568.5,64.4 L572.1,63.7 L575.6,63.0 L579.2,62.4 L582.8,61.8 L586.4,61.2 L589.9,60.6 L593.5,60.1 L597.1,59.6 L600.7,59.1 L604.2,58.6 L607.8,58.1 L611.4,57.6 L615.0,57.2 L618.5,56.8 L622.1,56.3 L625.7,55.9 L629.3,55.5 L632.8,55.1 L636.4,54.7 L640.0,54.3 L640.0,110.8 L636.4,110.4 L632.8,110.0 L629.3,109.6 L625.7,109.2 L622.1,108.8 L618.5,108.4 L615.0,108.0 L611.4,107.5 L607.8,107.0 L604.2,106.6 L600.7,106.1 L597.1,105.6 L593.5,105.1 L589.9,104.5 L586.4,104.0 L582.8,103.4 L579.2,102.8 L575.6,102.1 L572.1,101.5 L568.5,100.8 L564.9,100.0 L561.3,99.2 L557.8,98.3 L554.2,97.4 L550.6,96.4 L547.0,95.2 L543.5,93.8 L539.9,92.1 L536.3,89.8 Z" fill="#C6F432" fill-opacity=".12"/>
-<path d="M0.0,130.2 L3.6,128.6 L7.2,126.4 L10.7,123.7 L14.3,125.8 L17.9,127.0 L21.5,133.3 L25.0,134.7 L28.6,136.8 L32.2,141.0 L35.8,138.4 L39.3,120.6 L42.9,117.7 L46.5,116.0 L50.1,95.9 L53.6,94.3 L57.2,85.7 L60.8,100.5 L64.4,83.7 L67.9,80.6 L71.5,86.0 L75.1,77.9 L78.7,62.9 L82.2,52.5 L85.8,36.9 L89.4,28.4 L93.0,44.6 L96.5,36.4 L100.1,30.9 L103.7,17.0 L107.3,16.8 L110.8,12.4 L114.4,30.6 L118.0,32.1 L121.6,38.8 L125.1,36.6 L128.7,45.1 L132.3,54.4 L135.9,54.3 L139.4,59.8 L143.0,52.1 L146.6,57.3 L150.2,62.7 L153.7,62.6 L157.3,67.0 L160.9,77.5 L164.5,81.5 L168.0,87.6 L171.6,97.5 L175.2,98.2 L178.8,107.6 L182.3,112.0 L185.9,108.3 L189.5,112.7 L193.1,112.7 L196.6,112.4 L200.2,118.7 L203.8,114.5 L207.4,111.1 L210.9,108.0 L214.5,103.3 L218.1,106.2 L221.7,110.0 L225.3,101.5 L228.8,102.5 L232.4,98.9 L236.0,101.0 L239.6,95.3 L243.1,94.8 L246.7,99.2 L250.3,99.5 L253.9,105.6 L257.4,118.3 L261.0,117.6 L264.6,132.3 L268.2,122.4 L271.7,131.2 L275.3,129.3 L278.9,141.6 L282.5,120.8 L286.0,143.3 L289.6,129.7 L293.2,110.1 L296.8,120.0 L300.3,104.1 L303.9,100.8 L307.5,111.7 L311.1,95.6 L314.6,96.5 L318.2,94.2 L321.8,104.8 L325.4,112.6 L328.9,106.8 L332.5,100.2 L336.1,91.9 L339.7,80.3 L343.2,84.6 L346.8,86.4 L350.4,79.5 L354.0,68.9 L357.5,67.3 L361.1,71.5 L364.7,73.4 L368.3,64.8 L371.8,61.7 L375.4,69.7 L379.0,70.3 L382.6,64.9 L386.1,62.5 L389.7,67.1 L393.3,61.0 L396.9,63.3 L400.4,49.9 L404.0,75.2 L407.6,60.1 L411.2,107.1 L414.7,110.8 L418.3,105.2 L421.9,109.0 L425.5,103.1 L429.1,103.2 L432.6,105.5 L436.2,115.0 L439.8,116.2 L443.4,109.0 L446.9,77.6 L450.5,63.3 L454.1,46.5 L457.7,31.8 L461.2,6.7 L464.8,25.8 L468.4,41.5 L472.0,40.0 L475.5,35.5 L479.1,26.4 L482.7,20.4 L486.3,22.5 L489.8,29.9 L493.4,21.7 L497.0,35.4 L500.6,45.7 L504.1,44.5 L507.7,43.7 L511.3,55.7 L514.9,59.3 L518.4,59.0 L522.0,67.4 L525.6,79.1 L529.2,79.0 L532.7,82.6" fill="none" stroke="#ECEEE8" stroke-width="2" stroke-linejoin="round"/>
-<path d="M532.7,82.6 L536.3,82.4 L539.9,82.3 L543.5,82.2 L547.0,82.0 L550.6,81.9 L554.2,81.8 L557.8,81.6 L561.3,81.5 L564.9,81.4 L568.5,81.2 L572.1,81.1 L575.6,81.0 L579.2,80.8 L582.8,80.7 L586.4,80.6 L589.9,80.4 L593.5,80.3 L597.1,80.2 L600.7,80.0 L604.2,79.9 L607.8,79.8 L611.4,79.6 L615.0,79.5 L618.5,79.4 L622.1,79.2 L625.7,79.1 L629.3,79.0 L632.8,78.8 L636.4,78.7 L640.0,78.6" fill="none" stroke="#C6F432" stroke-width="2.5" stroke-dasharray="5 5"/>
-<circle cx="532.7" cy="82.6" r="5" fill="#C6F432"/>
-</svg>
+<p class="slate"><span>Ammar Raneez</span><span><i class="dot"></i>SC 00 / 08 Title</span><span>2019 - Now</span></p>
+<h1>Ammar<br>Raneez<b>.</b></h1>
+<p class="roles"><span>Head of Engineering, SoftSora</span><span>IEEE published</span><span>Colombo, Sri Lanka</span></p>
 <img src="../../src/assets/images/portrait.jpg" alt="">
-<div class="rule"></div>
-<p class="name">Ammar Raneez</p><p class="url">ammarraneez.vercel.app</p>
+<div class="bar"></div>
 </body></html>
