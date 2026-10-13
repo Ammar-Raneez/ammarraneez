@@ -221,6 +221,17 @@ ol {
   }
 }
 
+/* Monochrome brand marks (Simple Icons), tinted with the text colour through a CSS mask. */
+.logo {
+  display: inline-block;
+  flex: none;
+  width: 1em;
+  height: 1em;
+  background: currentColor;
+  -webkit-mask: var(--logo) center / contain no-repeat;
+  mask: var(--logo) center / contain no-repeat;
+}
+
 /* ---------- Layout ---------- */
 
 .stage {

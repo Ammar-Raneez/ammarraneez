@@ -21,6 +21,11 @@ const routes = [
     description: "From a 65% on my first Python assignment in 2019 to head of engineering: the long version.",
   },
   {
+    path: "/archive",
+    title: "Archive | Ammar Raneez",
+    description: "Every role, project, tool, award and certificate, in full.",
+  },
+  {
     path: "/notes",
     title: "Notes | Ammar Raneez",
     description: "Short essays on engineering, AI and the way we work.",

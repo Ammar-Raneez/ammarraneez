@@ -2,6 +2,7 @@ import Hud from "./components/Hud.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import Journey from "./pages/Journey.jsx";
+import Archive from "./pages/Archive.jsx";
 import NotesIndex from "./pages/NotesIndex.jsx";
 import Note from "./pages/Note.jsx";
 import CaseStudy from "./pages/CaseStudy.jsx";
@@ -10,6 +11,7 @@ import NotFound from "./pages/NotFound.jsx";
 // A handful of pages does not need a router: Vercel rewrites every path to index.html.
 const routes = [
   [/^\/$/, Home],
+  [/^\/archive$/, Archive],
   [/^\/journey$/, Journey],
   [/^\/notes$/, NotesIndex],
   [/^\/notes\/([\w-]+)$/, Note],
